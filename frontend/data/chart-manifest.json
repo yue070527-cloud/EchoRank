@@ -19,6 +19,16 @@
           "path": "./data/charts/daily/songs/2026-07-17.json"
         }
       ]
+    },
+    {
+      "entityType": "songs",
+      "periodType": "weekly",
+      "snapshots": [
+        {
+          "periodKey": "2026-W29",
+          "path": "./data/charts/weekly/songs/2026-W29.json"
+        }
+      ]
     }
   ]
 }

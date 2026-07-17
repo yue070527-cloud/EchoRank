@@ -14,36 +14,75 @@
   },
   "collection": {
     "collectedAt": "2026-07-16T22:03:00+08:00",
-    "coverage": 1,
+    "coverage": 1.0,
     "status": "success",
-    "sourceSnapshot": "data/raw/netease/2026/07/2026-07-16.json"
+    "sourceSnapshot": "demo://netease/2026-07-16"
   },
   "scoringVersions": {
     "netease": "netease-streaming-v1",
-    "physical": "physical-v1",
-    "bilibili": "bilibili-manual-v1",
+    "physical": "external-ledger-v1",
+    "bilibili": "external-ledger-v1",
     "combined": "combined-v1"
   },
   "entries": [
     {
-      "entityId": "song-midnight-index",
+      "entityId": "demo-song-100",
       "entity": {
-        "title": "Midnight Index",
+        "title": "晚风档案 · 100",
         "artists": [
           {
-            "id": "artist-luna-archive",
-            "name": "Luna Archive"
+            "id": "demo-artist-10",
+            "name": "潮汐邮局"
           }
         ],
         "album": {
-          "id": "album-glass-hours",
-          "title": "Glass Hours"
+          "id": "demo-album-10",
+          "title": "海岸来信"
         },
         "coverUrl": null,
-        "coverColor": "#cb473d"
+        "coverColor": "#356c7d"
       },
       "rank": {
         "current": 1,
+        "previous": 1,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.0,
+        "physical": 1440.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 1476.0
+      },
+      "record": {
+        "peak": 1,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-077",
+      "entity": {
+        "title": "Sunday Vinyl · 77",
+        "artists": [
+          {
+            "id": "demo-artist-07",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "demo-album-07",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 2,
         "previous": 2,
         "movement": {
           "type": "same",
@@ -51,559 +90,2080 @@
         }
       },
       "points": {
-        "netease": 263,
-        "physical": 1316,
-        "bilibili": 74,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 1653
+        "netease": 78.0,
+        "physical": 950.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 1028.0
       },
       "record": {
-        "peak": 1,
+        "peak": 2,
         "periods": 4
       }
     },
     {
-      "entityId": "song-daylight-signal",
+      "entityId": "demo-song-042",
       "entity": {
-        "title": "白昼信号",
+        "title": "白昼信号 · 42",
         "artists": [
           {
-            "id": "artist-paper-plane-choir",
+            "id": "demo-artist-02",
             "name": "纸飞机合唱团"
           }
         ],
         "album": {
-          "id": "album-city-coordinates",
+          "id": "demo-album-02",
           "title": "城市经纬"
         },
         "coverUrl": null,
         "coverColor": "#356c7d"
       },
       "rank": {
-        "current": 2,
+        "current": 3,
         "previous": 3,
         "movement": {
-          "type": "up",
-          "value": 1
+          "type": "same",
+          "value": 0
         }
       },
       "points": {
-        "netease": 289,
-        "physical": 0,
-        "bilibili": 51,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 340
+        "netease": 165.0,
+        "physical": 0.0,
+        "bilibili": 250.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 415.0
       },
       "record": {
-        "peak": 1,
-        "periods": 7
+        "peak": 2,
+        "periods": 4
       }
     },
     {
-      "entityId": "song-afterimage",
+      "entityId": "demo-song-022",
       "entity": {
-        "title": "Afterimage",
+        "title": "白昼信号 · 22",
         "artists": [
           {
-            "id": "artist-northbound",
+            "id": "demo-artist-02",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "demo-album-02",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 4,
+        "previous": 11,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 225.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 225.0
+      },
+      "record": {
+        "peak": 4,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-023",
+      "entity": {
+        "title": "Afterimage · 23",
+        "artists": [
+          {
+            "id": "demo-artist-03",
             "name": "Northbound"
           }
         ],
         "album": {
-          "id": "album-soft-geometry",
+          "id": "demo-album-03",
           "title": "Soft Geometry"
         },
         "coverUrl": null,
         "coverColor": "#7a634a"
       },
       "rank": {
-        "current": 3,
-        "previous": 1,
+        "current": 5,
+        "previous": 12,
         "movement": {
-          "type": "down",
-          "value": 1
+          "type": "up",
+          "value": 7
         }
       },
       "points": {
-        "netease": 231,
-        "physical": 589,
-        "bilibili": 101,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 921
+        "netease": 224.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 224.0
       },
       "record": {
-        "peak": 2,
-        "periods": 10
+        "peak": 5,
+        "periods": 4
       }
     },
     {
-      "entityId": "song-rain-in-gramophone",
+      "entityId": "demo-song-024",
       "entity": {
-        "title": "留声机里的雨",
+        "title": "留声机里的雨 · 24",
         "artists": [
           {
-            "id": "artist-lin-yu",
+            "id": "demo-artist-04",
             "name": "林屿"
           }
         ],
         "album": {
-          "id": "album-long-sunday",
+          "id": "demo-album-04",
           "title": "漫长的星期日"
         },
         "coverUrl": null,
         "coverColor": "#556344"
       },
       "rank": {
-        "current": 4,
-        "previous": 4,
+        "current": 6,
+        "previous": 13,
         "movement": {
-          "type": "same",
-          "value": 0
+          "type": "up",
+          "value": 7
         }
       },
       "points": {
-        "netease": 202,
-        "physical": 0,
-        "bilibili": 133,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 335
+        "netease": 222.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 222.0
       },
       "record": {
-        "peak": 4,
-        "periods": 13
+        "peak": 6,
+        "periods": 4
       }
     },
     {
-      "entityId": "song-cherry-static",
+      "entityId": "demo-song-025",
       "entity": {
-        "title": "Cherry Static",
+        "title": "Cherry Static · 25",
         "artists": [
           {
-            "id": "artist-hotel-cinema",
+            "id": "demo-artist-05",
             "name": "Hotel Cinema"
           }
         ],
         "album": {
-          "id": "album-channel-four",
+          "id": "demo-album-05",
           "title": "Channel Four"
         },
         "coverUrl": null,
         "coverColor": "#a24259"
       },
       "rank": {
-        "current": 5,
-        "previous": null,
+        "current": 7,
+        "previous": 14,
         "movement": {
           "type": "up",
-          "value": 1
+          "value": 7
         }
       },
       "points": {
-        "netease": 182,
-        "physical": 294,
-        "bilibili": 32,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 508
-      },
-      "record": {
-        "peak": 4,
-        "periods": 16
-      }
-    },
-    {
-      "entityId": "song-backlight-route",
-      "entity": {
-        "title": "逆光航线",
-        "artists": [
-          {
-            "id": "artist-echo-archive",
-            "name": "回声档案"
-          }
-        ],
-        "album": {
-          "id": "album-after-midnight",
-          "title": "零点以后"
-        },
-        "coverUrl": null,
-        "coverColor": "#304a73"
-      },
-      "rank": {
-        "current": 6,
-        "previous": 12,
-        "movement": {
-          "type": "down",
-          "value": 1
-        }
-      },
-      "points": {
-        "netease": 175,
-        "physical": 0,
-        "bilibili": 18,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 193
-      },
-      "record": {
-        "peak": 5,
-        "periods": 19
-      }
-    },
-    {
-      "entityId": "song-sunday-vinyl",
-      "entity": {
-        "title": "Sunday Vinyl",
-        "artists": [
-          {
-            "id": "artist-mika-rowe",
-            "name": "Mika Rowe"
-          }
-        ],
-        "album": {
-          "id": "album-pressed-flowers",
-          "title": "Pressed Flowers"
-        },
-        "coverUrl": null,
-        "coverColor": "#ad7d30"
-      },
-      "rank": {
-        "current": 7,
-        "previous": 5,
-        "movement": {
-          "type": "same",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 162,
-        "physical": 819,
-        "bilibili": 0,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 981
+        "netease": 216.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 216.0
       },
       "record": {
         "peak": 7,
-        "periods": 22
+        "periods": 4
       }
     },
     {
-      "entityId": "song-rooftop-radio",
+      "entityId": "demo-song-035",
       "entity": {
-        "title": "天台广播",
+        "title": "Cherry Static · 35",
         "artists": [
           {
-            "id": "artist-sleepless-radio",
-            "name": "不眠电台"
+            "id": "demo-artist-05",
+            "name": "Hotel Cinema"
           }
         ],
         "album": {
-          "id": "album-southern-night-shift",
-          "title": "南方夜班"
+          "id": "demo-album-05",
+          "title": "Channel Four"
         },
         "coverUrl": null,
-        "coverColor": "#678094"
+        "coverColor": "#a24259"
       },
       "rank": {
         "current": 8,
-        "previous": 9,
+        "previous": 24,
         "movement": {
           "type": "up",
-          "value": 1
+          "value": 16
         }
       },
       "points": {
-        "netease": 155,
-        "physical": 0,
-        "bilibili": 74,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 229
+        "netease": 215.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 215.0
       },
       "record": {
-        "peak": 7,
-        "periods": 25
+        "peak": 8,
+        "periods": 4
       }
     },
     {
-      "entityId": "song-midnight-index-candidate-2",
+      "entityId": "demo-song-033",
       "entity": {
-        "title": "Midnight Index · 2",
+        "title": "Afterimage · 33",
         "artists": [
           {
-            "id": "artist-luna-archive",
+            "id": "demo-artist-03",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "demo-album-03",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 9,
+        "previous": 22,
+        "movement": {
+          "type": "up",
+          "value": 13
+        }
+      },
+      "points": {
+        "netease": 210.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 210.0
+      },
+      "record": {
+        "peak": 9,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-034",
+      "entity": {
+        "title": "留声机里的雨 · 34",
+        "artists": [
+          {
+            "id": "demo-artist-04",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "demo-album-04",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 10,
+        "previous": 23,
+        "movement": {
+          "type": "up",
+          "value": 13
+        }
+      },
+      "points": {
+        "netease": 210.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 210.0
+      },
+      "record": {
+        "peak": 10,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-032",
+      "entity": {
+        "title": "白昼信号 · 32",
+        "artists": [
+          {
+            "id": "demo-artist-02",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "demo-album-02",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 11,
+        "previous": 21,
+        "movement": {
+          "type": "up",
+          "value": 10
+        }
+      },
+      "points": {
+        "netease": 205.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 205.0
+      },
+      "record": {
+        "peak": 11,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-031",
+      "entity": {
+        "title": "Midnight Index · 31",
+        "artists": [
+          {
+            "id": "demo-artist-01",
             "name": "Luna Archive"
           }
         ],
         "album": {
-          "id": "album-glass-hours",
+          "id": "demo-album-01",
           "title": "Glass Hours"
         },
         "coverUrl": null,
         "coverColor": "#cb473d"
       },
       "rank": {
-        "current": 51,
-        "previous": 52,
+        "current": 12,
+        "previous": 20,
         "movement": {
           "type": "up",
-          "value": 1
+          "value": 8
         }
       },
       "points": {
-        "netease": 72,
-        "physical": 358,
-        "bilibili": 20,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 450
+        "netease": 201.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 201.0
       },
       "record": {
-        "peak": 50,
-        "periods": 10
+        "peak": 12,
+        "periods": 4
       }
     },
     {
-      "entityId": "song-daylight-signal-candidate-3",
+      "entityId": "demo-song-030",
       "entity": {
-        "title": "白昼信号 · 3",
+        "title": "晚风档案 · 30",
         "artists": [
           {
-            "id": "artist-paper-plane-choir",
-            "name": "纸飞机合唱团"
+            "id": "demo-artist-10",
+            "name": "潮汐邮局"
           }
         ],
         "album": {
-          "id": "album-city-coordinates",
-          "title": "城市经纬"
+          "id": "demo-album-10",
+          "title": "海岸来信"
         },
         "coverUrl": null,
         "coverColor": "#356c7d"
       },
       "rank": {
-        "current": 52,
-        "previous": 50,
+        "current": 13,
+        "previous": 19,
         "movement": {
-          "type": "down",
-          "value": 2
+          "type": "up",
+          "value": 6
         }
       },
       "points": {
-        "netease": 78,
-        "physical": 0,
-        "bilibili": 14,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 92
+        "netease": 200.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 200.0
       },
       "record": {
-        "peak": 50,
-        "periods": 13
+        "peak": 13,
+        "periods": 4
       }
     },
     {
-      "entityId": "song-afterimage-candidate-4",
+      "entityId": "demo-song-029",
       "entity": {
-        "title": "Afterimage · 4",
+        "title": "Neon Calendar · 29",
         "artists": [
           {
-            "id": "artist-northbound",
-            "name": "Northbound"
+            "id": "demo-artist-09",
+            "name": "Satellite Club"
           }
         ],
         "album": {
-          "id": "album-soft-geometry",
-          "title": "Soft Geometry"
+          "id": "demo-album-09",
+          "title": "Electric Almanac"
         },
         "coverUrl": null,
-        "coverColor": "#7a634a"
+        "coverColor": "#cb473d"
       },
       "rank": {
-        "current": 53,
-        "previous": 53,
-        "movement": {
-          "type": "same",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 63,
-        "physical": 160,
-        "bilibili": 28,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 251
-      },
-      "record": {
-        "peak": 53,
-        "periods": 16
-      }
-    },
-    {
-      "entityId": "song-rain-in-gramophone-candidate-5",
-      "entity": {
-        "title": "留声机里的雨 · 5",
-        "artists": [
-          {
-            "id": "artist-lin-yu",
-            "name": "林屿"
-          }
-        ],
-        "album": {
-          "id": "album-long-sunday",
-          "title": "漫长的星期日"
-        },
-        "coverUrl": null,
-        "coverColor": "#556344"
-      },
-      "rank": {
-        "current": 54,
-        "previous": 58,
+        "current": 14,
+        "previous": 18,
         "movement": {
           "type": "up",
           "value": 4
         }
       },
       "points": {
-        "netease": 55,
-        "physical": 0,
-        "bilibili": 36,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 91
+        "netease": 196.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 196.0
       },
       "record": {
-        "peak": 50,
-        "periods": 19
+        "peak": 14,
+        "periods": 4
       }
     },
     {
-      "entityId": "song-cherry-static-candidate-6",
+      "entityId": "demo-song-027",
       "entity": {
-        "title": "Cherry Static · 6",
+        "title": "Sunday Vinyl · 27",
         "artists": [
           {
-            "id": "artist-hotel-cinema",
-            "name": "Hotel Cinema"
-          }
-        ],
-        "album": {
-          "id": "album-channel-four",
-          "title": "Channel Four"
-        },
-        "coverUrl": null,
-        "coverColor": "#a24259"
-      },
-      "rank": {
-        "current": 55,
-        "previous": 50,
-        "movement": {
-          "type": "down",
-          "value": 5
-        }
-      },
-      "points": {
-        "netease": 50,
-        "physical": 80,
-        "bilibili": 9,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 139
-      },
-      "record": {
-        "peak": 50,
-        "periods": 22
-      }
-    },
-    {
-      "entityId": "song-backlight-route-candidate-7",
-      "entity": {
-        "title": "逆光航线 · 7",
-        "artists": [
-          {
-            "id": "artist-echo-archive",
-            "name": "回声档案"
-          }
-        ],
-        "album": {
-          "id": "album-after-midnight",
-          "title": "零点以后"
-        },
-        "coverUrl": null,
-        "coverColor": "#304a73"
-      },
-      "rank": {
-        "current": 56,
-        "previous": 56,
-        "movement": {
-          "type": "same",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 48,
-        "physical": 0,
-        "bilibili": 5,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 53
-      },
-      "record": {
-        "peak": 56,
-        "periods": 25
-      }
-    },
-    {
-      "entityId": "song-sunday-vinyl-candidate-8",
-      "entity": {
-        "title": "Sunday Vinyl · 8",
-        "artists": [
-          {
-            "id": "artist-mika-rowe",
+            "id": "demo-artist-07",
             "name": "Mika Rowe"
           }
         ],
         "album": {
-          "id": "album-pressed-flowers",
+          "id": "demo-album-07",
           "title": "Pressed Flowers"
         },
         "coverUrl": null,
         "coverColor": "#ad7d30"
       },
       "rank": {
-        "current": 57,
-        "previous": 59,
+        "current": 15,
+        "previous": 16,
         "movement": {
           "type": "up",
+          "value": 1
+        }
+      },
+      "points": {
+        "netease": 191.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 191.0
+      },
+      "record": {
+        "peak": 15,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-028",
+      "entity": {
+        "title": "天台广播 · 28",
+        "artists": [
+          {
+            "id": "demo-artist-08",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "demo-album-08",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 16,
+        "previous": 17,
+        "movement": {
+          "type": "up",
+          "value": 1
+        }
+      },
+      "points": {
+        "netease": 191.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 191.0
+      },
+      "record": {
+        "peak": 16,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-026",
+      "entity": {
+        "title": "逆光航线 · 26",
+        "artists": [
+          {
+            "id": "demo-artist-06",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "demo-album-06",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 17,
+        "previous": 15,
+        "movement": {
+          "type": "down",
           "value": 2
         }
       },
       "points": {
-        "netease": 44,
-        "physical": 222,
-        "bilibili": 0,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 266
+        "netease": 186.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 186.0
+      },
+      "record": {
+        "peak": 15,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-036",
+      "entity": {
+        "title": "逆光航线 · 36",
+        "artists": [
+          {
+            "id": "demo-artist-06",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "demo-album-06",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 18,
+        "previous": 25,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 182.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 182.0
+      },
+      "record": {
+        "peak": 18,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-037",
+      "entity": {
+        "title": "Sunday Vinyl · 37",
+        "artists": [
+          {
+            "id": "demo-artist-07",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "demo-album-07",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 19,
+        "previous": 26,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 180.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 180.0
+      },
+      "record": {
+        "peak": 19,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-038",
+      "entity": {
+        "title": "天台广播 · 38",
+        "artists": [
+          {
+            "id": "demo-artist-08",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "demo-album-08",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 20,
+        "previous": 27,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 178.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 178.0
+      },
+      "record": {
+        "peak": 20,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-039",
+      "entity": {
+        "title": "Neon Calendar · 39",
+        "artists": [
+          {
+            "id": "demo-artist-09",
+            "name": "Satellite Club"
+          }
+        ],
+        "album": {
+          "id": "demo-album-09",
+          "title": "Electric Almanac"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 21,
+        "previous": 28,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 173.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 173.0
+      },
+      "record": {
+        "peak": 21,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-040",
+      "entity": {
+        "title": "晚风档案 · 40",
+        "artists": [
+          {
+            "id": "demo-artist-10",
+            "name": "潮汐邮局"
+          }
+        ],
+        "album": {
+          "id": "demo-album-10",
+          "title": "海岸来信"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 22,
+        "previous": 29,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 171.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 171.0
+      },
+      "record": {
+        "peak": 22,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-041",
+      "entity": {
+        "title": "Midnight Index · 41",
+        "artists": [
+          {
+            "id": "demo-artist-01",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "demo-album-01",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 23,
+        "previous": 30,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 170.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 170.0
+      },
+      "record": {
+        "peak": 23,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-043",
+      "entity": {
+        "title": "Afterimage · 43",
+        "artists": [
+          {
+            "id": "demo-artist-03",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "demo-album-03",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 24,
+        "previous": 31,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 163.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 163.0
+      },
+      "record": {
+        "peak": 24,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-044",
+      "entity": {
+        "title": "留声机里的雨 · 44",
+        "artists": [
+          {
+            "id": "demo-artist-04",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "demo-album-04",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 25,
+        "previous": 32,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 161.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 161.0
+      },
+      "record": {
+        "peak": 25,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-045",
+      "entity": {
+        "title": "Cherry Static · 45",
+        "artists": [
+          {
+            "id": "demo-artist-05",
+            "name": "Hotel Cinema"
+          }
+        ],
+        "album": {
+          "id": "demo-album-05",
+          "title": "Channel Four"
+        },
+        "coverUrl": null,
+        "coverColor": "#a24259"
+      },
+      "rank": {
+        "current": 26,
+        "previous": 33,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 156.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 156.0
+      },
+      "record": {
+        "peak": 26,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-046",
+      "entity": {
+        "title": "逆光航线 · 46",
+        "artists": [
+          {
+            "id": "demo-artist-06",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "demo-album-06",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 27,
+        "previous": 34,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 155.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 155.0
+      },
+      "record": {
+        "peak": 27,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-047",
+      "entity": {
+        "title": "Sunday Vinyl · 47",
+        "artists": [
+          {
+            "id": "demo-artist-07",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "demo-album-07",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 28,
+        "previous": 35,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 153.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 153.0
+      },
+      "record": {
+        "peak": 28,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-048",
+      "entity": {
+        "title": "天台广播 · 48",
+        "artists": [
+          {
+            "id": "demo-artist-08",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "demo-album-08",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 29,
+        "previous": 36,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 148.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 148.0
+      },
+      "record": {
+        "peak": 29,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-049",
+      "entity": {
+        "title": "Neon Calendar · 49",
+        "artists": [
+          {
+            "id": "demo-artist-09",
+            "name": "Satellite Club"
+          }
+        ],
+        "album": {
+          "id": "demo-album-09",
+          "title": "Electric Almanac"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 30,
+        "previous": 37,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 146.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 146.0
+      },
+      "record": {
+        "peak": 30,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-050",
+      "entity": {
+        "title": "晚风档案 · 50",
+        "artists": [
+          {
+            "id": "demo-artist-10",
+            "name": "潮汐邮局"
+          }
+        ],
+        "album": {
+          "id": "demo-album-10",
+          "title": "海岸来信"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 31,
+        "previous": 38,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 145.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 145.0
+      },
+      "record": {
+        "peak": 31,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-051",
+      "entity": {
+        "title": "Midnight Index · 51",
+        "artists": [
+          {
+            "id": "demo-artist-01",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "demo-album-01",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 32,
+        "previous": 39,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 140.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 140.0
+      },
+      "record": {
+        "peak": 32,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-052",
+      "entity": {
+        "title": "白昼信号 · 52",
+        "artists": [
+          {
+            "id": "demo-artist-02",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "demo-album-02",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 33,
+        "previous": 40,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 139.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 139.0
+      },
+      "record": {
+        "peak": 33,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-053",
+      "entity": {
+        "title": "Afterimage · 53",
+        "artists": [
+          {
+            "id": "demo-artist-03",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "demo-album-03",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 34,
+        "previous": 41,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 134.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 134.0
+      },
+      "record": {
+        "peak": 34,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-054",
+      "entity": {
+        "title": "留声机里的雨 · 54",
+        "artists": [
+          {
+            "id": "demo-artist-04",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "demo-album-04",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 35,
+        "previous": 42,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 132.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 132.0
+      },
+      "record": {
+        "peak": 35,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-055",
+      "entity": {
+        "title": "Cherry Static · 55",
+        "artists": [
+          {
+            "id": "demo-artist-05",
+            "name": "Hotel Cinema"
+          }
+        ],
+        "album": {
+          "id": "demo-album-05",
+          "title": "Channel Four"
+        },
+        "coverUrl": null,
+        "coverColor": "#a24259"
+      },
+      "rank": {
+        "current": 36,
+        "previous": 43,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 131.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 131.0
+      },
+      "record": {
+        "peak": 36,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-056",
+      "entity": {
+        "title": "逆光航线 · 56",
+        "artists": [
+          {
+            "id": "demo-artist-06",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "demo-album-06",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 37,
+        "previous": 44,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 126.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 126.0
+      },
+      "record": {
+        "peak": 37,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-057",
+      "entity": {
+        "title": "Sunday Vinyl · 57",
+        "artists": [
+          {
+            "id": "demo-artist-07",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "demo-album-07",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 38,
+        "previous": 45,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 125.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 125.0
+      },
+      "record": {
+        "peak": 38,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-058",
+      "entity": {
+        "title": "天台广播 · 58",
+        "artists": [
+          {
+            "id": "demo-artist-08",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "demo-album-08",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 39,
+        "previous": 46,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 123.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 123.0
+      },
+      "record": {
+        "peak": 39,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-059",
+      "entity": {
+        "title": "Neon Calendar · 59",
+        "artists": [
+          {
+            "id": "demo-artist-09",
+            "name": "Satellite Club"
+          }
+        ],
+        "album": {
+          "id": "demo-album-09",
+          "title": "Electric Almanac"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 40,
+        "previous": 47,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 119.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 119.0
+      },
+      "record": {
+        "peak": 40,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-060",
+      "entity": {
+        "title": "晚风档案 · 60",
+        "artists": [
+          {
+            "id": "demo-artist-10",
+            "name": "潮汐邮局"
+          }
+        ],
+        "album": {
+          "id": "demo-album-10",
+          "title": "海岸来信"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 41,
+        "previous": 48,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 117.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 117.0
+      },
+      "record": {
+        "peak": 41,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-061",
+      "entity": {
+        "title": "Midnight Index · 61",
+        "artists": [
+          {
+            "id": "demo-artist-01",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "demo-album-01",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 42,
+        "previous": 49,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 116.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 116.0
+      },
+      "record": {
+        "peak": 42,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-062",
+      "entity": {
+        "title": "白昼信号 · 62",
+        "artists": [
+          {
+            "id": "demo-artist-02",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "demo-album-02",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 43,
+        "previous": 50,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 111.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 111.0
+      },
+      "record": {
+        "peak": 43,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-063",
+      "entity": {
+        "title": "Afterimage · 63",
+        "artists": [
+          {
+            "id": "demo-artist-03",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "demo-album-03",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 44,
+        "previous": 51,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 110.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 110.0
+      },
+      "record": {
+        "peak": 44,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-064",
+      "entity": {
+        "title": "留声机里的雨 · 64",
+        "artists": [
+          {
+            "id": "demo-artist-04",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "demo-album-04",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 45,
+        "previous": 52,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 109.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 109.0
+      },
+      "record": {
+        "peak": 45,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-065",
+      "entity": {
+        "title": "Cherry Static · 65",
+        "artists": [
+          {
+            "id": "demo-artist-05",
+            "name": "Hotel Cinema"
+          }
+        ],
+        "album": {
+          "id": "demo-album-05",
+          "title": "Channel Four"
+        },
+        "coverUrl": null,
+        "coverColor": "#a24259"
+      },
+      "rank": {
+        "current": 46,
+        "previous": 53,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 104.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 104.0
+      },
+      "record": {
+        "peak": 46,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-066",
+      "entity": {
+        "title": "逆光航线 · 66",
+        "artists": [
+          {
+            "id": "demo-artist-06",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "demo-album-06",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 47,
+        "previous": 54,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 103.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 103.0
+      },
+      "record": {
+        "peak": 47,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-067",
+      "entity": {
+        "title": "Sunday Vinyl · 67",
+        "artists": [
+          {
+            "id": "demo-artist-07",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "demo-album-07",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 48,
+        "previous": 55,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 102.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 102.0
+      },
+      "record": {
+        "peak": 48,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-068",
+      "entity": {
+        "title": "天台广播 · 68",
+        "artists": [
+          {
+            "id": "demo-artist-08",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "demo-album-08",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 49,
+        "previous": 56,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 97.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 97.0
+      },
+      "record": {
+        "peak": 49,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-069",
+      "entity": {
+        "title": "Neon Calendar · 69",
+        "artists": [
+          {
+            "id": "demo-artist-09",
+            "name": "Satellite Club"
+          }
+        ],
+        "album": {
+          "id": "demo-album-09",
+          "title": "Electric Almanac"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 50,
+        "previous": 57,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 96.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 96.0
+      },
+      "record": {
+        "peak": 50,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-070",
+      "entity": {
+        "title": "晚风档案 · 70",
+        "artists": [
+          {
+            "id": "demo-artist-10",
+            "name": "潮汐邮局"
+          }
+        ],
+        "album": {
+          "id": "demo-album-10",
+          "title": "海岸来信"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 51,
+        "previous": 58,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 95.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 95.0
+      },
+      "record": {
+        "peak": 51,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-071",
+      "entity": {
+        "title": "Midnight Index · 71",
+        "artists": [
+          {
+            "id": "demo-artist-01",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "demo-album-01",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 52,
+        "previous": 59,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 91.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 91.0
+      },
+      "record": {
+        "peak": 52,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-072",
+      "entity": {
+        "title": "白昼信号 · 72",
+        "artists": [
+          {
+            "id": "demo-artist-02",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "demo-album-02",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 53,
+        "previous": 60,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 89.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 89.0
+      },
+      "record": {
+        "peak": 53,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-073",
+      "entity": {
+        "title": "Afterimage · 73",
+        "artists": [
+          {
+            "id": "demo-artist-03",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "demo-album-03",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 54,
+        "previous": 61,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 86.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 86.0
+      },
+      "record": {
+        "peak": 54,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-074",
+      "entity": {
+        "title": "留声机里的雨 · 74",
+        "artists": [
+          {
+            "id": "demo-artist-04",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "demo-album-04",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 55,
+        "previous": 62,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 84.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 84.0
       },
       "record": {
         "peak": 55,
@@ -611,17 +2171,95 @@
       }
     },
     {
-      "entityId": "song-rooftop-radio-candidate-9",
+      "entityId": "demo-song-075",
       "entity": {
-        "title": "天台广播 · 9",
+        "title": "Cherry Static · 75",
         "artists": [
           {
-            "id": "artist-sleepless-radio",
+            "id": "demo-artist-05",
+            "name": "Hotel Cinema"
+          }
+        ],
+        "album": {
+          "id": "demo-album-05",
+          "title": "Channel Four"
+        },
+        "coverUrl": null,
+        "coverColor": "#a24259"
+      },
+      "rank": {
+        "current": 56,
+        "previous": 63,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 83.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 83.0
+      },
+      "record": {
+        "peak": 56,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-076",
+      "entity": {
+        "title": "逆光航线 · 76",
+        "artists": [
+          {
+            "id": "demo-artist-06",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "demo-album-06",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 57,
+        "previous": 64,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 79.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 79.0
+      },
+      "record": {
+        "peak": 57,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-078",
+      "entity": {
+        "title": "天台广播 · 78",
+        "artists": [
+          {
+            "id": "demo-artist-08",
             "name": "不眠电台"
           }
         ],
         "album": {
-          "id": "album-southern-night-shift",
+          "id": "demo-album-08",
           "title": "南方夜班"
         },
         "coverUrl": null,
@@ -629,24 +2267,1662 @@
       },
       "rank": {
         "current": 58,
-        "previous": 55,
+        "previous": 65,
         "movement": {
-          "type": "down",
-          "value": 3
+          "type": "up",
+          "value": 7
         }
       },
       "points": {
-        "netease": 42,
-        "physical": 0,
-        "bilibili": 20,
-        "other": 0,
-        "legacyBonus": 0,
-        "manualAdjustment": 0,
-        "total": 62
+        "netease": 77.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 77.0
       },
       "record": {
-        "peak": 55,
-        "periods": 7
+        "peak": 58,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-079",
+      "entity": {
+        "title": "Neon Calendar · 79",
+        "artists": [
+          {
+            "id": "demo-artist-09",
+            "name": "Satellite Club"
+          }
+        ],
+        "album": {
+          "id": "demo-album-09",
+          "title": "Electric Almanac"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 59,
+        "previous": 66,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 73.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 73.0
+      },
+      "record": {
+        "peak": 59,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-080",
+      "entity": {
+        "title": "晚风档案 · 80",
+        "artists": [
+          {
+            "id": "demo-artist-10",
+            "name": "潮汐邮局"
+          }
+        ],
+        "album": {
+          "id": "demo-album-10",
+          "title": "海岸来信"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 60,
+        "previous": 67,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 72.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 72.0
+      },
+      "record": {
+        "peak": 60,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-081",
+      "entity": {
+        "title": "Midnight Index · 81",
+        "artists": [
+          {
+            "id": "demo-artist-01",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "demo-album-01",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 61,
+        "previous": 68,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 71.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 71.0
+      },
+      "record": {
+        "peak": 61,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-082",
+      "entity": {
+        "title": "白昼信号 · 82",
+        "artists": [
+          {
+            "id": "demo-artist-02",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "demo-album-02",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 62,
+        "previous": 69,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 67.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 67.0
+      },
+      "record": {
+        "peak": 62,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-083",
+      "entity": {
+        "title": "Afterimage · 83",
+        "artists": [
+          {
+            "id": "demo-artist-03",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "demo-album-03",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 63,
+        "previous": 70,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 66.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 66.0
+      },
+      "record": {
+        "peak": 63,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-084",
+      "entity": {
+        "title": "留声机里的雨 · 84",
+        "artists": [
+          {
+            "id": "demo-artist-04",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "demo-album-04",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 64,
+        "previous": 71,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 65.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 65.0
+      },
+      "record": {
+        "peak": 64,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-085",
+      "entity": {
+        "title": "Cherry Static · 85",
+        "artists": [
+          {
+            "id": "demo-artist-05",
+            "name": "Hotel Cinema"
+          }
+        ],
+        "album": {
+          "id": "demo-album-05",
+          "title": "Channel Four"
+        },
+        "coverUrl": null,
+        "coverColor": "#a24259"
+      },
+      "rank": {
+        "current": 65,
+        "previous": 72,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 61.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 61.0
+      },
+      "record": {
+        "peak": 65,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-086",
+      "entity": {
+        "title": "逆光航线 · 86",
+        "artists": [
+          {
+            "id": "demo-artist-06",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "demo-album-06",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 66,
+        "previous": 73,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 60.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 60.0
+      },
+      "record": {
+        "peak": 66,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-087",
+      "entity": {
+        "title": "Sunday Vinyl · 87",
+        "artists": [
+          {
+            "id": "demo-artist-07",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "demo-album-07",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 67,
+        "previous": 74,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 59.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 59.0
+      },
+      "record": {
+        "peak": 67,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-088",
+      "entity": {
+        "title": "天台广播 · 88",
+        "artists": [
+          {
+            "id": "demo-artist-08",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "demo-album-08",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 68,
+        "previous": 75,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 56.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 56.0
+      },
+      "record": {
+        "peak": 68,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-089",
+      "entity": {
+        "title": "Neon Calendar · 89",
+        "artists": [
+          {
+            "id": "demo-artist-09",
+            "name": "Satellite Club"
+          }
+        ],
+        "album": {
+          "id": "demo-album-09",
+          "title": "Electric Almanac"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 69,
+        "previous": 76,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 55.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 55.0
+      },
+      "record": {
+        "peak": 69,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-090",
+      "entity": {
+        "title": "晚风档案 · 90",
+        "artists": [
+          {
+            "id": "demo-artist-10",
+            "name": "潮汐邮局"
+          }
+        ],
+        "album": {
+          "id": "demo-album-10",
+          "title": "海岸来信"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 70,
+        "previous": 77,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 52.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 52.0
+      },
+      "record": {
+        "peak": 70,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-091",
+      "entity": {
+        "title": "Midnight Index · 91",
+        "artists": [
+          {
+            "id": "demo-artist-01",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "demo-album-01",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 71,
+        "previous": 78,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 51.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 51.0
+      },
+      "record": {
+        "peak": 71,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-092",
+      "entity": {
+        "title": "白昼信号 · 92",
+        "artists": [
+          {
+            "id": "demo-artist-02",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "demo-album-02",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 72,
+        "previous": 79,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 50.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 50.0
+      },
+      "record": {
+        "peak": 72,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-093",
+      "entity": {
+        "title": "Afterimage · 93",
+        "artists": [
+          {
+            "id": "demo-artist-03",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "demo-album-03",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 73,
+        "previous": 80,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 47.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 47.0
+      },
+      "record": {
+        "peak": 73,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-094",
+      "entity": {
+        "title": "留声机里的雨 · 94",
+        "artists": [
+          {
+            "id": "demo-artist-04",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "demo-album-04",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 74,
+        "previous": 81,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 46.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 46.0
+      },
+      "record": {
+        "peak": 74,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-095",
+      "entity": {
+        "title": "Cherry Static · 95",
+        "artists": [
+          {
+            "id": "demo-artist-05",
+            "name": "Hotel Cinema"
+          }
+        ],
+        "album": {
+          "id": "demo-album-05",
+          "title": "Channel Four"
+        },
+        "coverUrl": null,
+        "coverColor": "#a24259"
+      },
+      "rank": {
+        "current": 75,
+        "previous": 82,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 45.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 45.0
+      },
+      "record": {
+        "peak": 75,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-096",
+      "entity": {
+        "title": "逆光航线 · 96",
+        "artists": [
+          {
+            "id": "demo-artist-06",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "demo-album-06",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 76,
+        "previous": 83,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 42.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 42.0
+      },
+      "record": {
+        "peak": 76,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-097",
+      "entity": {
+        "title": "Sunday Vinyl · 97",
+        "artists": [
+          {
+            "id": "demo-artist-07",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "demo-album-07",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 77,
+        "previous": 84,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 41.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 41.0
+      },
+      "record": {
+        "peak": 77,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-098",
+      "entity": {
+        "title": "天台广播 · 98",
+        "artists": [
+          {
+            "id": "demo-artist-08",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "demo-album-08",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 78,
+        "previous": 85,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 40.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 40.0
+      },
+      "record": {
+        "peak": 78,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-099",
+      "entity": {
+        "title": "Neon Calendar · 99",
+        "artists": [
+          {
+            "id": "demo-artist-09",
+            "name": "Satellite Club"
+          }
+        ],
+        "album": {
+          "id": "demo-album-09",
+          "title": "Electric Almanac"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 79,
+        "previous": 86,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 37.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 37.0
+      },
+      "record": {
+        "peak": 79,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-001",
+      "entity": {
+        "title": "Midnight Index",
+        "artists": [
+          {
+            "id": "demo-artist-01",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "demo-album-01",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 80,
+        "previous": 87,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 35.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 35.0
+      },
+      "record": {
+        "peak": 3,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-002",
+      "entity": {
+        "title": "白昼信号",
+        "artists": [
+          {
+            "id": "demo-artist-02",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "demo-album-02",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 81,
+        "previous": 88,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 33.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 33.0
+      },
+      "record": {
+        "peak": 4,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-003",
+      "entity": {
+        "title": "Afterimage",
+        "artists": [
+          {
+            "id": "demo-artist-03",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "demo-album-03",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 82,
+        "previous": 89,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 32.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 32.0
+      },
+      "record": {
+        "peak": 5,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-004",
+      "entity": {
+        "title": "留声机里的雨",
+        "artists": [
+          {
+            "id": "demo-artist-04",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "demo-album-04",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 83,
+        "previous": 90,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 31.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 31.0
+      },
+      "record": {
+        "peak": 6,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-005",
+      "entity": {
+        "title": "Cherry Static",
+        "artists": [
+          {
+            "id": "demo-artist-05",
+            "name": "Hotel Cinema"
+          }
+        ],
+        "album": {
+          "id": "demo-album-05",
+          "title": "Channel Four"
+        },
+        "coverUrl": null,
+        "coverColor": "#a24259"
+      },
+      "rank": {
+        "current": 84,
+        "previous": 91,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 29.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 29.0
+      },
+      "record": {
+        "peak": 7,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-006",
+      "entity": {
+        "title": "逆光航线",
+        "artists": [
+          {
+            "id": "demo-artist-06",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "demo-album-06",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 85,
+        "previous": 92,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 28.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 28.0
+      },
+      "record": {
+        "peak": 8,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-007",
+      "entity": {
+        "title": "Sunday Vinyl",
+        "artists": [
+          {
+            "id": "demo-artist-07",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "demo-album-07",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 86,
+        "previous": 93,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 27.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 27.0
+      },
+      "record": {
+        "peak": 9,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-008",
+      "entity": {
+        "title": "天台广播",
+        "artists": [
+          {
+            "id": "demo-artist-08",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "demo-album-08",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 87,
+        "previous": 94,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 25.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 25.0
+      },
+      "record": {
+        "peak": 3,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-009",
+      "entity": {
+        "title": "Neon Calendar",
+        "artists": [
+          {
+            "id": "demo-artist-09",
+            "name": "Satellite Club"
+          }
+        ],
+        "album": {
+          "id": "demo-album-09",
+          "title": "Electric Almanac"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 88,
+        "previous": 95,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 24.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 24.0
+      },
+      "record": {
+        "peak": 4,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-010",
+      "entity": {
+        "title": "晚风档案",
+        "artists": [
+          {
+            "id": "demo-artist-10",
+            "name": "潮汐邮局"
+          }
+        ],
+        "album": {
+          "id": "demo-album-10",
+          "title": "海岸来信"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 89,
+        "previous": 96,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 23.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 23.0
+      },
+      "record": {
+        "peak": 5,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-011",
+      "entity": {
+        "title": "Midnight Index · 11",
+        "artists": [
+          {
+            "id": "demo-artist-01",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "demo-album-01",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 90,
+        "previous": 97,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 22.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 22.0
+      },
+      "record": {
+        "peak": 6,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-012",
+      "entity": {
+        "title": "白昼信号 · 12",
+        "artists": [
+          {
+            "id": "demo-artist-02",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "demo-album-02",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 91,
+        "previous": 100,
+        "movement": {
+          "type": "up",
+          "value": 9
+        }
+      },
+      "points": {
+        "netease": 21.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 21.0
+      },
+      "record": {
+        "peak": 14,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-013",
+      "entity": {
+        "title": "Afterimage · 13",
+        "artists": [
+          {
+            "id": "demo-artist-03",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "demo-album-03",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 92,
+        "previous": 99,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 20.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 20.0
+      },
+      "record": {
+        "peak": 15,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-015",
+      "entity": {
+        "title": "Cherry Static · 15",
+        "artists": [
+          {
+            "id": "demo-artist-05",
+            "name": "Hotel Cinema"
+          }
+        ],
+        "album": {
+          "id": "demo-album-05",
+          "title": "Channel Four"
+        },
+        "coverUrl": null,
+        "coverColor": "#a24259"
+      },
+      "rank": {
+        "current": 93,
+        "previous": 4,
+        "movement": {
+          "type": "down",
+          "value": 89
+        }
+      },
+      "points": {
+        "netease": 18.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 18.0
+      },
+      "record": {
+        "peak": 4,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-014",
+      "entity": {
+        "title": "留声机里的雨 · 14",
+        "artists": [
+          {
+            "id": "demo-artist-04",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "demo-album-04",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 94,
+        "previous": 98,
+        "movement": {
+          "type": "up",
+          "value": 4
+        }
+      },
+      "points": {
+        "netease": 18.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 18.0
+      },
+      "record": {
+        "peak": 14,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-016",
+      "entity": {
+        "title": "逆光航线 · 16",
+        "artists": [
+          {
+            "id": "demo-artist-06",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "demo-album-06",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 95,
+        "previous": 5,
+        "movement": {
+          "type": "down",
+          "value": 90
+        }
+      },
+      "points": {
+        "netease": 16.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 16.0
+      },
+      "record": {
+        "peak": 5,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-017",
+      "entity": {
+        "title": "Sunday Vinyl · 17",
+        "artists": [
+          {
+            "id": "demo-artist-07",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "demo-album-07",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 96,
+        "previous": 6,
+        "movement": {
+          "type": "down",
+          "value": 90
+        }
+      },
+      "points": {
+        "netease": 16.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 16.0
+      },
+      "record": {
+        "peak": 6,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-018",
+      "entity": {
+        "title": "天台广播 · 18",
+        "artists": [
+          {
+            "id": "demo-artist-08",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "demo-album-08",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 97,
+        "previous": 7,
+        "movement": {
+          "type": "down",
+          "value": 90
+        }
+      },
+      "points": {
+        "netease": 15.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 15.0
+      },
+      "record": {
+        "peak": 7,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-019",
+      "entity": {
+        "title": "Neon Calendar · 19",
+        "artists": [
+          {
+            "id": "demo-artist-09",
+            "name": "Satellite Club"
+          }
+        ],
+        "album": {
+          "id": "demo-album-09",
+          "title": "Electric Almanac"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 98,
+        "previous": 8,
+        "movement": {
+          "type": "down",
+          "value": 90
+        }
+      },
+      "points": {
+        "netease": 14.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 14.0
+      },
+      "record": {
+        "peak": 8,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-020",
+      "entity": {
+        "title": "晚风档案 · 20",
+        "artists": [
+          {
+            "id": "demo-artist-10",
+            "name": "潮汐邮局"
+          }
+        ],
+        "album": {
+          "id": "demo-album-10",
+          "title": "海岸来信"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 99,
+        "previous": 9,
+        "movement": {
+          "type": "down",
+          "value": 90
+        }
+      },
+      "points": {
+        "netease": 14.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 14.0
+      },
+      "record": {
+        "peak": 8,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "demo-song-021",
+      "entity": {
+        "title": "Midnight Index · 21",
+        "artists": [
+          {
+            "id": "demo-artist-01",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "demo-album-01",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 100,
+        "previous": 10,
+        "movement": {
+          "type": "down",
+          "value": 90
+        }
+      },
+      "points": {
+        "netease": 13.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 13.0
+      },
+      "record": {
+        "peak": 7,
+        "periods": 4
       }
     }
   ]

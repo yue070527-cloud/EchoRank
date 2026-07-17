@@ -1,22 +1,22 @@
 {
   "schemaVersion": "1.0",
   "chart": {
-    "id": "songs-weekly-2026-W29",
+    "id": "songs-daily-2026-07-18",
     "entityType": "songs",
-    "periodType": "weekly",
+    "periodType": "daily",
     "title": "PERSONAL CHART 50"
   },
   "period": {
-    "key": "2026-W29",
-    "label": "2026 年第 29 周",
+    "key": "2026-07-18",
+    "label": "2026 年 7 月 18 日",
     "scheduledAt": "2026-07-18T22:00:00+08:00",
-    "status": "collecting"
+    "status": "settled"
   },
   "collection": {
-    "collectedAt": "2026-07-18T22:00:00+08:00",
-    "coverage": 0.3333333333333333,
-    "status": "partial",
-    "sourceSnapshot": null
+    "collectedAt": "2026-07-18T00:10:13.808097+08:00",
+    "coverage": 1.0,
+    "status": "success",
+    "sourceSnapshot": "D:/Desktop/MyBillboard/data/raw/netease/2026/07/2026-07-18.json"
   },
   "scoringVersions": {
     "netease": "netease-streaming-v1",
@@ -44,24 +44,24 @@
       },
       "rank": {
         "current": 1,
-        "previous": null,
+        "previous": 1,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 420.0,
+        "netease": 210.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 420.0
+        "total": 210.0
       },
       "record": {
         "peak": 1,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -83,24 +83,24 @@
       },
       "rank": {
         "current": 2,
-        "previous": null,
+        "previous": 2,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 414.0,
+        "netease": 207.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 414.0
+        "total": 207.0
       },
       "record": {
         "peak": 2,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -122,24 +122,24 @@
       },
       "rank": {
         "current": 3,
-        "previous": null,
+        "previous": 3,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 410.0,
+        "netease": 205.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 410.0
+        "total": 205.0
       },
       "record": {
         "peak": 3,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -161,24 +161,24 @@
       },
       "rank": {
         "current": 4,
-        "previous": null,
+        "previous": 4,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 404.0,
+        "netease": 202.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 404.0
+        "total": 202.0
       },
       "record": {
         "peak": 4,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -200,24 +200,24 @@
       },
       "rank": {
         "current": 5,
-        "previous": null,
+        "previous": 5,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 400.0,
+        "netease": 200.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 400.0
+        "total": 200.0
       },
       "record": {
         "peak": 5,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -239,24 +239,24 @@
       },
       "rank": {
         "current": 6,
-        "previous": null,
+        "previous": 6,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 394.0,
+        "netease": 197.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 394.0
+        "total": 197.0
       },
       "record": {
         "peak": 6,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -278,24 +278,24 @@
       },
       "rank": {
         "current": 7,
-        "previous": null,
+        "previous": 7,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 390.0,
+        "netease": 195.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 390.0
+        "total": 195.0
       },
       "record": {
         "peak": 7,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -317,24 +317,24 @@
       },
       "rank": {
         "current": 8,
-        "previous": null,
+        "previous": 8,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 384.0,
+        "netease": 192.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 384.0
+        "total": 192.0
       },
       "record": {
         "peak": 8,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -356,24 +356,24 @@
       },
       "rank": {
         "current": 9,
-        "previous": null,
+        "previous": 9,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 378.0,
+        "netease": 189.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 378.0
+        "total": 189.0
       },
       "record": {
         "peak": 9,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -395,24 +395,24 @@
       },
       "rank": {
         "current": 10,
-        "previous": null,
+        "previous": 10,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 374.0,
+        "netease": 187.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 374.0
+        "total": 187.0
       },
       "record": {
         "peak": 10,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -434,24 +434,24 @@
       },
       "rank": {
         "current": 11,
-        "previous": null,
+        "previous": 11,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 368.0,
+        "netease": 184.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 368.0
+        "total": 184.0
       },
       "record": {
         "peak": 11,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -473,24 +473,24 @@
       },
       "rank": {
         "current": 12,
-        "previous": null,
+        "previous": 12,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 364.0,
+        "netease": 182.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 364.0
+        "total": 182.0
       },
       "record": {
         "peak": 12,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -512,24 +512,24 @@
       },
       "rank": {
         "current": 13,
-        "previous": null,
+        "previous": 13,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 358.0,
+        "netease": 179.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 358.0
+        "total": 179.0
       },
       "record": {
         "peak": 13,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -551,24 +551,24 @@
       },
       "rank": {
         "current": 14,
-        "previous": null,
+        "previous": 14,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 354.0,
+        "netease": 177.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 354.0
+        "total": 177.0
       },
       "record": {
         "peak": 14,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -590,24 +590,24 @@
       },
       "rank": {
         "current": 15,
-        "previous": null,
+        "previous": 15,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 348.0,
+        "netease": 174.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 348.0
+        "total": 174.0
       },
       "record": {
         "peak": 15,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -629,24 +629,24 @@
       },
       "rank": {
         "current": 16,
-        "previous": null,
+        "previous": 16,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 344.0,
+        "netease": 172.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 344.0
+        "total": 172.0
       },
       "record": {
         "peak": 16,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -668,24 +668,24 @@
       },
       "rank": {
         "current": 17,
-        "previous": null,
+        "previous": 17,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 340.0,
+        "netease": 170.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 340.0
+        "total": 170.0
       },
       "record": {
         "peak": 17,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -707,24 +707,24 @@
       },
       "rank": {
         "current": 18,
-        "previous": null,
+        "previous": 18,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 334.0,
+        "netease": 167.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 334.0
+        "total": 167.0
       },
       "record": {
         "peak": 18,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -746,24 +746,24 @@
       },
       "rank": {
         "current": 19,
-        "previous": null,
+        "previous": 19,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 330.0,
+        "netease": 165.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 330.0
+        "total": 165.0
       },
       "record": {
         "peak": 19,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -785,24 +785,24 @@
       },
       "rank": {
         "current": 20,
-        "previous": null,
+        "previous": 20,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 324.0,
+        "netease": 162.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 324.0
+        "total": 162.0
       },
       "record": {
         "peak": 20,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -828,24 +828,24 @@
       },
       "rank": {
         "current": 21,
-        "previous": null,
+        "previous": 21,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 320.0,
+        "netease": 160.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 320.0
+        "total": 160.0
       },
       "record": {
         "peak": 21,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -867,24 +867,24 @@
       },
       "rank": {
         "current": 22,
-        "previous": null,
+        "previous": 22,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 314.0,
+        "netease": 157.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 314.0
+        "total": 157.0
       },
       "record": {
         "peak": 22,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -906,24 +906,24 @@
       },
       "rank": {
         "current": 23,
-        "previous": null,
+        "previous": 23,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 310.0,
+        "netease": 155.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 310.0
+        "total": 155.0
       },
       "record": {
         "peak": 23,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -945,24 +945,24 @@
       },
       "rank": {
         "current": 24,
-        "previous": null,
+        "previous": 24,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 306.0,
+        "netease": 153.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 306.0
+        "total": 153.0
       },
       "record": {
         "peak": 24,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -988,24 +988,24 @@
       },
       "rank": {
         "current": 25,
-        "previous": null,
+        "previous": 25,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 300.0,
+        "netease": 150.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 300.0
+        "total": 150.0
       },
       "record": {
         "peak": 25,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1027,24 +1027,24 @@
       },
       "rank": {
         "current": 26,
-        "previous": null,
+        "previous": 26,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 296.0,
+        "netease": 148.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 296.0
+        "total": 148.0
       },
       "record": {
         "peak": 26,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1066,24 +1066,24 @@
       },
       "rank": {
         "current": 27,
-        "previous": null,
+        "previous": 27,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 290.0,
+        "netease": 145.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 290.0
+        "total": 145.0
       },
       "record": {
         "peak": 27,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1105,24 +1105,24 @@
       },
       "rank": {
         "current": 28,
-        "previous": null,
+        "previous": 28,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 286.0,
+        "netease": 143.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 286.0
+        "total": 143.0
       },
       "record": {
         "peak": 28,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1144,24 +1144,24 @@
       },
       "rank": {
         "current": 29,
-        "previous": null,
+        "previous": 29,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 282.0,
+        "netease": 141.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 282.0
+        "total": 141.0
       },
       "record": {
         "peak": 29,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1183,24 +1183,24 @@
       },
       "rank": {
         "current": 30,
-        "previous": null,
+        "previous": 30,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 276.0,
+        "netease": 138.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 276.0
+        "total": 138.0
       },
       "record": {
         "peak": 30,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1222,24 +1222,24 @@
       },
       "rank": {
         "current": 31,
-        "previous": null,
+        "previous": 31,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 272.0,
+        "netease": 136.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 272.0
+        "total": 136.0
       },
       "record": {
         "peak": 31,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1261,24 +1261,24 @@
       },
       "rank": {
         "current": 32,
-        "previous": null,
+        "previous": 32,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 268.0,
+        "netease": 134.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.0
+        "total": 134.0
       },
       "record": {
         "peak": 32,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1300,24 +1300,24 @@
       },
       "rank": {
         "current": 33,
-        "previous": null,
+        "previous": 33,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 264.0,
+        "netease": 132.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 264.0
+        "total": 132.0
       },
       "record": {
         "peak": 33,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1339,24 +1339,24 @@
       },
       "rank": {
         "current": 34,
-        "previous": null,
+        "previous": 34,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 258.0,
+        "netease": 129.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 258.0
+        "total": 129.0
       },
       "record": {
         "peak": 34,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1386,24 +1386,24 @@
       },
       "rank": {
         "current": 35,
-        "previous": null,
+        "previous": 35,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 254.0,
+        "netease": 127.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 254.0
+        "total": 127.0
       },
       "record": {
         "peak": 35,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1425,24 +1425,24 @@
       },
       "rank": {
         "current": 36,
-        "previous": null,
+        "previous": 36,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 250.0,
+        "netease": 125.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 250.0
+        "total": 125.0
       },
       "record": {
         "peak": 36,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1464,24 +1464,24 @@
       },
       "rank": {
         "current": 37,
-        "previous": null,
+        "previous": 37,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 246.0,
+        "netease": 123.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 246.0
+        "total": 123.0
       },
       "record": {
         "peak": 37,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1507,24 +1507,24 @@
       },
       "rank": {
         "current": 38,
-        "previous": null,
+        "previous": 38,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 240.0,
+        "netease": 120.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 240.0
+        "total": 120.0
       },
       "record": {
         "peak": 38,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1546,24 +1546,24 @@
       },
       "rank": {
         "current": 39,
-        "previous": null,
+        "previous": 39,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 236.0,
+        "netease": 118.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 236.0
+        "total": 118.0
       },
       "record": {
         "peak": 39,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1589,24 +1589,24 @@
       },
       "rank": {
         "current": 40,
-        "previous": null,
+        "previous": 40,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 232.0,
+        "netease": 116.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 232.0
+        "total": 116.0
       },
       "record": {
         "peak": 40,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1628,24 +1628,24 @@
       },
       "rank": {
         "current": 41,
-        "previous": null,
+        "previous": 41,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 228.0,
+        "netease": 114.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 228.0
+        "total": 114.0
       },
       "record": {
         "peak": 41,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1667,24 +1667,24 @@
       },
       "rank": {
         "current": 42,
-        "previous": null,
+        "previous": 42,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 224.0,
+        "netease": 112.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 224.0
+        "total": 112.0
       },
       "record": {
         "peak": 42,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1706,24 +1706,24 @@
       },
       "rank": {
         "current": 43,
-        "previous": null,
+        "previous": 43,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 218.0,
+        "netease": 109.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 218.0
+        "total": 109.0
       },
       "record": {
         "peak": 43,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1745,24 +1745,24 @@
       },
       "rank": {
         "current": 44,
-        "previous": null,
+        "previous": 44,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 214.0,
+        "netease": 107.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 214.0
+        "total": 107.0
       },
       "record": {
         "peak": 44,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1784,24 +1784,24 @@
       },
       "rank": {
         "current": 45,
-        "previous": null,
+        "previous": 45,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 210.0,
+        "netease": 105.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 210.0
+        "total": 105.0
       },
       "record": {
         "peak": 45,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1823,24 +1823,24 @@
       },
       "rank": {
         "current": 46,
-        "previous": null,
+        "previous": 46,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 206.0,
+        "netease": 103.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 206.0
+        "total": 103.0
       },
       "record": {
         "peak": 46,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1862,24 +1862,24 @@
       },
       "rank": {
         "current": 47,
-        "previous": null,
+        "previous": 47,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 202.0,
+        "netease": 101.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 202.0
+        "total": 101.0
       },
       "record": {
         "peak": 47,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1901,24 +1901,24 @@
       },
       "rank": {
         "current": 48,
-        "previous": null,
+        "previous": 48,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 198.0,
+        "netease": 99.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 198.0
+        "total": 99.0
       },
       "record": {
         "peak": 48,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1940,24 +1940,24 @@
       },
       "rank": {
         "current": 49,
-        "previous": null,
+        "previous": 49,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 194.0,
+        "netease": 97.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 194.0
+        "total": 97.0
       },
       "record": {
         "peak": 49,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -1983,24 +1983,24 @@
       },
       "rank": {
         "current": 50,
-        "previous": null,
+        "previous": 50,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 190.0,
+        "netease": 95.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 190.0
+        "total": 95.0
       },
       "record": {
         "peak": 50,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2022,24 +2022,24 @@
       },
       "rank": {
         "current": 51,
-        "previous": null,
+        "previous": 51,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 186.0,
+        "netease": 93.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 186.0
+        "total": 93.0
       },
       "record": {
         "peak": 51,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2061,24 +2061,24 @@
       },
       "rank": {
         "current": 52,
-        "previous": null,
+        "previous": 52,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 182.0,
+        "netease": 91.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 182.0
+        "total": 91.0
       },
       "record": {
         "peak": 52,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2100,24 +2100,24 @@
       },
       "rank": {
         "current": 53,
-        "previous": null,
+        "previous": 53,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 178.0,
+        "netease": 89.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 178.0
+        "total": 89.0
       },
       "record": {
         "peak": 53,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2139,24 +2139,24 @@
       },
       "rank": {
         "current": 54,
-        "previous": null,
+        "previous": 54,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 174.0,
+        "netease": 87.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 174.0
+        "total": 87.0
       },
       "record": {
         "peak": 54,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2178,24 +2178,24 @@
       },
       "rank": {
         "current": 55,
-        "previous": null,
+        "previous": 55,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 170.0,
+        "netease": 85.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 170.0
+        "total": 85.0
       },
       "record": {
         "peak": 55,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2217,24 +2217,24 @@
       },
       "rank": {
         "current": 56,
-        "previous": null,
+        "previous": 56,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 166.0,
+        "netease": 83.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 166.0
+        "total": 83.0
       },
       "record": {
         "peak": 56,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2256,24 +2256,24 @@
       },
       "rank": {
         "current": 57,
-        "previous": null,
+        "previous": 57,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 162.0,
+        "netease": 81.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 162.0
+        "total": 81.0
       },
       "record": {
         "peak": 57,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2299,24 +2299,24 @@
       },
       "rank": {
         "current": 58,
-        "previous": null,
+        "previous": 58,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 158.0,
+        "netease": 79.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 158.0
+        "total": 79.0
       },
       "record": {
         "peak": 58,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2338,24 +2338,24 @@
       },
       "rank": {
         "current": 59,
-        "previous": null,
+        "previous": 59,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 154.0,
+        "netease": 77.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 154.0
+        "total": 77.0
       },
       "record": {
         "peak": 59,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2377,24 +2377,24 @@
       },
       "rank": {
         "current": 60,
-        "previous": null,
+        "previous": 60,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 150.0,
+        "netease": 75.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 150.0
+        "total": 75.0
       },
       "record": {
         "peak": 60,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2416,24 +2416,24 @@
       },
       "rank": {
         "current": 61,
-        "previous": null,
+        "previous": 61,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 146.0,
+        "netease": 73.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 146.0
+        "total": 73.0
       },
       "record": {
         "peak": 61,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2455,24 +2455,24 @@
       },
       "rank": {
         "current": 62,
-        "previous": null,
+        "previous": 62,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 142.0,
+        "netease": 71.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 142.0
+        "total": 71.0
       },
       "record": {
         "peak": 62,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2494,24 +2494,24 @@
       },
       "rank": {
         "current": 63,
-        "previous": null,
+        "previous": 63,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 138.0,
+        "netease": 69.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 138.0
+        "total": 69.0
       },
       "record": {
         "peak": 63,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2533,24 +2533,24 @@
       },
       "rank": {
         "current": 64,
-        "previous": null,
+        "previous": 64,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 134.0,
+        "netease": 67.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 134.0
+        "total": 67.0
       },
       "record": {
         "peak": 64,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2572,24 +2572,24 @@
       },
       "rank": {
         "current": 65,
-        "previous": null,
+        "previous": 65,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 130.0,
+        "netease": 65.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 130.0
+        "total": 65.0
       },
       "record": {
         "peak": 65,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2611,24 +2611,24 @@
       },
       "rank": {
         "current": 66,
-        "previous": null,
+        "previous": 66,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 128.0,
+        "netease": 64.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 128.0
+        "total": 64.0
       },
       "record": {
         "peak": 66,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2650,24 +2650,24 @@
       },
       "rank": {
         "current": 67,
-        "previous": null,
+        "previous": 67,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 124.0,
+        "netease": 62.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 124.0
+        "total": 62.0
       },
       "record": {
         "peak": 67,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2689,24 +2689,24 @@
       },
       "rank": {
         "current": 68,
-        "previous": null,
+        "previous": 68,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 120.0,
+        "netease": 60.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 120.0
+        "total": 60.0
       },
       "record": {
         "peak": 68,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2728,24 +2728,24 @@
       },
       "rank": {
         "current": 69,
-        "previous": null,
+        "previous": 69,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 116.0,
+        "netease": 58.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 116.0
+        "total": 58.0
       },
       "record": {
         "peak": 69,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2771,24 +2771,24 @@
       },
       "rank": {
         "current": 70,
-        "previous": null,
+        "previous": 70,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 114.0,
+        "netease": 57.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 114.0
+        "total": 57.0
       },
       "record": {
         "peak": 70,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2810,24 +2810,24 @@
       },
       "rank": {
         "current": 71,
-        "previous": null,
+        "previous": 71,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 110.0,
+        "netease": 55.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 110.0
+        "total": 55.0
       },
       "record": {
         "peak": 71,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2849,24 +2849,24 @@
       },
       "rank": {
         "current": 72,
-        "previous": null,
+        "previous": 72,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 106.0,
+        "netease": 53.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 106.0
+        "total": 53.0
       },
       "record": {
         "peak": 72,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2888,24 +2888,24 @@
       },
       "rank": {
         "current": 73,
-        "previous": null,
+        "previous": 73,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 102.0,
+        "netease": 51.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 102.0
+        "total": 51.0
       },
       "record": {
         "peak": 73,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2927,24 +2927,24 @@
       },
       "rank": {
         "current": 74,
-        "previous": null,
+        "previous": 74,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 100.0,
+        "netease": 50.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 100.0
+        "total": 50.0
       },
       "record": {
         "peak": 74,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -2966,24 +2966,24 @@
       },
       "rank": {
         "current": 75,
-        "previous": null,
+        "previous": 75,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 96.0,
+        "netease": 48.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 96.0
+        "total": 48.0
       },
       "record": {
         "peak": 75,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3005,24 +3005,24 @@
       },
       "rank": {
         "current": 76,
-        "previous": null,
+        "previous": 76,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 94.0,
+        "netease": 47.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 94.0
+        "total": 47.0
       },
       "record": {
         "peak": 76,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3044,24 +3044,24 @@
       },
       "rank": {
         "current": 77,
-        "previous": null,
+        "previous": 77,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 90.0,
+        "netease": 45.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 90.0
+        "total": 45.0
       },
       "record": {
         "peak": 77,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3083,24 +3083,24 @@
       },
       "rank": {
         "current": 78,
-        "previous": null,
+        "previous": 78,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 86.0,
+        "netease": 43.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 86.0
+        "total": 43.0
       },
       "record": {
         "peak": 78,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3122,24 +3122,24 @@
       },
       "rank": {
         "current": 79,
-        "previous": null,
+        "previous": 79,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 84.0,
+        "netease": 42.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 84.0
+        "total": 42.0
       },
       "record": {
         "peak": 79,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3161,24 +3161,24 @@
       },
       "rank": {
         "current": 80,
-        "previous": null,
+        "previous": 80,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 80.0,
+        "netease": 40.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 80.0
+        "total": 40.0
       },
       "record": {
         "peak": 80,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3200,24 +3200,24 @@
       },
       "rank": {
         "current": 81,
-        "previous": null,
+        "previous": 81,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 78.0,
+        "netease": 39.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 78.0
+        "total": 39.0
       },
       "record": {
         "peak": 81,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3239,24 +3239,24 @@
       },
       "rank": {
         "current": 82,
-        "previous": null,
+        "previous": 82,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 74.0,
+        "netease": 37.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 74.0
+        "total": 37.0
       },
       "record": {
         "peak": 82,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3278,24 +3278,24 @@
       },
       "rank": {
         "current": 83,
-        "previous": null,
+        "previous": 83,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 72.0,
+        "netease": 36.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 72.0
+        "total": 36.0
       },
       "record": {
         "peak": 83,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3317,24 +3317,24 @@
       },
       "rank": {
         "current": 84,
-        "previous": null,
+        "previous": 84,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 68.0,
+        "netease": 34.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 68.0
+        "total": 34.0
       },
       "record": {
         "peak": 84,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3356,24 +3356,24 @@
       },
       "rank": {
         "current": 85,
-        "previous": null,
+        "previous": 85,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 66.0,
+        "netease": 33.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 66.0
+        "total": 33.0
       },
       "record": {
         "peak": 85,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3395,24 +3395,24 @@
       },
       "rank": {
         "current": 86,
-        "previous": null,
+        "previous": 86,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 64.0,
+        "netease": 32.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 64.0
+        "total": 32.0
       },
       "record": {
         "peak": 86,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3434,24 +3434,24 @@
       },
       "rank": {
         "current": 87,
-        "previous": null,
+        "previous": 87,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 60.0,
+        "netease": 30.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 60.0
+        "total": 30.0
       },
       "record": {
         "peak": 87,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3473,24 +3473,24 @@
       },
       "rank": {
         "current": 88,
-        "previous": null,
+        "previous": 88,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 58.0,
+        "netease": 29.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 58.0
+        "total": 29.0
       },
       "record": {
         "peak": 88,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3512,24 +3512,24 @@
       },
       "rank": {
         "current": 89,
-        "previous": null,
+        "previous": 89,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 56.0,
+        "netease": 28.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 56.0
+        "total": 28.0
       },
       "record": {
         "peak": 89,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3551,24 +3551,24 @@
       },
       "rank": {
         "current": 90,
-        "previous": null,
+        "previous": 90,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 54.0,
+        "netease": 27.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 54.0
+        "total": 27.0
       },
       "record": {
         "peak": 90,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3590,24 +3590,24 @@
       },
       "rank": {
         "current": 91,
-        "previous": null,
+        "previous": 91,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 50.0,
+        "netease": 25.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 50.0
+        "total": 25.0
       },
       "record": {
         "peak": 91,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3629,24 +3629,24 @@
       },
       "rank": {
         "current": 92,
-        "previous": null,
+        "previous": 92,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 48.0,
+        "netease": 24.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 48.0
+        "total": 24.0
       },
       "record": {
         "peak": 92,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3668,24 +3668,24 @@
       },
       "rank": {
         "current": 93,
-        "previous": null,
+        "previous": 93,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 46.0,
+        "netease": 23.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 46.0
+        "total": 23.0
       },
       "record": {
         "peak": 93,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3707,24 +3707,24 @@
       },
       "rank": {
         "current": 94,
-        "previous": null,
+        "previous": 94,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 44.0,
+        "netease": 22.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 44.0
+        "total": 22.0
       },
       "record": {
         "peak": 94,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3746,24 +3746,24 @@
       },
       "rank": {
         "current": 95,
-        "previous": null,
+        "previous": 95,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 42.0,
+        "netease": 21.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 42.0
+        "total": 21.0
       },
       "record": {
         "peak": 95,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3785,24 +3785,24 @@
       },
       "rank": {
         "current": 96,
-        "previous": null,
+        "previous": 96,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 40.0,
+        "netease": 20.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 40.0
+        "total": 20.0
       },
       "record": {
         "peak": 96,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3824,24 +3824,24 @@
       },
       "rank": {
         "current": 97,
-        "previous": null,
+        "previous": 97,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 38.0,
+        "netease": 19.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 38.0
+        "total": 19.0
       },
       "record": {
         "peak": 97,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3863,24 +3863,24 @@
       },
       "rank": {
         "current": 98,
-        "previous": null,
+        "previous": 98,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 36.0,
+        "netease": 18.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 36.0
+        "total": 18.0
       },
       "record": {
         "peak": 98,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3906,24 +3906,24 @@
       },
       "rank": {
         "current": 99,
-        "previous": null,
+        "previous": 99,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 36.0,
+        "netease": 18.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 36.0
+        "total": 18.0
       },
       "record": {
         "peak": 99,
-        "periods": 1
+        "periods": 2
       }
     },
     {
@@ -3945,24 +3945,24 @@
       },
       "rank": {
         "current": 100,
-        "previous": null,
+        "previous": 100,
         "movement": {
-          "type": "new",
+          "type": "same",
           "value": 0
         }
       },
       "points": {
-        "netease": 34.0,
+        "netease": 17.0,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 34.0
+        "total": 17.0
       },
       "record": {
         "peak": 100,
-        "periods": 1
+        "periods": 2
       }
     }
   ]

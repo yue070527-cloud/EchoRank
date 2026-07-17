@@ -12,5 +12,6 @@ venv/
 *.sqlite3
 frontend/test-output/
 data/raw/
+data/echorank-config.json
 .DS_Store
 Thumbs.db

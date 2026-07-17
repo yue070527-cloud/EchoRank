@@ -118,6 +118,20 @@ def export_period(connection: sqlite3.Connection, period_id: int, frontend_root:
     return destination
 
 
+def set_default_view(
+    path: Path,
+    period_type: str,
+    period_key: str,
+) -> None:
+    manifest = json.loads(path.read_text(encoding="utf-8"))
+    manifest["defaultView"] = {
+        "entityType": "songs",
+        "periodType": period_type,
+        "periodKey": period_key,
+    }
+    _atomic_json(path, manifest)
+
+
 def update_manifest(path: Path, period_type: str, period_key: str, snapshot_path: str) -> None:
     manifest = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {
         "schemaVersion": "1.0",

@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "chart-snapshot.schema.json",
+  "title": "My Billboard Chart Snapshot V1",
+  "type": "object",
+  "required": ["schemaVersion", "chart", "period", "collection", "scoringVersions", "entries"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "chart": {
+      "type": "object",
+      "required": ["id", "entityType", "periodType", "title"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "entityType": { "enum": ["songs", "albums", "artists"] },
+        "periodType": { "enum": ["daily", "weekly", "monthly", "yearly"] },
+        "title": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "period": {
+      "type": "object",
+      "required": ["key", "label", "scheduledAt", "status"],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "label": { "type": "string", "minLength": 1 },
+        "scheduledAt": { "type": "string", "format": "date-time" },
+        "status": { "enum": ["collecting", "settled", "missing", "failed"] }
+      },
+      "additionalProperties": false
+    },
+    "collection": {
+      "type": "object",
+      "required": ["collectedAt", "coverage", "status"],
+      "properties": {
+        "collectedAt": { "type": ["string", "null"], "format": "date-time" },
+        "coverage": { "type": "number", "minimum": 0, "maximum": 1 },
+        "status": { "enum": ["success", "partial", "missing", "failed"] },
+        "sourceSnapshot": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "scoringVersions": {
+      "type": "object",
+      "required": ["netease", "physical", "bilibili"],
+      "properties": {
+        "netease": { "type": "string" },
+        "physical": { "type": "string" },
+        "bilibili": { "type": "string" },
+        "combined": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "entries": {
+      "type": "array",
+      "maxItems": 100,
+      "items": { "$ref": "#/$defs/entry" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": ["entityId", "entity", "rank", "points", "record"],
+      "properties": {
+        "entityId": { "type": "string", "minLength": 1 },
+        "entity": {
+          "type": "object",
+          "required": ["title", "artists", "album"],
+          "properties": {
+            "title": { "type": "string" },
+            "artists": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": ["id", "name"],
+                "properties": {
+                  "id": { "type": "string" },
+                  "name": { "type": "string" }
+                },
+                "additionalProperties": false
+              }
+            },
+            "album": {
+              "type": "object",
+              "required": ["id", "title"],
+              "properties": {
+                "id": { "type": "string" },
+                "title": { "type": "string" }
+              },
+              "additionalProperties": false
+            },
+            "coverUrl": { "type": ["string", "null"] },
+            "coverColor": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" }
+          },
+          "additionalProperties": false
+        },
+        "rank": {
+          "type": "object",
+          "required": ["current", "previous", "movement"],
+          "properties": {
+            "current": { "type": "integer", "minimum": 1, "maximum": 100 },
+            "previous": { "type": ["integer", "null"], "minimum": 1, "maximum": 100 },
+            "movement": {
+              "type": "object",
+              "required": ["type", "value"],
+              "properties": {
+                "type": { "enum": ["up", "down", "same", "new", "re"] },
+                "value": { "type": "integer", "minimum": 0 }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        },
+        "points": {
+          "type": "object",
+          "required": ["netease", "physical", "bilibili", "other", "legacyBonus", "manualAdjustment", "total"],
+          "properties": {
+            "netease": { "type": "number" },
+            "physical": { "type": "number" },
+            "bilibili": { "type": "number" },
+            "other": { "type": "number" },
+            "legacyBonus": { "type": "number" },
+            "manualAdjustment": { "type": "number" },
+            "total": { "type": "number" }
+          },
+          "additionalProperties": false
+        },
+        "record": {
+          "type": "object",
+          "required": ["peak", "periods"],
+          "properties": {
+            "peak": { "type": "integer", "minimum": 1, "maximum": 100 },
+            "periods": { "type": "integer", "minimum": 1 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

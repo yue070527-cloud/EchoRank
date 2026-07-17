@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My Billboard 个人音乐榜单">
+  <title>My Billboard · Personal Chart</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <app-navigation active="charts"></app-navigation>
+
+    <main>
+      <header class="hero">
+        <div>
+          <p class="hero__kicker">PERSONAL MUSIC DATA · DAILY</p>
+          <h1>你的音乐，<br><em>按表现说话。</em></h1>
+        </div>
+        <p class="hero__note">
+          榜单每日 22:00 结算。主榜展示 Top 50，候补区保留 #51—#100；网易云数据来自结算时可见的最近一周听歌排行。
+        </p>
+      </header>
+
+      <section class="control-deck" aria-label="榜单筛选">
+        <div class="control-cluster">
+          <span class="control-label">榜单对象</span>
+          <chart-tabs
+            name="entity"
+            active="songs"
+            label="榜单对象"
+            options='[{"value":"songs","label":"歌曲"},{"value":"albums","label":"专辑"},{"value":"artists","label":"艺人"}]'>
+          </chart-tabs>
+        </div>
+        <period-selector></period-selector>
+        <div class="control-cluster">
+          <span class="control-label">统计尺度</span>
+          <chart-tabs
+            name="period"
+            active="daily"
+            label="统计尺度"
+            options='[{"value":"daily","label":"日榜"},{"value":"weekly","label":"周榜"},{"value":"monthly","label":"月榜"},{"value":"yearly","label":"年榜"}]'>
+          </chart-tabs>
+        </div>
+        <p class="hero__note chart-status" data-chart-status aria-live="polite">正在加载榜单数据…</p>
+      </section>
+
+      <chart-list title="PERSONAL CHART 50" eyebrow="歌曲主榜"></chart-list>
+      <bubbling-section></bubbling-section>
+    </main>
+  </div>
+
+  <script type="module" src="./assets/app.js"></script>
+</body>
+</html>

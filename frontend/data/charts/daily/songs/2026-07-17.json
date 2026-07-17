@@ -1,0 +1,653 @@
+{
+  "schemaVersion": "1.0",
+  "chart": {
+    "id": "songs-daily-2026-07-17",
+    "entityType": "songs",
+    "periodType": "daily",
+    "title": "PERSONAL CHART 50"
+  },
+  "period": {
+    "key": "2026-07-17",
+    "label": "2026 年 7 月 17 日",
+    "scheduledAt": "2026-07-17T22:00:00+08:00",
+    "status": "settled"
+  },
+  "collection": {
+    "collectedAt": "2026-07-17T22:03:00+08:00",
+    "coverage": 1,
+    "status": "success",
+    "sourceSnapshot": "data/raw/netease/2026/07/2026-07-17.json"
+  },
+  "scoringVersions": {
+    "netease": "netease-streaming-v1",
+    "physical": "physical-v1",
+    "bilibili": "bilibili-manual-v1",
+    "combined": "combined-v1"
+  },
+  "entries": [
+    {
+      "entityId": "song-midnight-index",
+      "entity": {
+        "title": "Midnight Index",
+        "artists": [
+          {
+            "id": "artist-luna-archive",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "album-glass-hours",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 1,
+        "previous": 3,
+        "movement": {
+          "type": "up",
+          "value": 2
+        }
+      },
+      "points": {
+        "netease": 286,
+        "physical": 1430,
+        "bilibili": 80,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 1796
+      },
+      "record": {
+        "peak": 1,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "song-daylight-signal",
+      "entity": {
+        "title": "白昼信号",
+        "artists": [
+          {
+            "id": "artist-paper-plane-choir",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "album-city-coordinates",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 2,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 314,
+        "physical": 0,
+        "bilibili": 55,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 369
+      },
+      "record": {
+        "peak": 2,
+        "periods": 7
+      }
+    },
+    {
+      "entityId": "song-afterimage",
+      "entity": {
+        "title": "Afterimage",
+        "artists": [
+          {
+            "id": "artist-northbound",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "album-soft-geometry",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 3,
+        "previous": 2,
+        "movement": {
+          "type": "down",
+          "value": 1
+        }
+      },
+      "points": {
+        "netease": 251,
+        "physical": 640,
+        "bilibili": 110,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 1001
+      },
+      "record": {
+        "peak": 2,
+        "periods": 10
+      }
+    },
+    {
+      "entityId": "song-rain-in-gramophone",
+      "entity": {
+        "title": "留声机里的雨",
+        "artists": [
+          {
+            "id": "artist-lin-yu",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "album-long-sunday",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 4,
+        "previous": 4,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 220,
+        "physical": 0,
+        "bilibili": 145,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 365
+      },
+      "record": {
+        "peak": 4,
+        "periods": 13
+      }
+    },
+    {
+      "entityId": "song-cherry-static",
+      "entity": {
+        "title": "Cherry Static",
+        "artists": [
+          {
+            "id": "artist-hotel-cinema",
+            "name": "Hotel Cinema"
+          }
+        ],
+        "album": {
+          "id": "album-channel-four",
+          "title": "Channel Four"
+        },
+        "coverUrl": null,
+        "coverColor": "#a24259"
+      },
+      "rank": {
+        "current": 5,
+        "previous": null,
+        "movement": {
+          "type": "re",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 198,
+        "physical": 320,
+        "bilibili": 35,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 553
+      },
+      "record": {
+        "peak": 5,
+        "periods": 16
+      }
+    },
+    {
+      "entityId": "song-backlight-route",
+      "entity": {
+        "title": "逆光航线",
+        "artists": [
+          {
+            "id": "artist-echo-archive",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "album-after-midnight",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 6,
+        "previous": 13,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      "points": {
+        "netease": 190,
+        "physical": 0,
+        "bilibili": 20,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 210
+      },
+      "record": {
+        "peak": 1,
+        "periods": 19
+      }
+    },
+    {
+      "entityId": "song-sunday-vinyl",
+      "entity": {
+        "title": "Sunday Vinyl",
+        "artists": [
+          {
+            "id": "artist-mika-rowe",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "album-pressed-flowers",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 7,
+        "previous": 4,
+        "movement": {
+          "type": "down",
+          "value": 3
+        }
+      },
+      "points": {
+        "netease": 176,
+        "physical": 890,
+        "bilibili": 0,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 1066
+      },
+      "record": {
+        "peak": 4,
+        "periods": 22
+      }
+    },
+    {
+      "entityId": "song-rooftop-radio",
+      "entity": {
+        "title": "天台广播",
+        "artists": [
+          {
+            "id": "artist-sleepless-radio",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "album-southern-night-shift",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 8,
+        "previous": 9,
+        "movement": {
+          "type": "up",
+          "value": 1
+        }
+      },
+      "points": {
+        "netease": 168,
+        "physical": 0,
+        "bilibili": 80,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 248
+      },
+      "record": {
+        "peak": 7,
+        "periods": 25
+      }
+    },
+    {
+      "entityId": "song-midnight-index-candidate-2",
+      "entity": {
+        "title": "Midnight Index · 2",
+        "artists": [
+          {
+            "id": "artist-luna-archive",
+            "name": "Luna Archive"
+          }
+        ],
+        "album": {
+          "id": "album-glass-hours",
+          "title": "Glass Hours"
+        },
+        "coverUrl": null,
+        "coverColor": "#cb473d"
+      },
+      "rank": {
+        "current": 51,
+        "previous": 52,
+        "movement": {
+          "type": "up",
+          "value": 1
+        }
+      },
+      "points": {
+        "netease": 80,
+        "physical": 400,
+        "bilibili": 22,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 502
+      },
+      "record": {
+        "peak": 50,
+        "periods": 10
+      }
+    },
+    {
+      "entityId": "song-daylight-signal-candidate-3",
+      "entity": {
+        "title": "白昼信号 · 3",
+        "artists": [
+          {
+            "id": "artist-paper-plane-choir",
+            "name": "纸飞机合唱团"
+          }
+        ],
+        "album": {
+          "id": "album-city-coordinates",
+          "title": "城市经纬"
+        },
+        "coverUrl": null,
+        "coverColor": "#356c7d"
+      },
+      "rank": {
+        "current": 52,
+        "previous": 50,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
+      },
+      "points": {
+        "netease": 88,
+        "physical": 0,
+        "bilibili": 15,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 103
+      },
+      "record": {
+        "peak": 50,
+        "periods": 13
+      }
+    },
+    {
+      "entityId": "song-afterimage-candidate-4",
+      "entity": {
+        "title": "Afterimage · 4",
+        "artists": [
+          {
+            "id": "artist-northbound",
+            "name": "Northbound"
+          }
+        ],
+        "album": {
+          "id": "album-soft-geometry",
+          "title": "Soft Geometry"
+        },
+        "coverUrl": null,
+        "coverColor": "#7a634a"
+      },
+      "rank": {
+        "current": 53,
+        "previous": 53,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 70,
+        "physical": 179,
+        "bilibili": 31,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 280
+      },
+      "record": {
+        "peak": 53,
+        "periods": 16
+      }
+    },
+    {
+      "entityId": "song-rain-in-gramophone-candidate-5",
+      "entity": {
+        "title": "留声机里的雨 · 5",
+        "artists": [
+          {
+            "id": "artist-lin-yu",
+            "name": "林屿"
+          }
+        ],
+        "album": {
+          "id": "album-long-sunday",
+          "title": "漫长的星期日"
+        },
+        "coverUrl": null,
+        "coverColor": "#556344"
+      },
+      "rank": {
+        "current": 54,
+        "previous": 58,
+        "movement": {
+          "type": "up",
+          "value": 4
+        }
+      },
+      "points": {
+        "netease": 62,
+        "physical": 0,
+        "bilibili": 41,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 103
+      },
+      "record": {
+        "peak": 50,
+        "periods": 19
+      }
+    },
+    {
+      "entityId": "song-cherry-static-candidate-6",
+      "entity": {
+        "title": "Cherry Static · 6",
+        "artists": [
+          {
+            "id": "artist-hotel-cinema",
+            "name": "Hotel Cinema"
+          }
+        ],
+        "album": {
+          "id": "album-channel-four",
+          "title": "Channel Four"
+        },
+        "coverUrl": null,
+        "coverColor": "#a24259"
+      },
+      "rank": {
+        "current": 55,
+        "previous": 50,
+        "movement": {
+          "type": "down",
+          "value": 5
+        }
+      },
+      "points": {
+        "netease": 55,
+        "physical": 90,
+        "bilibili": 10,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 155
+      },
+      "record": {
+        "peak": 50,
+        "periods": 22
+      }
+    },
+    {
+      "entityId": "song-backlight-route-candidate-7",
+      "entity": {
+        "title": "逆光航线 · 7",
+        "artists": [
+          {
+            "id": "artist-echo-archive",
+            "name": "回声档案"
+          }
+        ],
+        "album": {
+          "id": "album-after-midnight",
+          "title": "零点以后"
+        },
+        "coverUrl": null,
+        "coverColor": "#304a73"
+      },
+      "rank": {
+        "current": 56,
+        "previous": 56,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 53,
+        "physical": 0,
+        "bilibili": 6,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 59
+      },
+      "record": {
+        "peak": 56,
+        "periods": 25
+      }
+    },
+    {
+      "entityId": "song-sunday-vinyl-candidate-8",
+      "entity": {
+        "title": "Sunday Vinyl · 8",
+        "artists": [
+          {
+            "id": "artist-mika-rowe",
+            "name": "Mika Rowe"
+          }
+        ],
+        "album": {
+          "id": "album-pressed-flowers",
+          "title": "Pressed Flowers"
+        },
+        "coverUrl": null,
+        "coverColor": "#ad7d30"
+      },
+      "rank": {
+        "current": 57,
+        "previous": 59,
+        "movement": {
+          "type": "up",
+          "value": 2
+        }
+      },
+      "points": {
+        "netease": 49,
+        "physical": 249,
+        "bilibili": 0,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 298
+      },
+      "record": {
+        "peak": 55,
+        "periods": 4
+      }
+    },
+    {
+      "entityId": "song-rooftop-radio-candidate-9",
+      "entity": {
+        "title": "天台广播 · 9",
+        "artists": [
+          {
+            "id": "artist-sleepless-radio",
+            "name": "不眠电台"
+          }
+        ],
+        "album": {
+          "id": "album-southern-night-shift",
+          "title": "南方夜班"
+        },
+        "coverUrl": null,
+        "coverColor": "#678094"
+      },
+      "rank": {
+        "current": 58,
+        "previous": 55,
+        "movement": {
+          "type": "down",
+          "value": 3
+        }
+      },
+      "points": {
+        "netease": 47,
+        "physical": 0,
+        "bilibili": 22,
+        "other": 0,
+        "legacyBonus": 0,
+        "manualAdjustment": 0,
+        "total": 69
+      },
+      "record": {
+        "peak": 55,
+        "periods": 7
+      }
+    }
+  ]
+}

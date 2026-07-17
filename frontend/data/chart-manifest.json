@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "defaultView": {
+    "entityType": "songs",
+    "periodType": "daily",
+    "periodKey": "2026-07-17"
+  },
+  "views": [
+    {
+      "entityType": "songs",
+      "periodType": "daily",
+      "snapshots": [
+        {
+          "periodKey": "2026-07-16",
+          "path": "./data/charts/daily/songs/2026-07-16.json"
+        },
+        {
+          "periodKey": "2026-07-17",
+          "path": "./data/charts/daily/songs/2026-07-17.json"
+        }
+      ]
+    }
+  ]
+}

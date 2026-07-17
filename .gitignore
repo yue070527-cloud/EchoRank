@@ -1,0 +1,16 @@
+.claude/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+frontend/test-output/
+data/raw/
+.DS_Store
+Thumbs.db

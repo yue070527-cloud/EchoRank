@@ -97,12 +97,49 @@ class WorkflowTests(unittest.TestCase):
         self.assertEqual(first.entry_count, 100)
         self.assertTrue(first.daily_path.exists())
         self.assertTrue(first.weekly_path.exists())
+        for entity_type in ("songs", "albums", "artists"):
+            for period_type in ("daily", "weekly", "monthly", "yearly"):
+                self.assertTrue(
+                    (self.frontend / "data" / "trends" / period_type / f"{entity_type}.json").exists()
+                )
 
         manifest = json.loads(
             (self.frontend / "data" / "chart-manifest.json").read_text(encoding="utf-8")
         )
         self.assertEqual(manifest["defaultView"]["periodKey"], "2026-07-18")
         self.assertEqual(manifest["defaultView"]["periodType"], "daily")
+
+    def test_before_22_does_not_collect_or_modify_charts(self) -> None:
+        official_run = datetime(2026, 7, 17, 14, 5, tzinfo=timezone.utc)
+        official = update_charts(
+            self.config,
+            self.database,
+            self.raw_root,
+            self.frontend,
+            official_run,
+            fetcher=lambda request, timeout: raw_response(),
+        )
+        daily_before = official.daily_path.read_bytes()
+        before_cutoff = datetime(2026, 7, 17, 16, 10, tzinfo=timezone.utc)
+        result = update_charts(
+            self.config,
+            self.database,
+            self.raw_root,
+            self.frontend,
+            before_cutoff,
+            fetcher=lambda request, timeout: self.fail("early update fetched network"),
+        )
+        self.assertTrue(result.skipped)
+        self.assertFalse(result.collected)
+        self.assertEqual(result.period_key, "2026-07-17")
+        self.assertEqual(result.daily_path.read_bytes(), daily_before)
+        self.assertFalse(
+            (self.raw_root / "2026" / "07" / "2026-07-18.json").exists()
+        )
+        manifest = json.loads(
+            (self.frontend / "data" / "chart-manifest.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(manifest["defaultView"]["periodKey"], "2026-07-17")
 
     def test_archived_snapshot_recovers_without_network(self) -> None:
         archive_raw_snapshot(raw_response(), "2026-07-18", self.raw_root)

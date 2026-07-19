@@ -17,8 +17,9 @@ from echorank.netease import (
     collect_weekly_snapshot,
     fetch_weekly_ranking,
     normalize_weekly_ranking,
+    search_songs,
 )
-from echorank.settlement import import_netease_snapshot, settle_daily
+from echorank.settlement import import_catalog_song, import_netease_snapshot, settle_daily
 
 
 def raw_response(count: int = 100) -> dict:
@@ -95,6 +96,62 @@ class NeteaseAdapterTests(unittest.TestCase):
         self.assertEqual(first["artists"][0]["id"], "netease-artist-20001")
         self.assertEqual(first["album"]["id"], "netease-album-30001")
         self.assertNotIn("score", first)
+
+    def test_search_normalizes_and_imports_catalog_song(self) -> None:
+        observed = {}
+        response = {
+            "code": 200,
+            "result": {"songs": [{
+                "id": 123,
+                "name": "Search Song",
+                "ar": [
+                    {"id": 456, "name": "First Artist"},
+                    {"id": 457, "name": "Second Artist"},
+                ],
+                "al": {"id": 789, "name": "Search Album", "picUrl": "https://example.test/cover.jpg"},
+            }]},
+        }
+
+        def fetcher(request, timeout):
+            observed["url"] = request.full_url
+            observed["cookie"] = request.get_header("Cookie")
+            return response
+
+        songs = search_songs("Search Song", fetcher=fetcher)
+        self.assertIn("s=Search+Song", observed["url"])
+        self.assertIsNone(observed["cookie"])
+        self.assertEqual(songs[0]["id"], "netease-song-123")
+        self.assertEqual(
+            [artist["id"] for artist in songs[0]["artists"]],
+            ["netease-artist-456", "netease-artist-457"],
+        )
+
+        with tempfile.TemporaryDirectory() as temporary:
+            connection = connect(Path(temporary) / "echorank.db")
+            initialize(connection)
+            try:
+                import_catalog_song(connection, songs[0])
+                import_catalog_song(connection, songs[0])
+                self.assertEqual(connection.execute("SELECT COUNT(*) FROM songs").fetchone()[0], 1)
+                self.assertEqual(connection.execute("SELECT COUNT(*) FROM albums").fetchone()[0], 1)
+                self.assertEqual(connection.execute("SELECT COUNT(*) FROM artists").fetchone()[0], 2)
+                credits = connection.execute(
+                    "SELECT artist_id FROM song_artists ORDER BY credit_order"
+                ).fetchall()
+                self.assertEqual(
+                    [row["artist_id"] for row in credits],
+                    ["netease-artist-456", "netease-artist-457"],
+                )
+            finally:
+                connection.close()
+
+    def test_search_handles_empty_results_and_invalid_query(self) -> None:
+        self.assertEqual(
+            search_songs("missing", fetcher=lambda request, timeout: {"code": 200, "result": {}}),
+            [],
+        )
+        with self.assertRaisesRegex(ValueError, "关键词长度"):
+            search_songs(" ", fetcher=lambda request, timeout: {})
 
     def test_requires_complete_top_100_before_archiving(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

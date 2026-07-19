@@ -7,14 +7,126 @@
   },
   "views": [
     {
+      "entityType": "albums",
+      "periodType": "daily",
+      "snapshots": [
+        {
+          "periodKey": "2026-07-17",
+          "path": "./data/charts/daily/albums/2026-07-17.json"
+        },
+        {
+          "periodKey": "2026-07-18",
+          "path": "./data/charts/daily/albums/2026-07-18.json"
+        }
+      ],
+      "historyPath": "./data/trends/daily/albums.json"
+    },
+    {
+      "entityType": "albums",
+      "periodType": "monthly",
+      "snapshots": [
+        {
+          "periodKey": "2026-07",
+          "path": "./data/charts/monthly/albums/2026-07.json"
+        }
+      ],
+      "historyPath": "./data/trends/monthly/albums.json"
+    },
+    {
+      "entityType": "albums",
+      "periodType": "weekly",
+      "snapshots": [
+        {
+          "periodKey": "2026-W29",
+          "path": "./data/charts/weekly/albums/2026-W29.json"
+        }
+      ],
+      "historyPath": "./data/trends/weekly/albums.json"
+    },
+    {
+      "entityType": "albums",
+      "periodType": "yearly",
+      "snapshots": [
+        {
+          "periodKey": "2026",
+          "path": "./data/charts/yearly/albums/2026.json"
+        }
+      ],
+      "historyPath": "./data/trends/yearly/albums.json"
+    },
+    {
+      "entityType": "artists",
+      "periodType": "daily",
+      "snapshots": [
+        {
+          "periodKey": "2026-07-17",
+          "path": "./data/charts/daily/artists/2026-07-17.json"
+        },
+        {
+          "periodKey": "2026-07-18",
+          "path": "./data/charts/daily/artists/2026-07-18.json"
+        }
+      ],
+      "historyPath": "./data/trends/daily/artists.json"
+    },
+    {
+      "entityType": "artists",
+      "periodType": "monthly",
+      "snapshots": [
+        {
+          "periodKey": "2026-07",
+          "path": "./data/charts/monthly/artists/2026-07.json"
+        }
+      ],
+      "historyPath": "./data/trends/monthly/artists.json"
+    },
+    {
+      "entityType": "artists",
+      "periodType": "weekly",
+      "snapshots": [
+        {
+          "periodKey": "2026-W29",
+          "path": "./data/charts/weekly/artists/2026-W29.json"
+        }
+      ],
+      "historyPath": "./data/trends/weekly/artists.json"
+    },
+    {
+      "entityType": "artists",
+      "periodType": "yearly",
+      "snapshots": [
+        {
+          "periodKey": "2026",
+          "path": "./data/charts/yearly/artists/2026.json"
+        }
+      ],
+      "historyPath": "./data/trends/yearly/artists.json"
+    },
+    {
       "entityType": "songs",
       "periodType": "daily",
       "snapshots": [
         {
+          "periodKey": "2026-07-17",
+          "path": "./data/charts/daily/songs/2026-07-17.json"
+        },
+        {
           "periodKey": "2026-07-18",
           "path": "./data/charts/daily/songs/2026-07-18.json"
         }
-      ]
+      ],
+      "historyPath": "./data/trends/daily/songs.json"
+    },
+    {
+      "entityType": "songs",
+      "periodType": "monthly",
+      "snapshots": [
+        {
+          "periodKey": "2026-07",
+          "path": "./data/charts/monthly/songs/2026-07.json"
+        }
+      ],
+      "historyPath": "./data/trends/monthly/songs.json"
     },
     {
       "entityType": "songs",
@@ -24,7 +136,19 @@
           "periodKey": "2026-W29",
           "path": "./data/charts/weekly/songs/2026-W29.json"
         }
-      ]
+      ],
+      "historyPath": "./data/trends/weekly/songs.json"
+    },
+    {
+      "entityType": "songs",
+      "periodType": "yearly",
+      "snapshots": [
+        {
+          "periodKey": "2026",
+          "path": "./data/charts/yearly/songs/2026.json"
+        }
+      ],
+      "historyPath": "./data/trends/yearly/songs.json"
     }
   ]
 }

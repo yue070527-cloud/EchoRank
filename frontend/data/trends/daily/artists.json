@@ -1,0 +1,697 @@
+{
+  "schemaVersion": "1.0",
+  "entityType": "artists",
+  "periodType": "daily",
+  "periods": [
+    {
+      "key": "2026-07-17",
+      "label": "2026 年 7 月 17 日",
+      "status": "settled",
+      "coverage": 1.0,
+      "frozen": true
+    },
+    {
+      "key": "2026-07-18",
+      "label": "2026 年 7 月 18 日",
+      "status": "settled",
+      "coverage": 1.0,
+      "frozen": true
+    }
+  ],
+  "series": {
+    "netease-artist-51480970": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 1,
+        "points": 3543.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 2,
+        "points": 3501.0,
+        "movement": {
+          "type": "down",
+          "value": 1
+        }
+      }
+    ],
+    "netease-artist-44266": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 2,
+        "points": 3366.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 1,
+        "points": 3933.1041666666665,
+        "movement": {
+          "type": "up",
+          "value": 1
+        }
+      }
+    ],
+    "netease-artist-77993": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 3,
+        "points": 379.5,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 3,
+        "points": 360.0,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-33515545": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 4,
+        "points": 192.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 6,
+        "points": 186.0,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
+      }
+    ],
+    "netease-artist-70183": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 5,
+        "points": 174.33333333333334,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 7,
+        "points": 161.66666666666666,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
+      }
+    ],
+    "netease-artist-12132544": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 6,
+        "points": 174.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 4,
+        "points": 219.0,
+        "movement": {
+          "type": "up",
+          "value": 2
+        }
+      }
+    ],
+    "netease-artist-37351063": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 7,
+        "points": 165.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 11,
+        "points": 127.0,
+        "movement": {
+          "type": "down",
+          "value": 4
+        }
+      }
+    ],
+    "netease-artist-31155319": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 8,
+        "points": 155.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 9,
+        "points": 153.0,
+        "movement": {
+          "type": "down",
+          "value": 1
+        }
+      }
+    ],
+    "netease-artist-63901": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 9,
+        "points": 153.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 10,
+        "points": 134.0,
+        "movement": {
+          "type": "down",
+          "value": 1
+        }
+      }
+    ],
+    "netease-artist-62888": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 10,
+        "points": 148.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 18,
+        "points": 69.0,
+        "movement": {
+          "type": "down",
+          "value": 8
+        }
+      }
+    ],
+    "netease-artist-48161": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 11,
+        "points": 133.33333333333334,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 12,
+        "points": 118.66666666666667,
+        "movement": {
+          "type": "down",
+          "value": 1
+        }
+      }
+    ],
+    "netease-artist-1057092": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 12,
+        "points": 133.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 8,
+        "points": 155.0,
+        "movement": {
+          "type": "up",
+          "value": 4
+        }
+      }
+    ],
+    "netease-artist-64147": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 13,
+        "points": 131.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 25,
+        "points": 35.0,
+        "movement": {
+          "type": "down",
+          "value": 12
+        }
+      }
+    ],
+    "netease-artist-50934": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 14,
+        "points": 129.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 17,
+        "points": 83.0,
+        "movement": {
+          "type": "down",
+          "value": 3
+        }
+      }
+    ],
+    "netease-artist-70821": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 15,
+        "points": 129.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 16,
+        "points": 89.0,
+        "movement": {
+          "type": "down",
+          "value": 1
+        }
+      }
+    ],
+    "netease-artist-46487": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 16,
+        "points": 95.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 5,
+        "points": 195.0,
+        "movement": {
+          "type": "up",
+          "value": 11
+        }
+      }
+    ],
+    "netease-artist-66212": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 17,
+        "points": 80.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 13,
+        "points": 118.0,
+        "movement": {
+          "type": "up",
+          "value": 4
+        }
+      }
+    ],
+    "netease-artist-905232": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 18,
+        "points": 80.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 23,
+        "points": 36.5,
+        "movement": {
+          "type": "down",
+          "value": 5
+        }
+      }
+    ],
+    "netease-artist-28410395": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 19,
+        "points": 77.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 30,
+        "points": 19.0,
+        "movement": {
+          "type": "down",
+          "value": 11
+        }
+      }
+    ],
+    "netease-artist-9609": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 20,
+        "points": 75.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 31,
+        "points": 18.0,
+        "movement": {
+          "type": "down",
+          "value": 11
+        }
+      }
+    ],
+    "netease-artist-11097": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 21,
+        "points": 69.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-37995": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 22,
+        "points": 60.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 24,
+        "points": 36.5,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
+      }
+    ],
+    "netease-artist-35111369": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 23,
+        "points": 48.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-29337": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 24,
+        "points": 47.5,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 20,
+        "points": 47.5,
+        "movement": {
+          "type": "up",
+          "value": 4
+        }
+      }
+    ],
+    "netease-artist-62662": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 25,
+        "points": 42.333333333333336,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 27,
+        "points": 25.666666666666668,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
+      }
+    ],
+    "netease-artist-12154330": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 26,
+        "points": 39.5,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 21,
+        "points": 45.5,
+        "movement": {
+          "type": "up",
+          "value": 5
+        }
+      }
+    ],
+    "netease-artist-7219": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 27,
+        "points": 39.5,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 22,
+        "points": 45.5,
+        "movement": {
+          "type": "up",
+          "value": 5
+        }
+      }
+    ],
+    "netease-artist-99384": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 28,
+        "points": 39.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-53092": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 29,
+        "points": 37.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-72724": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 30,
+        "points": 36.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 19,
+        "points": 67.0,
+        "movement": {
+          "type": "up",
+          "value": 11
+        }
+      }
+    ],
+    "netease-artist-48432": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 31,
+        "points": 21.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-103399": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 32,
+        "points": 9.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-28076769": [
+      {
+        "periodKey": "2026-07-18",
+        "rank": 14,
+        "points": 89.60416666666666,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-90517": [
+      {
+        "periodKey": "2026-07-18",
+        "rank": 15,
+        "points": 89.60416666666666,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-12551134": [
+      {
+        "periodKey": "2026-07-18",
+        "rank": 26,
+        "points": 29.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-12194641": [
+      {
+        "periodKey": "2026-07-18",
+        "rank": 28,
+        "points": 23.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-1135086": [
+      {
+        "periodKey": "2026-07-18",
+        "rank": 29,
+        "points": 20.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-102057": [
+      {
+        "periodKey": "2026-07-18",
+        "rank": 32,
+        "points": 18.0,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-159300": [
+      {
+        "periodKey": "2026-07-18",
+        "rank": 33,
+        "points": 10.5,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-artist-855508": [
+      {
+        "periodKey": "2026-07-18",
+        "rank": 34,
+        "points": 10.5,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ]
+  }
+}

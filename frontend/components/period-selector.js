@@ -19,6 +19,7 @@ class PeriodSelector extends HTMLElement {
     const statusLabels = {
       collecting: '<span class="live-badge"><span></span> LIVE · 统计中</span>',
       settled: "已结算周期",
+      partial: "已结算 · 数据不完整",
       missing: "数据缺失",
       failed: "加载失败",
       unavailable: "暂无快照",

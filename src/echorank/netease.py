@@ -8,9 +8,12 @@ from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 from typing import Any, Callable
 from urllib.error import HTTPError, URLError
+from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 NETEASE_WEEKLY_URL = "https://music.163.com/api/v1/play/record?uid={uid}&type=1"
+NETEASE_SEARCH_URL = "https://music.163.com/api/search/get/web"
+NETEASE_ALBUM_URL = "https://music.163.com/api/v1/album/{album_id}"
 CHINA_TIMEZONE = timezone(timedelta(hours=8))
 Fetcher = Callable[[Request, float], dict[str, Any]]
 
@@ -52,6 +55,140 @@ def fetch_weekly_ranking(
     if not isinstance(payload.get("weekData"), list):
         raise ValueError("网易云周排行响应缺少 weekData")
     return payload
+
+
+def normalize_search_results(payload: dict[str, Any]) -> list[dict[str, Any]]:
+    if payload.get("code") != 200:
+        raise ValueError(f"网易云搜索不可用，响应代码：{payload.get('code')}")
+    result = payload.get("result")
+    if not isinstance(result, dict):
+        raise ValueError("网易云搜索响应缺少 result")
+    songs = result.get("songs") or []
+    if not isinstance(songs, list):
+        raise ValueError("网易云搜索响应缺少歌曲列表")
+    normalized = []
+    for index, song in enumerate(songs):
+        if not isinstance(song, dict):
+            raise ValueError(f"网易云搜索第 {index + 1} 条歌曲信息错误")
+        song_id = _required_integer(song.get("id"), f"result.songs[{index}].id")
+        album = song.get("al") or song.get("album")
+        artists = song.get("ar") or song.get("artists")
+        if not isinstance(album, dict) or not isinstance(artists, list) or not artists:
+            raise ValueError(f"网易云搜索第 {index + 1} 条缺少专辑或艺人信息")
+        album_id = _required_integer(album.get("id"), f"result.songs[{index}].album.id")
+        normalized_artists = []
+        for artist_index, artist in enumerate(artists):
+            if not isinstance(artist, dict):
+                raise ValueError(f"网易云搜索第 {index + 1} 条艺人信息错误")
+            artist_id = _required_integer(
+                artist.get("id"), f"result.songs[{index}].artists[{artist_index}].id"
+            )
+            normalized_artists.append({
+                "id": f"netease-artist-{artist_id}",
+                "name": _required_text(
+                    artist.get("name"),
+                    f"result.songs[{index}].artists[{artist_index}].name",
+                ),
+            })
+        cover_url = album.get("picUrl")
+        if cover_url is not None and not isinstance(cover_url, str):
+            raise ValueError(f"网易云搜索第 {index + 1} 条封面地址类型错误")
+        normalized.append({
+            "id": f"netease-song-{song_id}",
+            "title": _required_text(song.get("name"), f"result.songs[{index}].name"),
+            "artists": normalized_artists,
+            "album": {
+                "id": f"netease-album-{album_id}",
+                "title": _required_text(album.get("name"), f"result.songs[{index}].album.name"),
+            },
+            "coverUrl": cover_url,
+            "coverColor": _cover_color(album_id),
+        })
+    return normalized
+
+
+def search_songs(
+    query: str,
+    limit: int = 20,
+    timeout: float = 10,
+    fetcher: Fetcher = _default_fetcher,
+) -> list[dict[str, Any]]:
+    term = query.strip()
+    if not term or len(term) > 100:
+        raise ValueError("搜索关键词长度必须为 1—100 个字符")
+    if not 1 <= limit <= 50:
+        raise ValueError("搜索结果数量必须为 1—50")
+    parameters = urlencode({
+        "csrf_token": "",
+        "hlpretag": "",
+        "hlposttag": "",
+        "s": term,
+        "type": 1,
+        "offset": 0,
+        "total": "true",
+        "limit": limit,
+    })
+    request = Request(
+        f"{NETEASE_SEARCH_URL}?{parameters}",
+        headers={
+            "User-Agent": "Mozilla/5.0 EchoRank/0.1",
+            "Referer": "https://music.163.com/",
+            "Accept": "application/json",
+        },
+    )
+    try:
+        payload = fetcher(request, timeout)
+    except ValueError as error:
+        raise ValueError(f"网易云搜索请求失败：{error}") from error
+    if not isinstance(payload, dict):
+        raise ValueError("网易云搜索响应不是 JSON 对象")
+    return normalize_search_results(payload)[:limit]
+
+
+def fetch_album_tracks(
+    album_id: str,
+    timeout: float = 10,
+    fetcher: Fetcher = _default_fetcher,
+) -> list[dict[str, Any]]:
+    prefix = "netease-album-"
+    if not album_id.startswith(prefix) or not album_id.removeprefix(prefix).isdecimal():
+        raise ValueError("网易云专辑 ID 无效")
+    numeric_id = int(album_id.removeprefix(prefix))
+    request = Request(
+        NETEASE_ALBUM_URL.format(album_id=numeric_id),
+        headers={
+            "User-Agent": "Mozilla/5.0 EchoRank/0.1",
+            "Referer": "https://music.163.com/",
+            "Accept": "application/json",
+        },
+    )
+    try:
+        payload = fetcher(request, timeout)
+    except ValueError as error:
+        raise ValueError(f"网易云专辑请求失败：{error}") from error
+    if not isinstance(payload, dict):
+        raise ValueError("网易云专辑响应不是 JSON 对象")
+    album = payload.get("album")
+    songs = payload.get("songs")
+    if payload.get("code") != 200 or not isinstance(album, dict) or not isinstance(songs, list):
+        raise ValueError("网易云专辑响应缺少曲目")
+    normalized_payload = {
+        "code": 200,
+        "result": {
+            "songs": [{
+                **song,
+                "al": song.get("al") or {
+                    "id": numeric_id,
+                    "name": album.get("name"),
+                    "picUrl": album.get("picUrl"),
+                },
+            } for song in songs if isinstance(song, dict)],
+        },
+    }
+    tracks = normalize_search_results(normalized_payload)
+    if not tracks:
+        raise ValueError("网易云专辑没有可用曲目")
+    return tracks
 
 
 def raw_snapshot_path(period_key: str, raw_root: str | Path) -> Path:

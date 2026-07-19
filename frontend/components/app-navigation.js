@@ -8,6 +8,7 @@ class AppNavigation extends HTMLElement {
     const items = [
       { value: "charts", label: "数据及可视化" },
       { value: "trends", label: "走势" },
+      { value: "settlements", label: "结算记录" },
     ];
 
     this.innerHTML = `
@@ -25,6 +26,9 @@ class AppNavigation extends HTMLElement {
               ${item.label}
             </button>
           `).join("")}
+          ${["127.0.0.1", "localhost"].includes(location.hostname) ? `
+            <a class="app-nav__link app-nav__admin" href="/admin/">添加数据</a>
+          ` : ""}
         </div>
         <div class="update-clock">
           <span class="status-dot" aria-hidden="true"></span>

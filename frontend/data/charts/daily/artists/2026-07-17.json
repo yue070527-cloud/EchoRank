@@ -1,0 +1,1053 @@
+{
+  "schemaVersion": "1.0",
+  "chart": {
+    "id": "artists-daily-2026-07-17",
+    "entityType": "artists",
+    "periodType": "daily",
+    "title": "PERSONAL ARTIST 50"
+  },
+  "period": {
+    "key": "2026-07-17",
+    "label": "2026 年 7 月 17 日",
+    "scheduledAt": "2026-07-17T22:00:00+08:00",
+    "status": "settled"
+  },
+  "collection": {
+    "collectedAt": "2026-07-17T22:00:00+08:00",
+    "coverage": 1.0,
+    "status": "success",
+    "sourceSnapshot": "D:/Desktop/MyBillboard/data/raw/netease/2026/07/2026-07-17.json"
+  },
+  "scoringVersions": {
+    "netease": "netease-streaming-v1",
+    "physical": "external-ledger-v1",
+    "bilibili": "external-ledger-v1",
+    "combined": "combined-v1"
+  },
+  "entries": [
+    {
+      "entityId": "netease-artist-51480970",
+      "entity": {
+        "title": "NMIXX",
+        "subtitle": "艺人综合榜",
+        "detail": "25 首歌曲参与统计",
+        "coverUrl": "http://p2.music.126.net/rGsOEq1ezPY6owqXfHcEhA==/109951167080802728.jpg",
+        "coverColor": "#87c8c3"
+      },
+      "rank": {
+        "current": 1,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 3543.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 3543.0
+      },
+      "record": {
+        "peak": 1,
+        "periods": 1,
+        "championships": 1
+      }
+    },
+    {
+      "entityId": "netease-artist-44266",
+      "entity": {
+        "title": "Taylor Swift",
+        "subtitle": "艺人综合榜",
+        "detail": "84 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+        "coverColor": "#a5cc30"
+      },
+      "rank": {
+        "current": 2,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 3366.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 3366.0
+      },
+      "record": {
+        "peak": 2,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-77993",
+      "entity": {
+        "title": "Sabrina Carpenter",
+        "subtitle": "艺人综合榜",
+        "detail": "12 首歌曲参与统计",
+        "coverUrl": "http://p2.music.126.net/UXzplkXmm-e-hX2cGqZx1w==/109951171960924275.jpg",
+        "coverColor": "#f20d57"
+      },
+      "rank": {
+        "current": 3,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 379.5,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 379.5
+      },
+      "record": {
+        "peak": 3,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-33515545",
+      "entity": {
+        "title": "Gracie Abrams",
+        "subtitle": "艺人综合榜",
+        "detail": "4 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/SJ2CnxqyKmX9OOJ9xwLbxQ==/109951169703985489.jpg",
+        "coverColor": "#4a6426"
+      },
+      "rank": {
+        "current": 4,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 192.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 192.0
+      },
+      "record": {
+        "peak": 4,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-70183",
+      "entity": {
+        "title": "Nicki Minaj",
+        "subtitle": "艺人综合榜",
+        "detail": "2 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/o2BhJAlz3moqp5a0eFlVAw==/2469503116002357.jpg",
+        "coverColor": "#88679b"
+      },
+      "rank": {
+        "current": 5,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 174.33333333333334,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 174.33333333333334
+      },
+      "record": {
+        "peak": 5,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-12132544",
+      "entity": {
+        "title": "Olivia Rodrigo",
+        "subtitle": "艺人综合榜",
+        "detail": "2 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/KqTFZpr-ze931_sDfLBk3Q==/109951169026653354.jpg",
+        "coverColor": "#0503c3"
+      },
+      "rank": {
+        "current": 6,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 174.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 174.0
+      },
+      "record": {
+        "peak": 6,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-37351063",
+      "entity": {
+        "title": "aespa",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p2.music.126.net/uhvcwENl9zn5DapXOZXJfw==/109951170168306177.jpg",
+        "coverColor": "#4c0b23"
+      },
+      "rank": {
+        "current": 7,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 165.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 165.0
+      },
+      "record": {
+        "peak": 7,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-31155319",
+      "entity": {
+        "title": "ITZY",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p2.music.126.net/65E7xvc7oEIb9AhwI2_lCg==/109951173213643105.jpg",
+        "coverColor": "#55783c"
+      },
+      "rank": {
+        "current": 8,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 155.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 155.0
+      },
+      "record": {
+        "peak": 8,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-63901",
+      "entity": {
+        "title": "Kesha",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p2.music.126.net/RHv1VNQqb5Q7Y_ephBLqxA==/109951172325402148.jpg",
+        "coverColor": "#5f0f31"
+      },
+      "rank": {
+        "current": 9,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 153.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 153.0
+      },
+      "record": {
+        "peak": 9,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-62888",
+      "entity": {
+        "title": "Katy Perry",
+        "subtitle": "艺人综合榜",
+        "detail": "3 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/snLS2a3pKaPkmgH3gqDU4A==/109951173212925408.jpg",
+        "coverColor": "#9e7794"
+      },
+      "rank": {
+        "current": 10,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 148.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 148.0
+      },
+      "record": {
+        "peak": 10,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-48161",
+      "entity": {
+        "title": "Ariana Grande",
+        "subtitle": "艺人综合榜",
+        "detail": "2 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/G4HIWXvyzneVNjZPxwt00Q==/109951165741355057.jpg",
+        "coverColor": "#f9740f"
+      },
+      "rank": {
+        "current": 11,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 133.33333333333334,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 133.33333333333334
+      },
+      "record": {
+        "peak": 11,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-1057092",
+      "entity": {
+        "title": "Post Malone",
+        "subtitle": "艺人综合榜",
+        "detail": "2 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverColor": "#6d3887"
+      },
+      "rank": {
+        "current": 12,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 133.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 133.0
+      },
+      "record": {
+        "peak": 12,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-64147",
+      "entity": {
+        "title": "Lady Gaga",
+        "subtitle": "艺人综合榜",
+        "detail": "2 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/E-A30drf7Yh57SEc4vxChA==/109951167148132297.jpg",
+        "coverColor": "#8fcef3"
+      },
+      "rank": {
+        "current": 13,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 131.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 131.0
+      },
+      "record": {
+        "peak": 13,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-50934",
+      "entity": {
+        "title": "Carly Rae Jepsen",
+        "subtitle": "艺人综合榜",
+        "detail": "2 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/xitMjHqUd_WqLWkNdyOYQw==/109951171850460419.jpg",
+        "coverColor": "#2f600d"
+      },
+      "rank": {
+        "current": 14,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 129.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 129.0
+      },
+      "record": {
+        "peak": 14,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-70821",
+      "entity": {
+        "title": "P!nk",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/W0KCB3zjKbXykM1-Va5NcQ==/109951166001800740.jpg",
+        "coverColor": "#3d5205"
+      },
+      "rank": {
+        "current": 15,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 129.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 129.0
+      },
+      "record": {
+        "peak": 15,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-46487",
+      "entity": {
+        "title": "Adele",
+        "subtitle": "艺人综合榜",
+        "detail": "2 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/-aAWuK0-91lgZmDGx7V_kA==/109951172658442765.jpg",
+        "coverColor": "#9c1a6f"
+      },
+      "rank": {
+        "current": 16,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 95.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 95.0
+      },
+      "record": {
+        "peak": 16,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-66212",
+      "entity": {
+        "title": "Lana Del Rey",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/lKhXKmONQahzGsRdhoDR7w==/109951168178695711.jpg",
+        "coverColor": "#f81979"
+      },
+      "rank": {
+        "current": 17,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 80.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 80.0
+      },
+      "record": {
+        "peak": 17,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-905232",
+      "entity": {
+        "title": "SZA",
+        "subtitle": "艺人综合榜",
+        "detail": "2 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/qQ5e7rM-xY6YWJW9_3tR-w==/109951168121859537.jpg",
+        "coverColor": "#3f6417"
+      },
+      "rank": {
+        "current": 18,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 80.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 80.0
+      },
+      "record": {
+        "peak": 18,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-28410395",
+      "entity": {
+        "title": "La La Land Cast",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/CrAb6Ryc5osJUM6zuoqxuw==/109951171012054073.jpg",
+        "coverColor": "#1f80eb"
+      },
+      "rank": {
+        "current": 19,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 77.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 77.0
+      },
+      "record": {
+        "peak": 19,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-9609",
+      "entity": {
+        "title": "魏如萱",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/pUVA3A7XBN2WwGNXSPz4Og==/109951165958860830.jpg",
+        "coverColor": "#a0021b"
+      },
+      "rank": {
+        "current": 20,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 75.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 75.0
+      },
+      "record": {
+        "peak": 20,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-11097",
+      "entity": {
+        "title": "By2",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/F4PaoO9YZTRv-WQqEXCryw==/109951169200438951.jpg",
+        "coverColor": "#0b0706"
+      },
+      "rank": {
+        "current": 21,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 69.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 69.0
+      },
+      "record": {
+        "peak": 21,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-37995",
+      "entity": {
+        "title": "Kendrick Lamar",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/EMv55rDoGWJ3IzG-aphT3w==/109951170180620807.jpg",
+        "coverColor": "#0e202d"
+      },
+      "rank": {
+        "current": 22,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 60.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 60.0
+      },
+      "record": {
+        "peak": 22,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-35111369",
+      "entity": {
+        "title": "Laufey",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/qG9jovJB2bxGlXjzyKhpjQ==/109951171894964337.jpg",
+        "coverColor": "#a96a9a"
+      },
+      "rank": {
+        "current": 23,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 48.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 48.0
+      },
+      "record": {
+        "peak": 23,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-29337",
+      "entity": {
+        "title": "Bon Iver",
+        "subtitle": "艺人综合榜",
+        "detail": "2 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/b_6ZbpOz55g8oB4KR34aFw==/109951168971655174.jpg",
+        "coverColor": "#9779c5"
+      },
+      "rank": {
+        "current": 24,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 47.5,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 47.5
+      },
+      "record": {
+        "peak": 24,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-62662",
+      "entity": {
+        "title": "Jessie J",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/oA3lAYhcxmoPbfqUYHLbrQ==/109951163219135819.jpg",
+        "coverColor": "#d245e6"
+      },
+      "rank": {
+        "current": 25,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 42.333333333333336,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 42.333333333333336
+      },
+      "record": {
+        "peak": 25,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-12154330",
+      "entity": {
+        "title": "陈星翰",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/qXzyI00_XwByKbpHzB7rKg==/109951163378954345.jpg",
+        "coverColor": "#958b08"
+      },
+      "rank": {
+        "current": 26,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 39.5,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 39.5
+      },
+      "record": {
+        "peak": 26,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-7219",
+      "entity": {
+        "title": "蔡依林",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/qXzyI00_XwByKbpHzB7rKg==/109951163378954345.jpg",
+        "coverColor": "#958b08"
+      },
+      "rank": {
+        "current": 27,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 39.5,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 39.5
+      },
+      "record": {
+        "peak": 27,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-99384",
+      "entity": {
+        "title": "Radiohead",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/Zg-bnruyZm1L9GdPKI3RTw==/18205713532941813.jpg",
+        "coverColor": "#fc2906"
+      },
+      "rank": {
+        "current": 28,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 39.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 39.0
+      },
+      "record": {
+        "peak": 28,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-53092",
+      "entity": {
+        "title": "Charli xcx",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/Ba-96IExpMYCZsjFCaUM0g==/109951171954771934.jpg",
+        "coverColor": "#f6385c"
+      },
+      "rank": {
+        "current": 29,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 37.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 37.0
+      },
+      "record": {
+        "peak": 29,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-72724",
+      "entity": {
+        "title": "Rihanna",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/vrJzlA1RIiwaPHlXzZy90g==/3263350514797284.jpg",
+        "coverColor": "#7c44ef"
+      },
+      "rank": {
+        "current": 30,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.0
+      },
+      "record": {
+        "peak": 30,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-48432",
+      "entity": {
+        "title": "Britney Spears",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/deSSYRxKCEuGkecb4koc0w==/18290375928612464.jpg",
+        "coverColor": "#fa8eaa"
+      },
+      "rank": {
+        "current": 31,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 21.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 21.0
+      },
+      "record": {
+        "peak": 31,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-artist-103399",
+      "entity": {
+        "title": "The Civil Wars",
+        "subtitle": "艺人综合榜",
+        "detail": "1 首歌曲参与统计",
+        "coverUrl": "http://p1.music.126.net/INB1lGZhGefs5GaiWkFb1w==/18889609765388785.jpg",
+        "coverColor": "#707b5c"
+      },
+      "rank": {
+        "current": 32,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 9.0,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 9.0
+      },
+      "record": {
+        "peak": 32,
+        "periods": 1,
+        "championships": 0
+      }
+    }
+  ]
+}

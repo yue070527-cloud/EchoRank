@@ -5,7 +5,7 @@ from dataclasses import dataclass
 
 @dataclass(frozen=True)
 class PointTotal:
-    song_id: str
+    entity_id: str
     netease: float = 0
     physical: float = 0
     bilibili: float = 0
@@ -34,24 +34,21 @@ def rank_totals(
         eligible,
         key=lambda total: (
             -total.total,
-            -total.netease,
-            -total.physical,
-            -total.bilibili,
-            previous_ranks.get(total.song_id, 101),
-            total.song_id,
+            previous_ranks.get(total.entity_id, 101),
+            total.entity_id,
         ),
     )[:100]
 
 
 def movement_for(
-    song_id: str,
+    entity_id: str,
     current_rank: int,
     previous_ranks: dict[str, int],
     appeared_before: set[str],
 ) -> tuple[str, int, int | None]:
-    previous_rank = previous_ranks.get(song_id)
+    previous_rank = previous_ranks.get(entity_id)
     if previous_rank is None:
-        return ("re" if song_id in appeared_before else "new", 0, None)
+        return ("re" if entity_id in appeared_before else "new", 0, None)
     if current_rank < previous_rank:
         return "up", previous_rank - current_rank, previous_rank
     if current_rank > previous_rank:

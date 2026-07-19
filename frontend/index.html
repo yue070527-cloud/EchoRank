@@ -45,8 +45,18 @@
         <p class="hero__note chart-status" data-chart-status aria-live="polite">正在加载榜单数据…</p>
       </section>
 
-      <chart-list title="PERSONAL CHART 50" eyebrow="歌曲主榜"></chart-list>
-      <bubbling-section></bubbling-section>
+      <section data-page-region="charts">
+        <chart-list title="PERSONAL CHART 50" eyebrow="歌曲主榜"></chart-list>
+        <bubbling-section></bubbling-section>
+      </section>
+      <section data-page-region="trends" hidden>
+        <aggregate-trend></aggregate-trend>
+      </section>
+      <section data-page-region="settlements" hidden>
+        <settlement-archive></settlement-archive>
+      </section>
+      <trend-detail></trend-detail>
+      <settlement-reveal></settlement-reveal>
     </main>
   </div>
 

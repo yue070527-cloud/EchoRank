@@ -17,6 +17,7 @@ class ChartList extends HTMLElement {
   render() {
     const title = this.getAttribute("title") || "PERSONAL CHART 50";
     const eyebrow = this.getAttribute("eyebrow") || "歌曲主榜";
+    const entityLabel = this.getAttribute("entity-label") || "歌曲";
 
     this.innerHTML = `
       <section class="chart-list" aria-label="${title}">
@@ -29,7 +30,7 @@ class ChartList extends HTMLElement {
           </div>
         </header>
         <div class="chart-column-labels" aria-hidden="true">
-          <span>排名</span><span>歌曲</span><span>来源点数</span><span>综合</span><span>纪录</span>
+          <span>排名</span><span>${entityLabel}</span><span>来源点数</span><span>综合</span><span>纪录</span>
         </div>
         <div class="chart-list__rows"></div>
         ${this.items.length ? "" : '<p class="empty-state">当前周期暂无榜单数据。</p>'}

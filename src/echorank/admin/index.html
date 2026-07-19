@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EchoRank 本地管理</title>
+  <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+  <header>
+    <div>
+      <p>LOCAL MANAGEMENT</p>
+      <h1>添加来源数据</h1>
+      <span>网易云用于识别曲目；观看、实体购买和人工修正分别记录</span>
+    </div>
+    <a class="exit-link" href="/">退出管理并返回榜单</a>
+  </header>
+  <main>
+    <section class="entry-flow">
+      <nav class="mode-tabs" aria-label="录入类型">
+        <button type="button" data-mode="bilibili" class="is-active">B站观看</button>
+        <button type="button" data-mode="physical">实体购买</button>
+        <button type="button" data-mode="adjustment">人工修正</button>
+      </nav>
+
+      <div class="step">
+        <span>01</span>
+        <div>
+          <h2>搜索网易云曲目</h2>
+          <form data-form="netease">
+            <label>歌曲、艺人或专辑关键词<input name="query" maxlength="100" required></label>
+            <button>搜索</button>
+          </form>
+          <div data-netease-results class="netease-results"></div>
+        </div>
+      </div>
+
+      <section data-panel="bilibili" class="data-panel">
+        <h2>记录 B 站每日观看</h2>
+        <div data-selected-song class="selected-song is-empty">请先选择一首歌曲</div>
+        <form data-form="bilibili">
+          <label>统计日期<input name="periodKey" type="date" required></label>
+          <label>当日观看次数<input name="viewCount" type="number" min="0" step="1" required></label>
+          <label>BV号、链接或视频标题（可选）<input name="videoRef" maxlength="300"></label>
+          <label>备注（可选）<textarea name="notes" maxlength="500"></textarea></label>
+          <p class="preview">预计 B 站点数：<strong data-bilibili-preview>0</strong></p>
+          <p data-freeze-warning class="warning" hidden>该日期已经结算，不能再录入。</p>
+          <button data-bilibili-submit disabled>记录观看次数</button>
+        </form>
+      </section>
+
+      <section data-panel="physical" class="data-panel" hidden>
+        <h2>记录实体购买</h2>
+        <p class="notice">搜索到歌曲后可直接载入其整张专辑，默认选择全部曲目；每首有效曲目获得完整歌曲实体点，专辑和艺人只计一次事件点。</p>
+        <div class="selection-tools"><strong data-physical-summary>尚未选择专辑</strong><button type="button" data-clear-physical disabled>清空曲目</button></div>
+        <div data-physical-tracks class="selected-song is-empty">尚未添加曲目</div>
+        <form data-form="physical">
+          <label>购买日期<input name="purchaseDate" type="date" required></label>
+          <label>实体格式<select name="format" required>
+            <option value="standard_cd">普通版 CD（1.00）</option>
+            <option value="deluxe_cd">豪华/加曲版 CD（1.15）</option>
+            <option value="limited_cd">限定版 CD（1.20）</option>
+            <option value="cassette">磁带（0.90）</option>
+            <option value="vinyl">标准黑胶（1.25）</option>
+            <option value="limited_vinyl">彩胶/限定黑胶（1.35）</option>
+            <option value="box_set">豪华盒装（1.50）</option>
+            <option value="single_cd">单曲 CD（0.70）</option>
+            <option value="seven_inch_single">7 英寸黑胶单曲（0.85）</option>
+          </select></label>
+          <label>版本名称<input name="editionLabel" maxlength="100" placeholder="例如：初回限定 A 版" required></label>
+          <label>数量<input name="quantity" type="number" min="1" step="1" value="1" required></label>
+          <label>备注（可选）<textarea name="notes" maxlength="500"></textarea></label>
+          <p class="preview"><strong data-physical-preview>0 首曲目 · 总购买权重 1.00</strong><br>将建立 28 天实体周期；具体点数在购买日 22:00 冻结网易云参考曲线后确定。</p>
+          <p data-physical-freeze-warning class="warning" hidden>购买日期已经结算，不能新增实体事件。</p>
+          <button data-physical-submit disabled>记录实体购买</button>
+        </form>
+      </section>
+
+      <section data-panel="adjustment" class="data-panel" hidden>
+        <h2>人工修正</h2>
+        <div data-adjustment-song class="selected-song is-empty">请先选择一首歌曲</div>
+        <form data-form="adjustment">
+          <label>统计日期<input name="periodKey" type="date" required></label>
+          <label>调整点数（可为负数）<input name="points" type="number" step="0.01" required></label>
+          <label>修正原因<textarea name="reason" maxlength="500" required></textarea></label>
+          <p data-adjustment-freeze-warning class="warning" hidden>该日期已经结算，不能再修正。</p>
+          <button data-adjustment-submit disabled>记录人工修正</button>
+        </form>
+      </section>
+    </section>
+
+    <aside>
+      <h2>近期周期</h2>
+      <div data-periods class="periods"></div>
+    </aside>
+  </main>
+  <output data-status aria-live="polite"></output>
+  <div data-success class="success-overlay" hidden>
+    <div class="success-card" role="status">
+      <span class="success-mark">✓</span>
+      <strong data-success-message>数据已记录</strong>
+    </div>
+  </div>
+  <script type="module" src="./admin.js"></script>
+</body>
+</html>

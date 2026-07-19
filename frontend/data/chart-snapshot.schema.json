@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "chart-snapshot.schema.json",
-  "title": "My Billboard Chart Snapshot V1",
+  "title": "EchoRank Chart Snapshot V1",
   "type": "object",
   "required": ["schemaVersion", "chart", "period", "collection", "scoringVersions", "entries"],
   "properties": {
@@ -24,7 +24,7 @@
         "key": { "type": "string", "minLength": 1 },
         "label": { "type": "string", "minLength": 1 },
         "scheduledAt": { "type": "string", "format": "date-time" },
-        "status": { "enum": ["collecting", "settled", "missing", "failed"] }
+        "status": { "enum": ["collecting", "settled", "partial", "missing", "failed"] }
       },
       "additionalProperties": false
     },
@@ -41,7 +41,7 @@
     },
     "scoringVersions": {
       "type": "object",
-      "required": ["netease", "physical", "bilibili"],
+      "required": ["netease", "physical", "bilibili", "combined"],
       "properties": {
         "netease": { "type": "string" },
         "physical": { "type": "string" },
@@ -58,43 +58,43 @@
   },
   "additionalProperties": false,
   "$defs": {
+    "artist": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "entity": {
+      "type": "object",
+      "required": ["title", "subtitle", "detail", "coverUrl", "coverColor"],
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "detail": { "type": "string" },
+        "artists": { "type": "array", "items": { "$ref": "#/$defs/artist" } },
+        "album": {
+          "type": "object",
+          "required": ["id", "title"],
+          "properties": {
+            "id": { "type": "string" },
+            "title": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "coverUrl": { "type": ["string", "null"] },
+        "coverColor": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" }
+      },
+      "additionalProperties": false
+    },
     "entry": {
       "type": "object",
       "required": ["entityId", "entity", "rank", "points", "record"],
       "properties": {
         "entityId": { "type": "string", "minLength": 1 },
-        "entity": {
-          "type": "object",
-          "required": ["title", "artists", "album"],
-          "properties": {
-            "title": { "type": "string" },
-            "artists": {
-              "type": "array",
-              "minItems": 1,
-              "items": {
-                "type": "object",
-                "required": ["id", "name"],
-                "properties": {
-                  "id": { "type": "string" },
-                  "name": { "type": "string" }
-                },
-                "additionalProperties": false
-              }
-            },
-            "album": {
-              "type": "object",
-              "required": ["id", "title"],
-              "properties": {
-                "id": { "type": "string" },
-                "title": { "type": "string" }
-              },
-              "additionalProperties": false
-            },
-            "coverUrl": { "type": ["string", "null"] },
-            "coverColor": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" }
-          },
-          "additionalProperties": false
-        },
+        "entity": { "$ref": "#/$defs/entity" },
         "rank": {
           "type": "object",
           "required": ["current", "previous", "movement"],
@@ -129,10 +129,11 @@
         },
         "record": {
           "type": "object",
-          "required": ["peak", "periods"],
+          "required": ["peak", "periods", "championships"],
           "properties": {
             "peak": { "type": "integer", "minimum": 1, "maximum": 100 },
-            "periods": { "type": "integer", "minimum": 1 }
+            "periods": { "type": "integer", "minimum": 1 },
+            "championships": { "type": "integer", "minimum": 0 }
           },
           "additionalProperties": false
         }

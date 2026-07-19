@@ -8,8 +8,6 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-from .scoring import NETEASE_SCORING_VERSION
-
 ENTITY_TITLES = {
     "songs": "PERSONAL CHART 50",
     "albums": "PERSONAL ALBUM 50",
@@ -181,9 +179,10 @@ def snapshot_for_period(connection: sqlite3.Connection, period_id: int) -> dict[
                 else period["status"]
             ),
             "sourceSnapshot": period["source_snapshot"],
+            "version": period["collection_version"],
         },
         "scoringVersions": {
-            "netease": NETEASE_SCORING_VERSION,
+            "netease": period["netease_scoring_version"] or "unknown",
             "physical": "external-ledger-v1",
             "bilibili": "external-ledger-v1",
             "combined": "combined-v1",

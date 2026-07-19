@@ -3,7 +3,7 @@
   "defaultView": {
     "entityType": "songs",
     "periodType": "daily",
-    "periodKey": "2026-07-18"
+    "periodKey": "2026-07-19"
   },
   "views": [
     {
@@ -17,6 +17,10 @@
         {
           "periodKey": "2026-07-18",
           "path": "./data/charts/daily/albums/2026-07-18.json"
+        },
+        {
+          "periodKey": "2026-07-19",
+          "path": "./data/charts/daily/albums/2026-07-19.json"
         }
       ],
       "historyPath": "./data/trends/daily/albums.json"
@@ -65,6 +69,10 @@
         {
           "periodKey": "2026-07-18",
           "path": "./data/charts/daily/artists/2026-07-18.json"
+        },
+        {
+          "periodKey": "2026-07-19",
+          "path": "./data/charts/daily/artists/2026-07-19.json"
         }
       ],
       "historyPath": "./data/trends/daily/artists.json"
@@ -113,6 +121,10 @@
         {
           "periodKey": "2026-07-18",
           "path": "./data/charts/daily/songs/2026-07-18.json"
+        },
+        {
+          "periodKey": "2026-07-19",
+          "path": "./data/charts/daily/songs/2026-07-19.json"
         }
       ],
       "historyPath": "./data/trends/daily/songs.json"

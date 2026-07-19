@@ -9,17 +9,18 @@
   "period": {
     "key": "2026-07",
     "label": "2026 年 7 月",
-    "scheduledAt": "2026-07-18T22:00:00+08:00",
+    "scheduledAt": "2026-07-19T22:00:00+08:00",
     "status": "collecting"
   },
   "collection": {
-    "collectedAt": "2026-07-18T22:00:00+08:00",
-    "coverage": 0.06451612903225806,
+    "collectedAt": "2026-07-19T22:00:00+08:00",
+    "coverage": 0.0967741935483871,
     "status": "partial",
-    "sourceSnapshot": null
+    "sourceSnapshot": null,
+    "version": "netease-week-record-score-v1"
   },
   "scoringVersions": {
-    "netease": "netease-streaming-v1",
+    "netease": "netease-relative-score-v1",
     "physical": "external-ledger-v1",
     "bilibili": "external-ledger-v1",
     "combined": "combined-v1"
@@ -53,13 +54,13 @@
         }
       },
       "points": {
-        "netease": 322.0,
-        "physical": 268.8125,
+        "netease": 520.346133877053,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 590.8125
+        "total": 982.7997147906021
       },
       "record": {
         "peak": 1,
@@ -95,13 +96,13 @@
         }
       },
       "points": {
-        "netease": 420.0,
+        "netease": 721.4004111978109,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 420.0
+        "total": 721.4004111978109
       },
       "record": {
         "peak": 2,
@@ -110,11 +111,11 @@
       }
     },
     {
-      "entityId": "netease-song-2062925628",
+      "entityId": "netease-song-1922623565",
       "entity": {
-        "title": "Party O'Clock",
+        "title": "O.O",
         "subtitle": "NMIXX",
-        "detail": "A Midsummer NMIXX's Dream",
+        "detail": "AD MARE",
         "artists": [
           {
             "id": "netease-artist-51480970",
@@ -122,11 +123,11 @@
           }
         ],
         "album": {
-          "id": "netease-album-169354350",
-          "title": "A Midsummer NMIXX's Dream"
+          "id": "netease-album-140792047",
+          "title": "AD MARE"
         },
-        "coverUrl": "http://p2.music.126.net/_D78HhIawnP39LnGe2BN0g==/109951168730733118.jpg",
-        "coverColor": "#b78547"
+        "coverUrl": "http://p2.music.126.net/rGsOEq1ezPY6owqXfHcEhA==/109951167080802728.jpg",
+        "coverColor": "#87c8c3"
       },
       "rank": {
         "current": 3,
@@ -137,13 +138,13 @@
         }
       },
       "points": {
-        "netease": 414.0,
+        "netease": 718.4013961609609,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 414.0
+        "total": 718.4013961609609
       },
       "record": {
         "peak": 3,
@@ -179,13 +180,13 @@
         }
       },
       "points": {
-        "netease": 410.0,
+        "netease": 712.4351881848362,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 410.0
+        "total": 712.4351881848362
       },
       "record": {
         "peak": 4,
@@ -194,11 +195,11 @@
       }
     },
     {
-      "entityId": "netease-song-1922623565",
+      "entityId": "netease-song-2062925628",
       "entity": {
-        "title": "O.O",
+        "title": "Party O'Clock",
         "subtitle": "NMIXX",
-        "detail": "AD MARE",
+        "detail": "A Midsummer NMIXX's Dream",
         "artists": [
           {
             "id": "netease-artist-51480970",
@@ -206,11 +207,11 @@
           }
         ],
         "album": {
-          "id": "netease-album-140792047",
-          "title": "AD MARE"
+          "id": "netease-album-169354350",
+          "title": "A Midsummer NMIXX's Dream"
         },
-        "coverUrl": "http://p2.music.126.net/rGsOEq1ezPY6owqXfHcEhA==/109951167080802728.jpg",
-        "coverColor": "#87c8c3"
+        "coverUrl": "http://p2.music.126.net/_D78HhIawnP39LnGe2BN0g==/109951168730733118.jpg",
+        "coverColor": "#b78547"
       },
       "rank": {
         "current": 5,
@@ -221,13 +222,13 @@
         }
       },
       "points": {
-        "netease": 404.0,
+        "netease": 712.4351881848362,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 404.0
+        "total": 712.4351881848362
       },
       "record": {
         "peak": 5,
@@ -263,13 +264,13 @@
         }
       },
       "points": {
-        "netease": 400.0,
+        "netease": 690.0146071143998,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 400.0
+        "total": 690.0146071143998
       },
       "record": {
         "peak": 6,
@@ -305,13 +306,13 @@
         }
       },
       "points": {
-        "netease": 394.0,
+        "netease": 685.4914296542516,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 394.0
+        "total": 685.4914296542516
       },
       "record": {
         "peak": 7,
@@ -347,13 +348,13 @@
         }
       },
       "points": {
-        "netease": 390.0,
+        "netease": 678.0940696152416,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 390.0
+        "total": 678.0940696152416
       },
       "record": {
         "peak": 8,
@@ -389,13 +390,13 @@
         }
       },
       "points": {
-        "netease": 384.0,
+        "netease": 673.688306601234,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 384.0
+        "total": 673.688306601234
       },
       "record": {
         "peak": 9,
@@ -404,23 +405,23 @@
       }
     },
     {
-      "entityId": "netease-song-1382781417",
+      "entityId": "netease-song-2684172287",
       "entity": {
-        "title": "Paper Rings",
-        "subtitle": "Taylor Swift",
-        "detail": "Lover",
+        "title": "KNOW ABOUT ME",
+        "subtitle": "NMIXX",
+        "detail": "Fe3O4: FORWARD",
         "artists": [
           {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
+            "id": "netease-artist-51480970",
+            "name": "NMIXX"
           }
         ],
         "album": {
-          "id": "netease-album-80752440",
-          "title": "Lover"
+          "id": "netease-album-263973886",
+          "title": "Fe3O4: FORWARD"
         },
-        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
-        "coverColor": "#a5cc30"
+        "coverUrl": "http://p2.music.126.net/Y7mI4NpwoCxQiVnSOJN1zA==/109951170607144555.jpg",
+        "coverColor": "#809212"
       },
       "rank": {
         "current": 10,
@@ -431,13 +432,13 @@
         }
       },
       "points": {
-        "netease": 115.0,
-        "physical": 268.8125,
+        "netease": 656.0204904811595,
+        "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 383.8125
+        "total": 656.0204904811595
       },
       "record": {
         "peak": 10,
@@ -473,13 +474,13 @@
         }
       },
       "points": {
-        "netease": 112.0,
-        "physical": 268.8125,
+        "netease": 187.35670198541231,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 380.8125
+        "total": 649.8102828989614
       },
       "record": {
         "peak": 11,
@@ -488,51 +489,9 @@
       }
     },
     {
-      "entityId": "netease-song-2684172287",
+      "entityId": "netease-song-1382781417",
       "entity": {
-        "title": "KNOW ABOUT ME",
-        "subtitle": "NMIXX",
-        "detail": "Fe3O4: FORWARD",
-        "artists": [
-          {
-            "id": "netease-artist-51480970",
-            "name": "NMIXX"
-          }
-        ],
-        "album": {
-          "id": "netease-album-263973886",
-          "title": "Fe3O4: FORWARD"
-        },
-        "coverUrl": "http://p2.music.126.net/Y7mI4NpwoCxQiVnSOJN1zA==/109951170607144555.jpg",
-        "coverColor": "#809212"
-      },
-      "rank": {
-        "current": 12,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 378.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 378.0
-      },
-      "record": {
-        "peak": 12,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1382778514",
-      "entity": {
-        "title": "Lover",
+        "title": "Paper Rings",
         "subtitle": "Taylor Swift",
         "detail": "Lover",
         "artists": [
@@ -549,6 +508,48 @@
         "coverColor": "#a5cc30"
       },
       "rank": {
+        "current": 12,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 187.35670198541231,
+        "physical": 462.4535809135491,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 649.8102828989614
+      },
+      "record": {
+        "peak": 12,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2617971650",
+      "entity": {
+        "title": "별별별 (See that?)",
+        "subtitle": "NMIXX",
+        "detail": "Fe3O4: STICK OUT",
+        "artists": [
+          {
+            "id": "netease-artist-51480970",
+            "name": "NMIXX"
+          }
+        ],
+        "album": {
+          "id": "netease-album-245245946",
+          "title": "Fe3O4: STICK OUT"
+        },
+        "coverUrl": "http://p2.music.126.net/yzTGqdBHa-IiJyUFHNu-wQ==/109951169885477298.jpg",
+        "coverColor": "#0937cf"
+      },
+      "rank": {
         "current": 13,
         "previous": null,
         "movement": {
@@ -557,13 +558,13 @@
         }
       },
       "points": {
-        "netease": 108.0,
-        "physical": 268.8125,
+        "netease": 642.8189244091732,
+        "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 376.8125
+        "total": 642.8189244091732
       },
       "record": {
         "peak": 13,
@@ -599,13 +600,13 @@
         }
       },
       "points": {
-        "netease": 374.0,
+        "netease": 642.8189244091732,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 374.0
+        "total": 642.8189244091732
       },
       "record": {
         "peak": 14,
@@ -641,58 +642,16 @@
         }
       },
       "points": {
-        "netease": 368.0,
+        "netease": 635.5872335071234,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 368.0
+        "total": 635.5872335071234
       },
       "record": {
         "peak": 15,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2617971650",
-      "entity": {
-        "title": "별별별 (See that?)",
-        "subtitle": "NMIXX",
-        "detail": "Fe3O4: STICK OUT",
-        "artists": [
-          {
-            "id": "netease-artist-51480970",
-            "name": "NMIXX"
-          }
-        ],
-        "album": {
-          "id": "netease-album-245245946",
-          "title": "Fe3O4: STICK OUT"
-        },
-        "coverUrl": "http://p2.music.126.net/yzTGqdBHa-IiJyUFHNu-wQ==/109951169885477298.jpg",
-        "coverColor": "#0937cf"
-      },
-      "rank": {
-        "current": 16,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 364.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 364.0
-      },
-      "record": {
-        "peak": 16,
         "periods": 1,
         "championships": 0
       }
@@ -717,7 +676,7 @@
         "coverColor": "#18db5b"
       },
       "rank": {
-        "current": 17,
+        "current": 16,
         "previous": null,
         "movement": {
           "type": "new",
@@ -725,16 +684,16 @@
         }
       },
       "points": {
-        "netease": 356.0,
+        "netease": 623.9996055737654,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 356.0
+        "total": 623.9996055737654
       },
       "record": {
-        "peak": 17,
+        "peak": 16,
         "periods": 1,
         "championships": 0
       }
@@ -759,6 +718,48 @@
         "coverColor": "#809212"
       },
       "rank": {
+        "current": 17,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 621.0516879807428,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 621.0516879807428
+      },
+      "record": {
+        "peak": 17,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1382778514",
+      "entity": {
+        "title": "Lover",
+        "subtitle": "Taylor Swift",
+        "detail": "Lover",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-80752440",
+          "title": "Lover"
+        },
+        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+        "coverColor": "#a5cc30"
+      },
+      "rank": {
         "current": 18,
         "previous": null,
         "movement": {
@@ -767,13 +768,13 @@
         }
       },
       "points": {
-        "netease": 356.0,
-        "physical": 0.0,
+        "netease": 145.58061319332774,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 356.0
+        "total": 608.0341941068768
       },
       "record": {
         "peak": 18,
@@ -809,13 +810,13 @@
         }
       },
       "points": {
-        "netease": 348.0,
+        "netease": 601.259167344684,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 348.0
+        "total": 601.259167344684
       },
       "record": {
         "peak": 19,
@@ -851,13 +852,13 @@
         }
       },
       "points": {
-        "netease": 344.0,
+        "netease": 571.3911476041299,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 344.0
+        "total": 571.3911476041299
       },
       "record": {
         "peak": 20,
@@ -893,13 +894,13 @@
         }
       },
       "points": {
-        "netease": 335.0,
+        "netease": 557.7171859749233,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 335.0
+        "total": 557.7171859749233
       },
       "record": {
         "peak": 21,
@@ -939,13 +940,13 @@
         }
       },
       "points": {
-        "netease": 330.0,
+        "netease": 555.576682512274,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 330.0
+        "total": 555.576682512274
       },
       "record": {
         "peak": 22,
@@ -981,13 +982,13 @@
         }
       },
       "points": {
-        "netease": 324.0,
+        "netease": 539.2374858055332,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 324.0
+        "total": 539.2374858055332
       },
       "record": {
         "peak": 23,
@@ -1023,16 +1024,58 @@
         }
       },
       "points": {
-        "netease": 322.0,
+        "netease": 501.86643370766296,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 322.0
+        "total": 501.86643370766296
       },
       "record": {
         "peak": 24,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1803546393",
+      "entity": {
+        "title": "champagne problems",
+        "subtitle": "Taylor Swift",
+        "detail": "evermore (deluxe version)",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-120321112",
+          "title": "evermore (deluxe version)"
+        },
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverColor": "#02c639"
+      },
+      "rank": {
+        "current": 25,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 496.9244894483069,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 496.9244894483069
+      },
+      "record": {
+        "peak": 25,
         "periods": 1,
         "championships": 0
       }
@@ -1061,48 +1104,6 @@
         "coverColor": "#f11f0d"
       },
       "rank": {
-        "current": 25,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 312.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 312.0
-      },
-      "record": {
-        "peak": 25,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-3381402998",
-      "entity": {
-        "title": "Motto",
-        "subtitle": "ITZY",
-        "detail": "Motto",
-        "artists": [
-          {
-            "id": "netease-artist-31155319",
-            "name": "ITZY"
-          }
-        ],
-        "album": {
-          "id": "netease-album-376089266",
-          "title": "Motto"
-        },
-        "coverUrl": "http://p2.music.126.net/65E7xvc7oEIb9AhwI2_lCg==/109951173213643105.jpg",
-        "coverColor": "#55783c"
-      },
-      "rank": {
         "current": 26,
         "previous": null,
         "movement": {
@@ -1111,13 +1112,13 @@
         }
       },
       "points": {
-        "netease": 308.0,
+        "netease": 477.8970748299137,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 308.0
+        "total": 477.8970748299137
       },
       "record": {
         "peak": 26,
@@ -1126,11 +1127,11 @@
       }
     },
     {
-      "entityId": "netease-song-2147408180",
+      "entityId": "netease-song-1382572453",
       "entity": {
-        "title": "Robin",
+        "title": "I Forgot That You Existed",
         "subtitle": "Taylor Swift",
-        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "detail": "Lover",
         "artists": [
           {
             "id": "netease-artist-44266",
@@ -1138,11 +1139,11 @@
           }
         ],
         "album": {
-          "id": "netease-album-192833347",
-          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
+          "id": "netease-album-80752440",
+          "title": "Lover"
         },
-        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
-        "coverColor": "#6d3887"
+        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+        "coverColor": "#a5cc30"
       },
       "rank": {
         "current": 27,
@@ -1153,13 +1154,13 @@
         }
       },
       "points": {
-        "netease": 295.0,
-        "physical": 0.0,
+        "netease": 0.0,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 295.0
+        "total": 462.4535809135491
       },
       "record": {
         "peak": 27,
@@ -1168,11 +1169,11 @@
       }
     },
     {
-      "entityId": "netease-song-1803546393",
+      "entityId": "netease-song-1382778829",
       "entity": {
-        "title": "champagne problems",
+        "title": "The Archer",
         "subtitle": "Taylor Swift",
-        "detail": "evermore (deluxe version)",
+        "detail": "Lover",
         "artists": [
           {
             "id": "netease-artist-44266",
@@ -1180,11 +1181,11 @@
           }
         ],
         "album": {
-          "id": "netease-album-120321112",
-          "title": "evermore (deluxe version)"
+          "id": "netease-album-80752440",
+          "title": "Lover"
         },
-        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
-        "coverColor": "#02c639"
+        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+        "coverColor": "#a5cc30"
       },
       "rank": {
         "current": 28,
@@ -1195,13 +1196,13 @@
         }
       },
       "points": {
-        "netease": 293.0,
-        "physical": 0.0,
+        "netease": 0.0,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 293.0
+        "total": 462.4535809135491
       },
       "record": {
         "peak": 28,
@@ -1210,23 +1211,23 @@
       }
     },
     {
-      "entityId": "netease-song-2638637134",
+      "entityId": "netease-song-1382778878",
       "entity": {
-        "title": "Whiplash",
-        "subtitle": "aespa",
-        "detail": "Whiplash - The 5th Mini Album",
+        "title": "Cornelia Street",
+        "subtitle": "Taylor Swift",
+        "detail": "Lover",
         "artists": [
           {
-            "id": "netease-artist-37351063",
-            "name": "aespa"
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
           }
         ],
         "album": {
-          "id": "netease-album-251406892",
-          "title": "Whiplash - The 5th Mini Album"
+          "id": "netease-album-80752440",
+          "title": "Lover"
         },
-        "coverUrl": "http://p2.music.126.net/uhvcwENl9zn5DapXOZXJfw==/109951170168306177.jpg",
-        "coverColor": "#4c0b23"
+        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+        "coverColor": "#a5cc30"
       },
       "rank": {
         "current": 29,
@@ -1237,13 +1238,13 @@
         }
       },
       "points": {
-        "netease": 292.0,
-        "physical": 0.0,
+        "netease": 0.0,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 292.0
+        "total": 462.4535809135491
       },
       "record": {
         "peak": 29,
@@ -1252,11 +1253,11 @@
       }
     },
     {
-      "entityId": "netease-song-2147407563",
+      "entityId": "netease-song-1382781100",
       "entity": {
-        "title": "Chloe or Sam or Sophia or Marcus",
+        "title": "The Man",
         "subtitle": "Taylor Swift",
-        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "detail": "Lover",
         "artists": [
           {
             "id": "netease-artist-44266",
@@ -1264,11 +1265,11 @@
           }
         ],
         "album": {
-          "id": "netease-album-192833347",
-          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
+          "id": "netease-album-80752440",
+          "title": "Lover"
         },
-        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
-        "coverColor": "#6d3887"
+        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+        "coverColor": "#a5cc30"
       },
       "rank": {
         "current": 30,
@@ -1279,13 +1280,13 @@
         }
       },
       "points": {
-        "netease": 288.0,
-        "physical": 0.0,
+        "netease": 0.0,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 288.0
+        "total": 462.4535809135491
       },
       "record": {
         "peak": 30,
@@ -1294,23 +1295,23 @@
       }
     },
     {
-      "entityId": "netease-song-2918954",
+      "entityId": "netease-song-1382781397",
       "entity": {
-        "title": "TiK ToK",
-        "subtitle": "Kesha",
-        "detail": "Animal (Expanded Edition)",
+        "title": "I Think He Knows",
+        "subtitle": "Taylor Swift",
+        "detail": "Lover",
         "artists": [
           {
-            "id": "netease-artist-63901",
-            "name": "Kesha"
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
           }
         ],
         "album": {
-          "id": "netease-album-294761",
-          "title": "Animal (Expanded Edition)"
+          "id": "netease-album-80752440",
+          "title": "Lover"
         },
-        "coverUrl": "http://p2.music.126.net/RHv1VNQqb5Q7Y_ephBLqxA==/109951172325402148.jpg",
-        "coverColor": "#5f0f31"
+        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+        "coverColor": "#a5cc30"
       },
       "rank": {
         "current": 31,
@@ -1321,13 +1322,13 @@
         }
       },
       "points": {
-        "netease": 287.0,
-        "physical": 0.0,
+        "netease": 0.0,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 287.0
+        "total": 462.4535809135491
       },
       "record": {
         "peak": 31,
@@ -1336,23 +1337,23 @@
       }
     },
     {
-      "entityId": "netease-song-2117571880",
+      "entityId": "netease-song-1382781399",
       "entity": {
-        "title": "Run For Roses",
-        "subtitle": "NMIXX",
-        "detail": "Fe3O4: BREAK",
+        "title": "Miss Americana & The Heartbreak Prince",
+        "subtitle": "Taylor Swift",
+        "detail": "Lover",
         "artists": [
           {
-            "id": "netease-artist-51480970",
-            "name": "NMIXX"
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
           }
         ],
         "album": {
-          "id": "netease-album-183236625",
-          "title": "Fe3O4: BREAK"
+          "id": "netease-album-80752440",
+          "title": "Lover"
         },
-        "coverUrl": "http://p2.music.126.net/5tJzpo0e9DoNKSp5d-3Oqg==/109951169261472921.jpg",
-        "coverColor": "#26253a"
+        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+        "coverColor": "#a5cc30"
       },
       "rank": {
         "current": 32,
@@ -1363,13 +1364,13 @@
         }
       },
       "points": {
-        "netease": 284.0,
-        "physical": 0.0,
+        "netease": 0.0,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 284.0
+        "total": 462.4535809135491
       },
       "record": {
         "peak": 32,
@@ -1378,11 +1379,11 @@
       }
     },
     {
-      "entityId": "netease-song-516818336",
+      "entityId": "netease-song-1382781434",
       "entity": {
-        "title": "Delicate",
+        "title": "Death By A Thousand Cuts",
         "subtitle": "Taylor Swift",
-        "detail": "reputation",
+        "detail": "Lover",
         "artists": [
           {
             "id": "netease-artist-44266",
@@ -1390,11 +1391,11 @@
           }
         ],
         "album": {
-          "id": "netease-album-36709029",
-          "title": "reputation"
+          "id": "netease-album-80752440",
+          "title": "Lover"
         },
-        "coverUrl": "http://p2.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
-        "coverColor": "#643566"
+        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+        "coverColor": "#a5cc30"
       },
       "rank": {
         "current": 33,
@@ -1405,13 +1406,13 @@
         }
       },
       "points": {
-        "netease": 272.0,
-        "physical": 0.0,
+        "netease": 0.0,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 272.0
+        "total": 462.4535809135491
       },
       "record": {
         "peak": 33,
@@ -1420,9 +1421,9 @@
       }
     },
     {
-      "entityId": "netease-song-1382572453",
+      "entityId": "netease-song-1382781444",
       "entity": {
-        "title": "I Forgot That You Existed",
+        "title": "London Boy",
         "subtitle": "Taylor Swift",
         "detail": "Lover",
         "artists": [
@@ -1448,309 +1449,15 @@
       },
       "points": {
         "netease": 0.0,
-        "physical": 268.8125,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.8125
+        "total": 462.4535809135491
       },
       "record": {
         "peak": 34,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1382778829",
-      "entity": {
-        "title": "The Archer",
-        "subtitle": "Taylor Swift",
-        "detail": "Lover",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-80752440",
-          "title": "Lover"
-        },
-        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
-        "coverColor": "#a5cc30"
-      },
-      "rank": {
-        "current": 35,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 0.0,
-        "physical": 268.8125,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 268.8125
-      },
-      "record": {
-        "peak": 35,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1382778878",
-      "entity": {
-        "title": "Cornelia Street",
-        "subtitle": "Taylor Swift",
-        "detail": "Lover",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-80752440",
-          "title": "Lover"
-        },
-        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
-        "coverColor": "#a5cc30"
-      },
-      "rank": {
-        "current": 36,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 0.0,
-        "physical": 268.8125,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 268.8125
-      },
-      "record": {
-        "peak": 36,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1382781100",
-      "entity": {
-        "title": "The Man",
-        "subtitle": "Taylor Swift",
-        "detail": "Lover",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-80752440",
-          "title": "Lover"
-        },
-        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
-        "coverColor": "#a5cc30"
-      },
-      "rank": {
-        "current": 37,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 0.0,
-        "physical": 268.8125,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 268.8125
-      },
-      "record": {
-        "peak": 37,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1382781397",
-      "entity": {
-        "title": "I Think He Knows",
-        "subtitle": "Taylor Swift",
-        "detail": "Lover",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-80752440",
-          "title": "Lover"
-        },
-        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
-        "coverColor": "#a5cc30"
-      },
-      "rank": {
-        "current": 38,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 0.0,
-        "physical": 268.8125,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 268.8125
-      },
-      "record": {
-        "peak": 38,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1382781399",
-      "entity": {
-        "title": "Miss Americana & The Heartbreak Prince",
-        "subtitle": "Taylor Swift",
-        "detail": "Lover",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-80752440",
-          "title": "Lover"
-        },
-        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
-        "coverColor": "#a5cc30"
-      },
-      "rank": {
-        "current": 39,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 0.0,
-        "physical": 268.8125,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 268.8125
-      },
-      "record": {
-        "peak": 39,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1382781434",
-      "entity": {
-        "title": "Death By A Thousand Cuts",
-        "subtitle": "Taylor Swift",
-        "detail": "Lover",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-80752440",
-          "title": "Lover"
-        },
-        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
-        "coverColor": "#a5cc30"
-      },
-      "rank": {
-        "current": 40,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 0.0,
-        "physical": 268.8125,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 268.8125
-      },
-      "record": {
-        "peak": 40,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1382781444",
-      "entity": {
-        "title": "London Boy",
-        "subtitle": "Taylor Swift",
-        "detail": "Lover",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-80752440",
-          "title": "Lover"
-        },
-        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
-        "coverColor": "#a5cc30"
-      },
-      "rank": {
-        "current": 41,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 0.0,
-        "physical": 268.8125,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 268.8125
-      },
-      "record": {
-        "peak": 41,
         "periods": 1,
         "championships": 0
       }
@@ -1779,7 +1486,7 @@
         "coverColor": "#a5cc30"
       },
       "rank": {
-        "current": 42,
+        "current": 35,
         "previous": null,
         "movement": {
           "type": "new",
@@ -1788,15 +1495,15 @@
       },
       "points": {
         "netease": 0.0,
-        "physical": 268.8125,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.8125
+        "total": 462.4535809135491
       },
       "record": {
-        "peak": 42,
+        "peak": 35,
         "periods": 1,
         "championships": 0
       }
@@ -1821,7 +1528,7 @@
         "coverColor": "#a5cc30"
       },
       "rank": {
-        "current": 43,
+        "current": 36,
         "previous": null,
         "movement": {
           "type": "new",
@@ -1830,15 +1537,15 @@
       },
       "points": {
         "netease": 0.0,
-        "physical": 268.8125,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.8125
+        "total": 462.4535809135491
       },
       "record": {
-        "peak": 43,
+        "peak": 36,
         "periods": 1,
         "championships": 0
       }
@@ -1863,7 +1570,7 @@
         "coverColor": "#a5cc30"
       },
       "rank": {
-        "current": 44,
+        "current": 37,
         "previous": null,
         "movement": {
           "type": "new",
@@ -1872,15 +1579,15 @@
       },
       "points": {
         "netease": 0.0,
-        "physical": 268.8125,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.8125
+        "total": 462.4535809135491
       },
       "record": {
-        "peak": 44,
+        "peak": 37,
         "periods": 1,
         "championships": 0
       }
@@ -1909,7 +1616,7 @@
         "coverColor": "#a5cc30"
       },
       "rank": {
-        "current": 45,
+        "current": 38,
         "previous": null,
         "movement": {
           "type": "new",
@@ -1918,15 +1625,15 @@
       },
       "points": {
         "netease": 0.0,
-        "physical": 268.8125,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.8125
+        "total": 462.4535809135491
       },
       "record": {
-        "peak": 45,
+        "peak": 38,
         "periods": 1,
         "championships": 0
       }
@@ -1951,7 +1658,7 @@
         "coverColor": "#a5cc30"
       },
       "rank": {
-        "current": 46,
+        "current": 39,
         "previous": null,
         "movement": {
           "type": "new",
@@ -1960,15 +1667,15 @@
       },
       "points": {
         "netease": 0.0,
-        "physical": 268.8125,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.8125
+        "total": 462.4535809135491
       },
       "record": {
-        "peak": 46,
+        "peak": 39,
         "periods": 1,
         "championships": 0
       }
@@ -1993,7 +1700,7 @@
         "coverColor": "#a5cc30"
       },
       "rank": {
-        "current": 47,
+        "current": 40,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2002,15 +1709,15 @@
       },
       "points": {
         "netease": 0.0,
-        "physical": 268.8125,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.8125
+        "total": 462.4535809135491
       },
       "record": {
-        "peak": 47,
+        "peak": 40,
         "periods": 1,
         "championships": 0
       }
@@ -2035,7 +1742,7 @@
         "coverColor": "#a5cc30"
       },
       "rank": {
-        "current": 48,
+        "current": 41,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2044,15 +1751,15 @@
       },
       "points": {
         "netease": 0.0,
-        "physical": 268.8125,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.8125
+        "total": 462.4535809135491
       },
       "record": {
-        "peak": 48,
+        "peak": 41,
         "periods": 1,
         "championships": 0
       }
@@ -2077,7 +1784,7 @@
         "coverColor": "#a5cc30"
       },
       "rank": {
-        "current": 49,
+        "current": 42,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2086,40 +1793,40 @@
       },
       "points": {
         "netease": 0.0,
-        "physical": 268.8125,
+        "physical": 462.4535809135491,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.8125
+        "total": 462.4535809135491
       },
       "record": {
-        "peak": 49,
+        "peak": 42,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-5065581",
+      "entityId": "netease-song-2117571880",
       "entity": {
-        "title": "Starships",
-        "subtitle": "Nicki Minaj",
-        "detail": "NRJ Summer Hits Only 2012",
+        "title": "Run For Roses",
+        "subtitle": "NMIXX",
+        "detail": "Fe3O4: BREAK",
         "artists": [
           {
-            "id": "netease-artist-70183",
-            "name": "Nicki Minaj"
+            "id": "netease-artist-51480970",
+            "name": "NMIXX"
           }
         ],
         "album": {
-          "id": "netease-album-502453",
-          "title": "NRJ Summer Hits Only 2012"
+          "id": "netease-album-183236625",
+          "title": "Fe3O4: BREAK"
         },
-        "coverUrl": "http://p2.music.126.net/o2BhJAlz3moqp5a0eFlVAw==/2469503116002357.jpg",
-        "coverColor": "#88679b"
+        "coverUrl": "http://p2.music.126.net/5tJzpo0e9DoNKSp5d-3Oqg==/109951169261472921.jpg",
+        "coverColor": "#26253a"
       },
       "rank": {
-        "current": 50,
+        "current": 43,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2127,16 +1834,142 @@
         }
       },
       "points": {
-        "netease": 268.0,
+        "netease": 433.0721320807644,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 268.0
+        "total": 433.0721320807644
       },
       "record": {
-        "peak": 50,
+        "peak": 43,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2147407563",
+      "entity": {
+        "title": "Chloe or Sam or Sophia or Marcus",
+        "subtitle": "Taylor Swift",
+        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-192833347",
+          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
+        },
+        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverColor": "#6d3887"
+      },
+      "rank": {
+        "current": 44,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 433.0721320807644,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 433.0721320807644
+      },
+      "record": {
+        "peak": 44,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2147408180",
+      "entity": {
+        "title": "Robin",
+        "subtitle": "Taylor Swift",
+        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-192833347",
+          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
+        },
+        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverColor": "#6d3887"
+      },
+      "rank": {
+        "current": 45,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 433.0721320807644,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 433.0721320807644
+      },
+      "record": {
+        "peak": 45,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-3381402998",
+      "entity": {
+        "title": "Motto",
+        "subtitle": "ITZY",
+        "detail": "Motto",
+        "artists": [
+          {
+            "id": "netease-artist-31155319",
+            "name": "ITZY"
+          }
+        ],
+        "album": {
+          "id": "netease-album-376089266",
+          "title": "Motto"
+        },
+        "coverUrl": "http://p2.music.126.net/65E7xvc7oEIb9AhwI2_lCg==/109951173213643105.jpg",
+        "coverColor": "#55783c"
+      },
+      "rank": {
+        "current": 46,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 433.0721320807644,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 433.0721320807644
+      },
+      "record": {
+        "peak": 46,
         "periods": 1,
         "championships": 0
       }
@@ -2165,6 +1998,174 @@
         "coverColor": "#6d3887"
       },
       "rank": {
+        "current": 47,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 386.08644973722846,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 386.08644973722846
+      },
+      "record": {
+        "peak": 47,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2638637134",
+      "entity": {
+        "title": "Whiplash",
+        "subtitle": "aespa",
+        "detail": "Whiplash - The 5th Mini Album",
+        "artists": [
+          {
+            "id": "netease-artist-37351063",
+            "name": "aespa"
+          }
+        ],
+        "album": {
+          "id": "netease-album-251406892",
+          "title": "Whiplash - The 5th Mini Album"
+        },
+        "coverUrl": "http://p2.music.126.net/uhvcwENl9zn5DapXOZXJfw==/109951170168306177.jpg",
+        "coverColor": "#4c0b23"
+      },
+      "rank": {
+        "current": 48,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 374.5166763217653,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 374.5166763217653
+      },
+      "record": {
+        "peak": 48,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1803546869",
+      "entity": {
+        "title": "willow",
+        "subtitle": "Taylor Swift",
+        "detail": "evermore (deluxe version)",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-120321112",
+          "title": "evermore (deluxe version)"
+        },
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverColor": "#02c639"
+      },
+      "rank": {
+        "current": 49,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 350.5473174440161,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 350.5473174440161
+      },
+      "record": {
+        "peak": 49,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2918954",
+      "entity": {
+        "title": "TiK ToK",
+        "subtitle": "Kesha",
+        "detail": "Animal (Expanded Edition)",
+        "artists": [
+          {
+            "id": "netease-artist-63901",
+            "name": "Kesha"
+          }
+        ],
+        "album": {
+          "id": "netease-album-294761",
+          "title": "Animal (Expanded Edition)"
+        },
+        "coverUrl": "http://p2.music.126.net/RHv1VNQqb5Q7Y_ephBLqxA==/109951172325402148.jpg",
+        "coverColor": "#5f0f31"
+      },
+      "rank": {
+        "current": 50,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 350.5473174440161,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 350.5473174440161
+      },
+      "record": {
+        "peak": 50,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1490999365",
+      "entity": {
+        "title": "34+35",
+        "subtitle": "Ariana Grande",
+        "detail": "Positions (Deluxe)",
+        "artists": [
+          {
+            "id": "netease-artist-48161",
+            "name": "Ariana Grande"
+          }
+        ],
+        "album": {
+          "id": "netease-album-97470760",
+          "title": "Positions (Deluxe)"
+        },
+        "coverUrl": "http://p2.music.126.net/G4HIWXvyzneVNjZPxwt00Q==/109951165741355057.jpg",
+        "coverColor": "#f9740f"
+      },
+      "rank": {
         "current": 51,
         "previous": null,
         "movement": {
@@ -2173,13 +2174,13 @@
         }
       },
       "points": {
-        "netease": 264.0,
+        "netease": 344.87307647297564,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 264.0
+        "total": 344.87307647297564
       },
       "record": {
         "peak": 51,
@@ -2188,23 +2189,23 @@
       }
     },
     {
-      "entityId": "netease-song-2754561326",
+      "entityId": "netease-song-1990192728",
       "entity": {
-        "title": "Blue Valentine",
-        "subtitle": "NMIXX",
-        "detail": "Blue Valentine",
+        "title": "Sweet Nothing",
+        "subtitle": "Taylor Swift",
+        "detail": "Midnights (3am Edition)",
         "artists": [
           {
-            "id": "netease-artist-51480970",
-            "name": "NMIXX"
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
           }
         ],
         "album": {
-          "id": "netease-album-288114758",
-          "title": "Blue Valentine"
+          "id": "netease-album-153345099",
+          "title": "Midnights (3am Edition)"
         },
-        "coverUrl": "http://p2.music.126.net/wRDGhwhhzJuUkWMrjrPwKw==/109951172137146717.jpg",
-        "coverColor": "#ffcda8"
+        "coverUrl": "http://p2.music.126.net/lKhXKmONQahzGsRdhoDR7w==/109951168178695711.jpg",
+        "coverColor": "#f81979"
       },
       "rank": {
         "current": 52,
@@ -2215,58 +2216,16 @@
         }
       },
       "points": {
-        "netease": 257.0,
+        "netease": 344.87307647297564,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 257.0
+        "total": 344.87307647297564
       },
       "record": {
         "peak": 52,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2754561323",
-      "entity": {
-        "title": "RICO",
-        "subtitle": "NMIXX",
-        "detail": "Blue Valentine",
-        "artists": [
-          {
-            "id": "netease-artist-51480970",
-            "name": "NMIXX"
-          }
-        ],
-        "album": {
-          "id": "netease-album-288114758",
-          "title": "Blue Valentine"
-        },
-        "coverUrl": "http://p2.music.126.net/wRDGhwhhzJuUkWMrjrPwKw==/109951172137146717.jpg",
-        "coverColor": "#ffcda8"
-      },
-      "rank": {
-        "current": 53,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 252.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 252.0
-      },
-      "record": {
-        "peak": 53,
         "periods": 1,
         "championships": 0
       }
@@ -2291,6 +2250,48 @@
         "coverColor": "#6d3887"
       },
       "rank": {
+        "current": 53,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 344.87307647297564,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 344.87307647297564
+      },
+      "record": {
+        "peak": 53,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-516818336",
+      "entity": {
+        "title": "Delicate",
+        "subtitle": "Taylor Swift",
+        "detail": "reputation",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-36709029",
+          "title": "reputation"
+        },
+        "coverUrl": "http://p2.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
+        "coverColor": "#643566"
+      },
+      "rank": {
         "current": 54,
         "previous": null,
         "movement": {
@@ -2299,13 +2300,13 @@
         }
       },
       "points": {
-        "netease": 243.0,
+        "netease": 344.87307647297564,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 243.0
+        "total": 344.87307647297564
       },
       "record": {
         "peak": 54,
@@ -2341,13 +2342,13 @@
         }
       },
       "points": {
-        "netease": 240.0,
+        "netease": 344.7750083647329,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 240.0
+        "total": 344.7750083647329
       },
       "record": {
         "peak": 55,
@@ -2356,15 +2357,19 @@
       }
     },
     {
-      "entityId": "netease-song-1803546869",
+      "entityId": "netease-song-1803546400",
       "entity": {
-        "title": "willow",
-        "subtitle": "Taylor Swift",
+        "title": "evermore (feat. Bon Iver)",
+        "subtitle": "Taylor Swift / Bon Iver",
         "detail": "evermore (deluxe version)",
         "artists": [
           {
             "id": "netease-artist-44266",
             "name": "Taylor Swift"
+          },
+          {
+            "id": "netease-artist-29337",
+            "name": "Bon Iver"
           }
         ],
         "album": {
@@ -2383,13 +2388,13 @@
         }
       },
       "points": {
-        "netease": 235.0,
+        "netease": 303.5616351004801,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 235.0
+        "total": 303.5616351004801
       },
       "record": {
         "peak": 56,
@@ -2398,11 +2403,11 @@
       }
     },
     {
-      "entityId": "netease-song-2147407565",
+      "entityId": "netease-song-19292809",
       "entity": {
-        "title": "Peter",
+        "title": "Holy Ground",
         "subtitle": "Taylor Swift",
-        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "detail": "Red",
         "artists": [
           {
             "id": "netease-artist-44266",
@@ -2410,11 +2415,11 @@
           }
         ],
         "album": {
-          "id": "netease-album-192833347",
-          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
+          "id": "netease-album-1770428",
+          "title": "Red"
         },
-        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
-        "coverColor": "#6d3887"
+        "coverUrl": "http://p2.music.126.net/WS5zt4tq5KBONXcAktO2lA==/109951169270236134.jpg",
+        "coverColor": "#91d023"
       },
       "rank": {
         "current": 57,
@@ -2425,58 +2430,16 @@
         }
       },
       "points": {
-        "netease": 230.0,
+        "netease": 303.5616351004801,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 230.0
+        "total": 303.5616351004801
       },
       "record": {
         "peak": 57,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2147407557",
-      "entity": {
-        "title": "I Can Fix Him (No Really I Can)",
-        "subtitle": "Taylor Swift",
-        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-192833347",
-          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
-        },
-        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
-        "coverColor": "#6d3887"
-      },
-      "rank": {
-        "current": 58,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 226.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 226.0
-      },
-      "record": {
-        "peak": 58,
         "periods": 1,
         "championships": 0
       }
@@ -2501,6 +2464,48 @@
         "coverColor": "#26253a"
       },
       "rank": {
+        "current": 58,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 303.5616351004801,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 303.5616351004801
+      },
+      "record": {
+        "peak": 58,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2147407557",
+      "entity": {
+        "title": "I Can Fix Him (No Really I Can)",
+        "subtitle": "Taylor Swift",
+        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-192833347",
+          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
+        },
+        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverColor": "#6d3887"
+      },
+      "rank": {
         "current": 59,
         "previous": null,
         "movement": {
@@ -2509,13 +2514,13 @@
         }
       },
       "points": {
-        "netease": 221.0,
+        "netease": 303.5616351004801,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 221.0
+        "total": 303.5616351004801
       },
       "record": {
         "peak": 59,
@@ -2524,23 +2529,23 @@
       }
     },
     {
-      "entityId": "netease-song-409931224",
+      "entityId": "netease-song-2147407565",
       "entity": {
-        "title": "Just Like Fire (From the Original Motion Picture \"Alice Through The Looking Glass\")",
-        "subtitle": "P!nk",
-        "detail": "Just Like Fire (From the Original Motion Picture \"Alice Through The Looking Glass\")",
+        "title": "Peter",
+        "subtitle": "Taylor Swift",
+        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
         "artists": [
           {
-            "id": "netease-artist-70821",
-            "name": "P!nk"
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
           }
         ],
         "album": {
-          "id": "netease-album-34611412",
-          "title": "Just Like Fire (From the Original Motion Picture \"Alice Through The Looking Glass\")"
+          "id": "netease-album-192833347",
+          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
         },
-        "coverUrl": "http://p2.music.126.net/W0KCB3zjKbXykM1-Va5NcQ==/109951166001800740.jpg",
-        "coverColor": "#3d5205"
+        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverColor": "#6d3887"
       },
       "rank": {
         "current": 60,
@@ -2551,16 +2556,100 @@
         }
       },
       "points": {
-        "netease": 218.0,
+        "netease": 303.5616351004801,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 218.0
+        "total": 303.5616351004801
       },
       "record": {
         "peak": 60,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2754561323",
+      "entity": {
+        "title": "RICO",
+        "subtitle": "NMIXX",
+        "detail": "Blue Valentine",
+        "artists": [
+          {
+            "id": "netease-artist-51480970",
+            "name": "NMIXX"
+          }
+        ],
+        "album": {
+          "id": "netease-album-288114758",
+          "title": "Blue Valentine"
+        },
+        "coverUrl": "http://p2.music.126.net/wRDGhwhhzJuUkWMrjrPwKw==/109951172137146717.jpg",
+        "coverColor": "#ffcda8"
+      },
+      "rank": {
+        "current": 61,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 303.5616351004801,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 303.5616351004801
+      },
+      "record": {
+        "peak": 61,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2754561326",
+      "entity": {
+        "title": "Blue Valentine",
+        "subtitle": "NMIXX",
+        "detail": "Blue Valentine",
+        "artists": [
+          {
+            "id": "netease-artist-51480970",
+            "name": "NMIXX"
+          }
+        ],
+        "album": {
+          "id": "netease-album-288114758",
+          "title": "Blue Valentine"
+        },
+        "coverUrl": "http://p2.music.126.net/wRDGhwhhzJuUkWMrjrPwKw==/109951172137146717.jpg",
+        "coverColor": "#ffcda8"
+      },
+      "rank": {
+        "current": 62,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 303.5616351004801,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 303.5616351004801
+      },
+      "record": {
+        "peak": 62,
         "periods": 1,
         "championships": 0
       }
@@ -2585,7 +2674,7 @@
         "coverColor": "#aff686"
       },
       "rank": {
-        "current": 61,
+        "current": 63,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2593,16 +2682,58 @@
         }
       },
       "points": {
-        "netease": 217.0,
+        "netease": 289.4335575174882,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 217.0
+        "total": 289.4335575174882
       },
       "record": {
-        "peak": 61,
+        "peak": 63,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2147408166",
+      "entity": {
+        "title": "Down Bad",
+        "subtitle": "Taylor Swift",
+        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-192833347",
+          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
+        },
+        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverColor": "#6d3887"
+      },
+      "rank": {
+        "current": 64,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 281.2783610097513,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 281.2783610097513
+      },
+      "record": {
+        "peak": 64,
         "periods": 1,
         "championships": 0
       }
@@ -2627,7 +2758,7 @@
         "coverColor": "#cd7fd8"
       },
       "rank": {
-        "current": 62,
+        "current": 65,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2635,26 +2766,68 @@
         }
       },
       "points": {
-        "netease": 214.0,
+        "netease": 248.47046191194016,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 214.0
+        "total": 248.47046191194016
       },
       "record": {
-        "peak": 62,
+        "peak": 65,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-1990192728",
+      "entityId": "netease-song-5065581",
       "entity": {
-        "title": "Sweet Nothing",
+        "title": "Starships",
+        "subtitle": "Nicki Minaj",
+        "detail": "NRJ Summer Hits Only 2012",
+        "artists": [
+          {
+            "id": "netease-artist-70183",
+            "name": "Nicki Minaj"
+          }
+        ],
+        "album": {
+          "id": "netease-album-502453",
+          "title": "NRJ Summer Hits Only 2012"
+        },
+        "coverUrl": "http://p2.music.126.net/o2BhJAlz3moqp5a0eFlVAw==/2469503116002357.jpg",
+        "coverColor": "#88679b"
+      },
+      "rank": {
+        "current": 66,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 248.47046191194016,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 248.47046191194016
+      },
+      "record": {
+        "peak": 66,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1803546872",
+      "entity": {
+        "title": "happiness",
         "subtitle": "Taylor Swift",
-        "detail": "Midnights (3am Edition)",
+        "detail": "evermore (deluxe version)",
         "artists": [
           {
             "id": "netease-artist-44266",
@@ -2662,14 +2835,14 @@
           }
         ],
         "album": {
-          "id": "netease-album-153345099",
-          "title": "Midnights (3am Edition)"
+          "id": "netease-album-120321112",
+          "title": "evermore (deluxe version)"
         },
-        "coverUrl": "http://p2.music.126.net/lKhXKmONQahzGsRdhoDR7w==/109951168178695711.jpg",
-        "coverColor": "#f81979"
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverColor": "#02c639"
       },
       "rank": {
-        "current": 63,
+        "current": 67,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2677,16 +2850,352 @@
         }
       },
       "points": {
-        "netease": 208.0,
+        "netease": 245.16188277312824,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 208.0
+        "total": 245.16188277312824
       },
       "record": {
-        "peak": 63,
+        "peak": 67,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2147407567",
+      "entity": {
+        "title": "The Manuscript",
+        "subtitle": "Taylor Swift",
+        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-192833347",
+          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
+        },
+        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverColor": "#6d3887"
+      },
+      "rank": {
+        "current": 68,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 239.96691963725576,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 239.96691963725576
+      },
+      "record": {
+        "peak": 68,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2147408168",
+      "entity": {
+        "title": "But Daddy I Love Him",
+        "subtitle": "Taylor Swift",
+        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-192833347",
+          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
+        },
+        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverColor": "#6d3887"
+      },
+      "rank": {
+        "current": 69,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 239.96691963725576,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 239.96691963725576
+      },
+      "record": {
+        "peak": 69,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1803546870",
+      "entity": {
+        "title": "tolerate it",
+        "subtitle": "Taylor Swift",
+        "detail": "evermore (deluxe version)",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-120321112",
+          "title": "evermore (deluxe version)"
+        },
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverColor": "#02c639"
+      },
+      "rank": {
+        "current": 70,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 203.85044140063275,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 203.85044140063275
+      },
+      "record": {
+        "peak": 70,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1964237328",
+      "entity": {
+        "title": "emails i can’t send",
+        "subtitle": "Sabrina Carpenter",
+        "detail": "emails i can't send",
+        "artists": [
+          {
+            "id": "netease-artist-77993",
+            "name": "Sabrina Carpenter"
+          }
+        ],
+        "album": {
+          "id": "netease-album-148164055",
+          "title": "emails i can't send"
+        },
+        "coverUrl": "http://p2.music.126.net/UXzplkXmm-e-hX2cGqZx1w==/109951171960924275.jpg",
+        "coverColor": "#f20d57"
+      },
+      "rank": {
+        "current": 71,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 203.85044140063275,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 203.85044140063275
+      },
+      "record": {
+        "peak": 71,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1465114515",
+      "entity": {
+        "title": "illicit affairs",
+        "subtitle": "Taylor Swift",
+        "detail": "folklore (deluxe version)",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-92895788",
+          "title": "folklore (deluxe version)"
+        },
+        "coverUrl": "http://p2.music.126.net/b_6ZbpOz55g8oB4KR34aFw==/109951168971655174.jpg",
+        "coverColor": "#9779c5"
+      },
+      "rank": {
+        "current": 72,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 187.35670198541231,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 187.35670198541231
+      },
+      "record": {
+        "peak": 72,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1803546398",
+      "entity": {
+        "title": "marjorie",
+        "subtitle": "Taylor Swift",
+        "detail": "evermore (deluxe version)",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-120321112",
+          "title": "evermore (deluxe version)"
+        },
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverColor": "#02c639"
+      },
+      "rank": {
+        "current": 73,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 187.35670198541231,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 187.35670198541231
+      },
+      "record": {
+        "peak": 73,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2029845384",
+      "entity": {
+        "title": "Young, Dumb, Stupid",
+        "subtitle": "NMIXX",
+        "detail": "Young, Dumb, Stupid",
+        "artists": [
+          {
+            "id": "netease-artist-51480970",
+            "name": "NMIXX"
+          }
+        ],
+        "album": {
+          "id": "netease-album-161720187",
+          "title": "Young, Dumb, Stupid"
+        },
+        "coverUrl": "http://p2.music.126.net/XGwhkM0apLEgF9jDeQmXuQ==/109951168466105648.jpg",
+        "coverColor": "#ce318f"
+      },
+      "rank": {
+        "current": 74,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 187.35670198541231,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 187.35670198541231
+      },
+      "record": {
+        "peak": 74,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2059790586",
+      "entity": {
+        "title": "I Can See You (Taylor’s Version) (From The Vault)",
+        "subtitle": "Taylor Swift",
+        "detail": "Speak Now (Taylor's Version)",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-168588248",
+          "title": "Speak Now (Taylor's Version)"
+        },
+        "coverUrl": "http://p2.music.126.net/3MQls4eG_yJR_HaYXPMWlA==/109951168728387752.jpg",
+        "coverColor": "#3ebea4"
+      },
+      "rank": {
+        "current": 75,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 187.35670198541231,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 187.35670198541231
+      },
+      "record": {
+        "peak": 75,
         "periods": 1,
         "championships": 0
       }
@@ -2719,7 +3228,7 @@
         "coverColor": "#d245e6"
       },
       "rank": {
-        "current": 64,
+        "current": 76,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2727,26 +3236,110 @@
         }
       },
       "points": {
-        "netease": 204.0,
+        "netease": 187.35670198541231,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 204.0
+        "total": 187.35670198541231
       },
       "record": {
-        "peak": 64,
+        "peak": 76,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-19292809",
+      "entityId": "netease-song-409931224",
       "entity": {
-        "title": "Holy Ground",
+        "title": "Just Like Fire (From the Original Motion Picture \"Alice Through The Looking Glass\")",
+        "subtitle": "P!nk",
+        "detail": "Just Like Fire (From the Original Motion Picture \"Alice Through The Looking Glass\")",
+        "artists": [
+          {
+            "id": "netease-artist-70821",
+            "name": "P!nk"
+          }
+        ],
+        "album": {
+          "id": "netease-album-34611412",
+          "title": "Just Like Fire (From the Original Motion Picture \"Alice Through The Looking Glass\")"
+        },
+        "coverUrl": "http://p2.music.126.net/W0KCB3zjKbXykM1-Va5NcQ==/109951166001800740.jpg",
+        "coverColor": "#3d5205"
+      },
+      "rank": {
+        "current": 77,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 187.35670198541231,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 187.35670198541231
+      },
+      "record": {
+        "peak": 77,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-3407733421",
+      "entity": {
+        "title": "Look at My Life",
+        "subtitle": "Gracie Abrams",
+        "detail": "Daughter from Hell",
+        "artists": [
+          {
+            "id": "netease-artist-33515545",
+            "name": "Gracie Abrams"
+          }
+        ],
+        "album": {
+          "id": "netease-album-387518120",
+          "title": "Daughter from Hell"
+        },
+        "coverUrl": "http://p2.music.126.net/3SWH7LWxG0t1spDgRAv5Dw==/109951173575620790.jpg",
+        "coverColor": "#474c74"
+      },
+      "rank": {
+        "current": 78,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 181.76141114917192,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 181.76141114917192
+      },
+      "record": {
+        "peak": 78,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1990192689",
+      "entity": {
+        "title": "Lavender Haze",
         "subtitle": "Taylor Swift",
-        "detail": "Red",
+        "detail": "Midnights (3am Edition)",
         "artists": [
           {
             "id": "netease-artist-44266",
@@ -2754,14 +3347,14 @@
           }
         ],
         "album": {
-          "id": "netease-album-1770428",
-          "title": "Red"
+          "id": "netease-album-153345099",
+          "title": "Midnights (3am Edition)"
         },
-        "coverUrl": "http://p2.music.126.net/WS5zt4tq5KBONXcAktO2lA==/109951169270236134.jpg",
-        "coverColor": "#91d023"
+        "coverUrl": "http://p2.music.126.net/lKhXKmONQahzGsRdhoDR7w==/109951168178695711.jpg",
+        "coverColor": "#f81979"
       },
       "rank": {
-        "current": 65,
+        "current": 79,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2769,16 +3362,16 @@
         }
       },
       "points": {
-        "netease": 200.0,
+        "netease": 178.85315971072788,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 200.0
+        "total": 178.85315971072788
       },
       "record": {
-        "peak": 65,
+        "peak": 79,
         "periods": 1,
         "championships": 0
       }
@@ -2807,7 +3400,7 @@
         "coverColor": "#0e202d"
       },
       "rank": {
-        "current": 66,
+        "current": 80,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2815,45 +3408,125 @@
         }
       },
       "points": {
-        "netease": 193.0,
+        "netease": 145.58061319332774,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 193.0
+        "total": 145.58061319332774
       },
       "record": {
-        "peak": 66,
+        "peak": 80,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-1803546400",
+      "entityId": "netease-song-2116996",
       "entity": {
-        "title": "evermore (feat. Bon Iver)",
-        "subtitle": "Taylor Swift / Bon Iver",
-        "detail": "evermore (deluxe version)",
+        "title": "Rolling in the Deep",
+        "subtitle": "Adele",
+        "detail": "21",
+        "artists": [
+          {
+            "id": "netease-artist-46487",
+            "name": "Adele"
+          }
+        ],
+        "album": {
+          "id": "netease-album-213252",
+          "title": "21"
+        },
+        "coverUrl": "http://p2.music.126.net/-aAWuK0-91lgZmDGx7V_kA==/109951172658442765.jpg",
+        "coverColor": "#9c1a6f"
+      },
+      "rank": {
+        "current": 81,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 123.76198652218793,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 123.76198652218793
+      },
+      "record": {
+        "peak": 81,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2117573753",
+      "entity": {
+        "title": "BOOM",
+        "subtitle": "NMIXX",
+        "detail": "Fe3O4: BREAK",
+        "artists": [
+          {
+            "id": "netease-artist-51480970",
+            "name": "NMIXX"
+          }
+        ],
+        "album": {
+          "id": "netease-album-183236625",
+          "title": "Fe3O4: BREAK"
+        },
+        "coverUrl": "http://p2.music.126.net/5tJzpo0e9DoNKSp5d-3Oqg==/109951169261472921.jpg",
+        "coverColor": "#26253a"
+      },
+      "rank": {
+        "current": 82,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 123.76198652218793,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 123.76198652218793
+      },
+      "record": {
+        "peak": 82,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-2147407560",
+      "entity": {
+        "title": "Clara Bow",
+        "subtitle": "Taylor Swift",
+        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
         "artists": [
           {
             "id": "netease-artist-44266",
             "name": "Taylor Swift"
-          },
-          {
-            "id": "netease-artist-29337",
-            "name": "Bon Iver"
           }
         ],
         "album": {
-          "id": "netease-album-120321112",
-          "title": "evermore (deluxe version)"
+          "id": "netease-album-192833347",
+          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
         },
-        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
-        "coverColor": "#02c639"
+        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverColor": "#6d3887"
       },
       "rank": {
-        "current": 67,
+        "current": 83,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2861,41 +3534,41 @@
         }
       },
       "points": {
-        "netease": 190.0,
+        "netease": 123.76198652218793,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 190.0
+        "total": 123.76198652218793
       },
       "record": {
-        "peak": 67,
+        "peak": 83,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-1490999365",
+      "entityId": "netease-song-2147408171",
       "entity": {
-        "title": "34+35",
-        "subtitle": "Ariana Grande",
-        "detail": "Positions (Deluxe)",
+        "title": "loml",
+        "subtitle": "Taylor Swift",
+        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
         "artists": [
           {
-            "id": "netease-artist-48161",
-            "name": "Ariana Grande"
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
           }
         ],
         "album": {
-          "id": "netease-album-97470760",
-          "title": "Positions (Deluxe)"
+          "id": "netease-album-192833347",
+          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
         },
-        "coverUrl": "http://p2.music.126.net/G4HIWXvyzneVNjZPxwt00Q==/109951165741355057.jpg",
-        "coverColor": "#f9740f"
+        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverColor": "#6d3887"
       },
       "rank": {
-        "current": 68,
+        "current": 84,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2903,16 +3576,100 @@
         }
       },
       "points": {
-        "netease": 184.0,
+        "netease": 123.76198652218793,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 184.0
+        "total": 123.76198652218793
       },
       "record": {
-        "peak": 68,
+        "peak": 84,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-29561033",
+      "entity": {
+        "title": "Shake It Off",
+        "subtitle": "Taylor Swift",
+        "detail": "1989 (Deluxe)",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-3029801",
+          "title": "1989 (Deluxe)"
+        },
+        "coverUrl": "http://p2.music.126.net/3KDqQ9XW2Khj5Ia4tRqAAw==/18771962022688349.jpg",
+        "coverColor": "#730c49"
+      },
+      "rank": {
+        "current": 85,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 123.76198652218793,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 123.76198652218793
+      },
+      "record": {
+        "peak": 85,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-32785516",
+      "entity": {
+        "title": "Run Away With Me",
+        "subtitle": "Carly Rae Jepsen",
+        "detail": "E•MO•TION (Deluxe)",
+        "artists": [
+          {
+            "id": "netease-artist-50934",
+            "name": "Carly Rae Jepsen"
+          }
+        ],
+        "album": {
+          "id": "netease-album-3159689",
+          "title": "E•MO•TION (Deluxe)"
+        },
+        "coverUrl": "http://p2.music.126.net/xitMjHqUd_WqLWkNdyOYQw==/109951171850460419.jpg",
+        "coverColor": "#2f600d"
+      },
+      "rank": {
+        "current": 86,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 123.76198652218793,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 123.76198652218793
+      },
+      "record": {
+        "peak": 86,
         "periods": 1,
         "championships": 0
       }
@@ -2941,7 +3698,7 @@
         "coverColor": "#958b08"
       },
       "rank": {
-        "current": 69,
+        "current": 87,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2949,194 +3706,26 @@
         }
       },
       "points": {
-        "netease": 170.0,
+        "netease": 123.76198652218793,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 170.0
+        "total": 123.76198652218793
       },
       "record": {
-        "peak": 69,
+        "peak": 87,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-2059790586",
+      "entityId": "netease-song-3407732674",
       "entity": {
-        "title": "I Can See You (Taylor’s Version) (From The Vault)",
-        "subtitle": "Taylor Swift",
-        "detail": "Speak Now (Taylor's Version)",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-168588248",
-          "title": "Speak Now (Taylor's Version)"
-        },
-        "coverUrl": "http://p2.music.126.net/3MQls4eG_yJR_HaYXPMWlA==/109951168728387752.jpg",
-        "coverColor": "#3ebea4"
-      },
-      "rank": {
-        "current": 70,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 165.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 165.0
-      },
-      "record": {
-        "peak": 70,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2029845384",
-      "entity": {
-        "title": "Young, Dumb, Stupid",
-        "subtitle": "NMIXX",
-        "detail": "Young, Dumb, Stupid",
-        "artists": [
-          {
-            "id": "netease-artist-51480970",
-            "name": "NMIXX"
-          }
-        ],
-        "album": {
-          "id": "netease-album-161720187",
-          "title": "Young, Dumb, Stupid"
-        },
-        "coverUrl": "http://p2.music.126.net/XGwhkM0apLEgF9jDeQmXuQ==/109951168466105648.jpg",
-        "coverColor": "#ce318f"
-      },
-      "rank": {
-        "current": 71,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 160.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 160.0
-      },
-      "record": {
-        "peak": 71,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-36841430",
-      "entity": {
-        "title": "Hello",
-        "subtitle": "Adele",
-        "detail": "25",
-        "artists": [
-          {
-            "id": "netease-artist-46487",
-            "name": "Adele"
-          }
-        ],
-        "album": {
-          "id": "netease-album-3377045",
-          "title": "25"
-        },
-        "coverUrl": "http://p2.music.126.net/GBjkPuYOKYFaXtEjA6ULqA==/109951168110232012.jpg",
-        "coverColor": "#7806a4"
-      },
-      "rank": {
-        "current": 72,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 158.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 158.0
-      },
-      "record": {
-        "peak": 72,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2147408168",
-      "entity": {
-        "title": "But Daddy I Love Him",
-        "subtitle": "Taylor Swift",
-        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-192833347",
-          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
-        },
-        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
-        "coverColor": "#6d3887"
-      },
-      "rank": {
-        "current": 73,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 155.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 155.0
-      },
-      "record": {
-        "peak": 73,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-3398199151",
-      "entity": {
-        "title": "Look at My Life",
+        "title": "Good Reason",
         "subtitle": "Gracie Abrams",
-        "detail": "Look at My Life",
+        "detail": "Daughter from Hell",
         "artists": [
           {
             "id": "netease-artist-33515545",
@@ -3144,14 +3733,14 @@
           }
         ],
         "album": {
-          "id": "netease-album-383745195",
-          "title": "Look at My Life"
+          "id": "netease-album-387518120",
+          "title": "Daughter from Hell"
         },
-        "coverUrl": "http://p2.music.126.net/OQczUIXdW-o57D86fJ40HQ==/109951173458639082.jpg",
-        "coverColor": "#38c92c"
+        "coverUrl": "http://p2.music.126.net/3SWH7LWxG0t1spDgRAv5Dw==/109951173575620790.jpg",
+        "coverColor": "#474c74"
       },
       "rank": {
-        "current": 74,
+        "current": 88,
         "previous": null,
         "movement": {
           "type": "new",
@@ -3159,41 +3748,41 @@
         }
       },
       "points": {
-        "netease": 152.0,
+        "netease": 96.86726198062453,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 152.0
+        "total": 96.86726198062453
       },
       "record": {
-        "peak": 74,
+        "peak": 88,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-2147408166",
+      "entityId": "netease-song-3407732676",
       "entity": {
-        "title": "Down Bad",
-        "subtitle": "Taylor Swift",
-        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+        "title": "Mews",
+        "subtitle": "Gracie Abrams",
+        "detail": "Daughter from Hell",
         "artists": [
           {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
+            "id": "netease-artist-33515545",
+            "name": "Gracie Abrams"
           }
         ],
         "album": {
-          "id": "netease-album-192833347",
-          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
+          "id": "netease-album-387518120",
+          "title": "Daughter from Hell"
         },
-        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
-        "coverColor": "#6d3887"
+        "coverUrl": "http://p2.music.126.net/3SWH7LWxG0t1spDgRAv5Dw==/109951173575620790.jpg",
+        "coverColor": "#474c74"
       },
       "rank": {
-        "current": 75,
+        "current": 89,
         "previous": null,
         "movement": {
           "type": "new",
@@ -3201,192 +3790,24 @@
         }
       },
       "points": {
-        "netease": 150.0,
+        "netease": 96.86726198062453,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 150.0
+        "total": 96.86726198062453
       },
       "record": {
-        "peak": 75,
+        "peak": 89,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-32785516",
+      "entityId": "netease-song-1803546394",
       "entity": {
-        "title": "Run Away With Me",
-        "subtitle": "Carly Rae Jepsen",
-        "detail": "E•MO•TION (Deluxe)",
-        "artists": [
-          {
-            "id": "netease-artist-50934",
-            "name": "Carly Rae Jepsen"
-          }
-        ],
-        "album": {
-          "id": "netease-album-3159689",
-          "title": "E•MO•TION (Deluxe)"
-        },
-        "coverUrl": "http://p2.music.126.net/xitMjHqUd_WqLWkNdyOYQw==/109951171850460419.jpg",
-        "coverColor": "#2f600d"
-      },
-      "rank": {
-        "current": 76,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 148.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 148.0
-      },
-      "record": {
-        "peak": 76,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2147407567",
-      "entity": {
-        "title": "The Manuscript",
-        "subtitle": "Taylor Swift",
-        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-192833347",
-          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
-        },
-        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
-        "coverColor": "#6d3887"
-      },
-      "rank": {
-        "current": 77,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 147.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 147.0
-      },
-      "record": {
-        "peak": 77,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-29572501",
-      "entity": {
-        "title": "Blank Space",
-        "subtitle": "Taylor Swift",
-        "detail": "1989 (Deluxe)",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-3029801",
-          "title": "1989 (Deluxe)"
-        },
-        "coverUrl": "http://p2.music.126.net/3KDqQ9XW2Khj5Ia4tRqAAw==/18771962022688349.jpg",
-        "coverColor": "#730c49"
-      },
-      "rank": {
-        "current": 78,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 143.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 143.0
-      },
-      "record": {
-        "peak": 78,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-29561033",
-      "entity": {
-        "title": "Shake It Off",
-        "subtitle": "Taylor Swift",
-        "detail": "1989 (Deluxe)",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-3029801",
-          "title": "1989 (Deluxe)"
-        },
-        "coverUrl": "http://p2.music.126.net/3KDqQ9XW2Khj5Ia4tRqAAw==/18771962022688349.jpg",
-        "coverColor": "#730c49"
-      },
-      "rank": {
-        "current": 79,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 139.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 139.0
-      },
-      "record": {
-        "peak": 79,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1803546398",
-      "entity": {
-        "title": "marjorie",
+        "title": "gold rush",
         "subtitle": "Taylor Swift",
         "detail": "evermore (deluxe version)",
         "artists": [
@@ -3403,7 +3824,7 @@
         "coverColor": "#02c639"
       },
       "rank": {
-        "current": 80,
+        "current": 90,
         "previous": null,
         "movement": {
           "type": "new",
@@ -3411,41 +3832,45 @@
         }
       },
       "points": {
-        "netease": 130.0,
+        "netease": 87.64550828556493,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 130.0
+        "total": 87.64550828556493
       },
       "record": {
-        "peak": 80,
+        "peak": 90,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-2740959473",
+      "entityId": "netease-song-1803546396",
       "entity": {
-        "title": "Never Getting Laid",
-        "subtitle": "Sabrina Carpenter",
-        "detail": "Man’s Best Friend",
+        "title": "coney island (feat. The National)",
+        "subtitle": "Taylor Swift / The National",
+        "detail": "evermore (deluxe version)",
         "artists": [
           {
-            "id": "netease-artist-77993",
-            "name": "Sabrina Carpenter"
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          },
+          {
+            "id": "netease-artist-102057",
+            "name": "The National"
           }
         ],
         "album": {
-          "id": "netease-album-283239096",
-          "title": "Man’s Best Friend"
+          "id": "netease-album-120321112",
+          "title": "evermore (deluxe version)"
         },
-        "coverUrl": "http://p2.music.126.net/YeH7390tcj6VgHd1hz6PRA==/109951171960893246.jpg",
-        "coverColor": "#4c32b3"
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverColor": "#02c639"
       },
       "rank": {
-        "current": 81,
+        "current": 91,
         "previous": null,
         "movement": {
           "type": "new",
@@ -3453,26 +3878,26 @@
         }
       },
       "points": {
-        "netease": 125.0,
+        "netease": 87.64550828556493,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 125.0
+        "total": 87.64550828556493
       },
       "record": {
-        "peak": 81,
+        "peak": 91,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-1465114515",
+      "entityId": "netease-song-1803546873",
       "entity": {
-        "title": "illicit affairs",
+        "title": "dorothea",
         "subtitle": "Taylor Swift",
-        "detail": "folklore (deluxe version)",
+        "detail": "evermore (deluxe version)",
         "artists": [
           {
             "id": "netease-artist-44266",
@@ -3480,14 +3905,14 @@
           }
         ],
         "album": {
-          "id": "netease-album-92895788",
-          "title": "folklore (deluxe version)"
+          "id": "netease-album-120321112",
+          "title": "evermore (deluxe version)"
         },
-        "coverUrl": "http://p2.music.126.net/b_6ZbpOz55g8oB4KR34aFw==/109951168971655174.jpg",
-        "coverColor": "#9779c5"
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverColor": "#02c639"
       },
       "rank": {
-        "current": 82,
+        "current": 92,
         "previous": null,
         "movement": {
           "type": "new",
@@ -3495,110 +3920,26 @@
         }
       },
       "points": {
-        "netease": 121.0,
+        "netease": 87.64550828556493,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 121.0
+        "total": 87.64550828556493
       },
       "record": {
-        "peak": 82,
+        "peak": 92,
         "periods": 1,
         "championships": 0
       }
     },
     {
-      "entityId": "netease-song-2619745344",
+      "entityId": "netease-song-1803546874",
       "entity": {
-        "title": "Espresso",
-        "subtitle": "Sabrina Carpenter",
-        "detail": "Short n' Sweet",
-        "artists": [
-          {
-            "id": "netease-artist-77993",
-            "name": "Sabrina Carpenter"
-          }
-        ],
-        "album": {
-          "id": "netease-album-245712680",
-          "title": "Short n' Sweet"
-        },
-        "coverUrl": "http://p2.music.126.net/ZqMhqy-8rC1yWRuskrs0SQ==/109951171960903511.jpg",
-        "coverColor": "#7b7d98"
-      },
-      "rank": {
-        "current": 83,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 116.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 116.0
-      },
-      "record": {
-        "peak": 83,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1964237328",
-      "entity": {
-        "title": "emails i can’t send",
-        "subtitle": "Sabrina Carpenter",
-        "detail": "emails i can't send",
-        "artists": [
-          {
-            "id": "netease-artist-77993",
-            "name": "Sabrina Carpenter"
-          }
-        ],
-        "album": {
-          "id": "netease-album-148164055",
-          "title": "emails i can't send"
-        },
-        "coverUrl": "http://p2.music.126.net/UXzplkXmm-e-hX2cGqZx1w==/109951171960924275.jpg",
-        "coverColor": "#f20d57"
-      },
-      "rank": {
-        "current": 84,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 105.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 105.0
-      },
-      "record": {
-        "peak": 84,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-516818337",
-      "entity": {
-        "title": "Getaway Car",
+        "title": "ivy",
         "subtitle": "Taylor Swift",
-        "detail": "reputation",
+        "detail": "evermore (deluxe version)",
         "artists": [
           {
             "id": "netease-artist-44266",
@@ -3606,14 +3947,14 @@
           }
         ],
         "album": {
-          "id": "netease-album-36709029",
-          "title": "reputation"
+          "id": "netease-album-120321112",
+          "title": "evermore (deluxe version)"
         },
-        "coverUrl": "http://p2.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
-        "coverColor": "#643566"
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverColor": "#02c639"
       },
       "rank": {
-        "current": 85,
+        "current": 93,
         "previous": null,
         "movement": {
           "type": "new",
@@ -3621,16 +3962,268 @@
         }
       },
       "points": {
-        "netease": 105.0,
+        "netease": 87.64550828556493,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 105.0
+        "total": 87.64550828556493
       },
       "record": {
-        "peak": 85,
+        "peak": 93,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1803546875",
+      "entity": {
+        "title": "long story short",
+        "subtitle": "Taylor Swift",
+        "detail": "evermore (deluxe version)",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-120321112",
+          "title": "evermore (deluxe version)"
+        },
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverColor": "#02c639"
+      },
+      "rank": {
+        "current": 94,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 87.64550828556493,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 87.64550828556493
+      },
+      "record": {
+        "peak": 94,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1810009762",
+      "entity": {
+        "title": "right where you left me (bonus track)",
+        "subtitle": "Taylor Swift",
+        "detail": "evermore (deluxe version)",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-120321112",
+          "title": "evermore (deluxe version)"
+        },
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverColor": "#02c639"
+      },
+      "rank": {
+        "current": 95,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 87.64550828556493,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 87.64550828556493
+      },
+      "record": {
+        "peak": 95,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1846473650",
+      "entity": {
+        "title": "drivers license",
+        "subtitle": "Olivia Rodrigo",
+        "detail": "SOUR",
+        "artists": [
+          {
+            "id": "netease-artist-12132544",
+            "name": "Olivia Rodrigo"
+          }
+        ],
+        "album": {
+          "id": "netease-album-127725764",
+          "title": "SOUR"
+        },
+        "coverUrl": "http://p2.music.126.net/KqTFZpr-ze931_sDfLBk3Q==/109951169026653354.jpg",
+        "coverColor": "#0503c3"
+      },
+      "rank": {
+        "current": 96,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 87.64550828556493,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 87.64550828556493
+      },
+      "record": {
+        "peak": 96,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1891454354",
+      "entity": {
+        "title": "Come Back...Be Here (Taylor's Version)",
+        "subtitle": "Taylor Swift",
+        "detail": "Red (Taylor's Version)",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-135521226",
+          "title": "Red (Taylor's Version)"
+        },
+        "coverUrl": "http://p2.music.126.net/DYGaOqXCdIUjT2Wj7lvsqQ==/109951168852611462.jpg",
+        "coverColor": "#0e58da"
+      },
+      "rank": {
+        "current": 97,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 87.64550828556493,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 87.64550828556493
+      },
+      "record": {
+        "peak": 97,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-1894277828",
+      "entity": {
+        "title": "The Bottom",
+        "subtitle": "Gracie Abrams",
+        "detail": "This Is What It Feels Like",
+        "artists": [
+          {
+            "id": "netease-artist-33515545",
+            "name": "Gracie Abrams"
+          }
+        ],
+        "album": {
+          "id": "netease-album-136035356",
+          "title": "This Is What It Feels Like"
+        },
+        "coverUrl": "http://p2.music.126.net/szWssF6qkNFa8c4Z9eO1rg==/109951166611753454.jpg",
+        "coverColor": "#03373b"
+      },
+      "rank": {
+        "current": 98,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 87.64550828556493,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 87.64550828556493
+      },
+      "record": {
+        "peak": 98,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-song-19292803",
+      "entity": {
+        "title": "All Too Well",
+        "subtitle": "Taylor Swift",
+        "detail": "Red",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "album": {
+          "id": "netease-album-1770428",
+          "title": "Red"
+        },
+        "coverUrl": "http://p2.music.126.net/WS5zt4tq5KBONXcAktO2lA==/109951169270236134.jpg",
+        "coverColor": "#91d023"
+      },
+      "rank": {
+        "current": 99,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 87.64550828556493,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 87.64550828556493
+      },
+      "record": {
+        "peak": 99,
         "periods": 1,
         "championships": 0
       }
@@ -3655,598 +4248,6 @@
         "coverColor": "#7c44ef"
       },
       "rank": {
-        "current": 86,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 103.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 103.0
-      },
-      "record": {
-        "peak": 86,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1803546872",
-      "entity": {
-        "title": "happiness",
-        "subtitle": "Taylor Swift",
-        "detail": "evermore (deluxe version)",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-120321112",
-          "title": "evermore (deluxe version)"
-        },
-        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
-        "coverColor": "#02c639"
-      },
-      "rank": {
-        "current": 87,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 101.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 101.0
-      },
-      "record": {
-        "peak": 87,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1803546870",
-      "entity": {
-        "title": "tolerate it",
-        "subtitle": "Taylor Swift",
-        "detail": "evermore (deluxe version)",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-120321112",
-          "title": "evermore (deluxe version)"
-        },
-        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
-        "coverColor": "#02c639"
-      },
-      "rank": {
-        "current": 88,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 99.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 99.0
-      },
-      "record": {
-        "peak": 88,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2147408171",
-      "entity": {
-        "title": "loml",
-        "subtitle": "Taylor Swift",
-        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-192833347",
-          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
-        },
-        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
-        "coverColor": "#6d3887"
-      },
-      "rank": {
-        "current": 89,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 98.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 98.0
-      },
-      "record": {
-        "peak": 89,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-445867332",
-      "entity": {
-        "title": "Another Day Of Sun (From \"La La Land\" Soundtrack)",
-        "subtitle": "La La Land Cast",
-        "detail": "La La Land (Original Motion Picture Soundtrack)",
-        "artists": [
-          {
-            "id": "netease-artist-28410395",
-            "name": "La La Land Cast"
-          }
-        ],
-        "album": {
-          "id": "netease-album-35046112",
-          "title": "La La Land (Original Motion Picture Soundtrack)"
-        },
-        "coverUrl": "http://p2.music.126.net/CrAb6Ryc5osJUM6zuoqxuw==/109951171012054073.jpg",
-        "coverColor": "#1f80eb"
-      },
-      "rank": {
-        "current": 90,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 96.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 96.0
-      },
-      "record": {
-        "peak": 90,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-442869270",
-      "entity": {
-        "title": "末路狂花",
-        "subtitle": "魏如萱",
-        "detail": "末路狂花",
-        "artists": [
-          {
-            "id": "netease-artist-9609",
-            "name": "魏如萱"
-          }
-        ],
-        "album": {
-          "id": "netease-album-35016103",
-          "title": "末路狂花"
-        },
-        "coverUrl": "http://p2.music.126.net/pUVA3A7XBN2WwGNXSPz4Og==/109951165958860830.jpg",
-        "coverColor": "#a0021b"
-      },
-      "rank": {
-        "current": 91,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 93.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 93.0
-      },
-      "record": {
-        "peak": 91,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2147407560",
-      "entity": {
-        "title": "Clara Bow",
-        "subtitle": "Taylor Swift",
-        "detail": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-192833347",
-          "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY"
-        },
-        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
-        "coverColor": "#6d3887"
-      },
-      "rank": {
-        "current": 92,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 92.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 92.0
-      },
-      "record": {
-        "peak": 92,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-436487069",
-      "entity": {
-        "title": "Just Another Day",
-        "subtitle": "Lady Gaga",
-        "detail": "Joanne (Deluxe)",
-        "artists": [
-          {
-            "id": "netease-artist-64147",
-            "name": "Lady Gaga"
-          }
-        ],
-        "album": {
-          "id": "netease-album-34887005",
-          "title": "Joanne (Deluxe)"
-        },
-        "coverUrl": "http://p2.music.126.net/uAfW09c_7PJ18bvwFspYQw==/109951166162939168.jpg",
-        "coverColor": "#8eab41"
-      },
-      "rank": {
-        "current": 93,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 91.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 91.0
-      },
-      "record": {
-        "peak": 93,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2117573753",
-      "entity": {
-        "title": "BOOM",
-        "subtitle": "NMIXX",
-        "detail": "Fe3O4: BREAK",
-        "artists": [
-          {
-            "id": "netease-artist-51480970",
-            "name": "NMIXX"
-          }
-        ],
-        "album": {
-          "id": "netease-album-183236625",
-          "title": "Fe3O4: BREAK"
-        },
-        "coverUrl": "http://p2.music.126.net/5tJzpo0e9DoNKSp5d-3Oqg==/109951169261472921.jpg",
-        "coverColor": "#26253a"
-      },
-      "rank": {
-        "current": 94,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 87.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 87.0
-      },
-      "record": {
-        "peak": 94,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2116996",
-      "entity": {
-        "title": "Rolling in the Deep",
-        "subtitle": "Adele",
-        "detail": "21",
-        "artists": [
-          {
-            "id": "netease-artist-46487",
-            "name": "Adele"
-          }
-        ],
-        "album": {
-          "id": "netease-album-213252",
-          "title": "21"
-        },
-        "coverUrl": "http://p2.music.126.net/-aAWuK0-91lgZmDGx7V_kA==/109951172658442765.jpg",
-        "coverColor": "#9c1a6f"
-      },
-      "rank": {
-        "current": 95,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 84.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 84.0
-      },
-      "record": {
-        "peak": 95,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-1990192689",
-      "entity": {
-        "title": "Lavender Haze",
-        "subtitle": "Taylor Swift",
-        "detail": "Midnights (3am Edition)",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "album": {
-          "id": "netease-album-153345099",
-          "title": "Midnights (3am Edition)"
-        },
-        "coverUrl": "http://p2.music.126.net/lKhXKmONQahzGsRdhoDR7w==/109951168178695711.jpg",
-        "coverColor": "#f81979"
-      },
-      "rank": {
-        "current": 96,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 72.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 72.0
-      },
-      "record": {
-        "peak": 96,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-344403",
-      "entity": {
-        "title": "凑热闹",
-        "subtitle": "By2",
-        "detail": "成人礼",
-        "artists": [
-          {
-            "id": "netease-artist-11097",
-            "name": "By2"
-          }
-        ],
-        "album": {
-          "id": "netease-album-33975",
-          "title": "成人礼"
-        },
-        "coverUrl": "http://p1.music.126.net/F4PaoO9YZTRv-WQqEXCryw==/109951169200438951.jpg",
-        "coverColor": "#0b0706"
-      },
-      "rank": {
-        "current": 97,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 69.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 69.0
-      },
-      "record": {
-        "peak": 97,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-32408653",
-      "entity": {
-        "title": "I Really Like You",
-        "subtitle": "Carly Rae Jepsen",
-        "detail": "E•MO•TION (Deluxe)",
-        "artists": [
-          {
-            "id": "netease-artist-50934",
-            "name": "Carly Rae Jepsen"
-          }
-        ],
-        "album": {
-          "id": "netease-album-3159689",
-          "title": "E•MO•TION (Deluxe)"
-        },
-        "coverUrl": "http://p2.music.126.net/xitMjHqUd_WqLWkNdyOYQw==/109951171850460419.jpg",
-        "coverColor": "#2f600d"
-      },
-      "rank": {
-        "current": 98,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 64.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 64.0
-      },
-      "record": {
-        "peak": 98,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-27927011",
-      "entity": {
-        "title": "Applause",
-        "subtitle": "Lady Gaga",
-        "detail": "ARTPOP",
-        "artists": [
-          {
-            "id": "netease-artist-64147",
-            "name": "Lady Gaga"
-          }
-        ],
-        "album": {
-          "id": "netease-album-2635085",
-          "title": "ARTPOP"
-        },
-        "coverUrl": "http://p1.music.126.net/E-A30drf7Yh57SEc4vxChA==/109951167148132297.jpg",
-        "coverColor": "#8fcef3"
-      },
-      "rank": {
-        "current": 99,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 58.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 58.0
-      },
-      "record": {
-        "peak": 99,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-song-2744403471",
-      "entity": {
-        "title": "The Life of a Showgirl",
-        "subtitle": "Taylor Swift / Sabrina Carpenter",
-        "detail": "The Life of a Showgirl",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          },
-          {
-            "id": "netease-artist-77993",
-            "name": "Sabrina Carpenter"
-          }
-        ],
-        "album": {
-          "id": "netease-album-284356964",
-          "title": "The Life of a Showgirl"
-        },
-        "coverUrl": "http://p1.music.126.net/kgSrl1121l_8KNc77j8Qkw==/109951172077792684.jpg",
-        "coverColor": "#8cb90f"
-      },
-      "rank": {
         "current": 100,
         "previous": null,
         "movement": {
@@ -4255,13 +4256,13 @@
         }
       },
       "points": {
-        "netease": 57.0,
+        "netease": 81.98589773010335,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 57.0
+        "total": 81.98589773010335
       },
       "record": {
         "peak": 100,

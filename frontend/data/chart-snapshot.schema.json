@@ -35,7 +35,8 @@
         "collectedAt": { "type": ["string", "null"], "format": "date-time" },
         "coverage": { "type": "number", "minimum": 0, "maximum": 1 },
         "status": { "enum": ["success", "partial", "missing", "failed"] },
-        "sourceSnapshot": { "type": ["string", "null"] }
+        "sourceSnapshot": { "type": ["string", "null"] },
+        "version": { "type": ["string", "null"] }
       },
       "additionalProperties": false
     },

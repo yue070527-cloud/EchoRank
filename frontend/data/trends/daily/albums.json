@@ -16,6 +16,13 @@
       "status": "settled",
       "coverage": 1.0,
       "frozen": true
+    },
+    {
+      "key": "2026-07-19",
+      "label": "2026 年 7 月 19 日",
+      "status": "settled",
+      "coverage": 1.0,
+      "frozen": true
     }
   ],
   "series": {
@@ -23,7 +30,7 @@
       {
         "periodKey": "2026-07-17",
         "rank": 1,
-        "points": 934.0,
+        "points": 908.9373963058943,
         "movement": {
           "type": "new",
           "value": 0
@@ -31,8 +38,17 @@
       },
       {
         "periodKey": "2026-07-18",
-        "rank": 1,
-        "points": 1288.0,
+        "rank": 2,
+        "points": 1178.2275735597932,
+        "movement": {
+          "type": "down",
+          "value": 1
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 2,
+        "points": 1161.9147422722674,
         "movement": {
           "type": "same",
           "value": 0
@@ -43,7 +59,7 @@
       {
         "periodKey": "2026-07-17",
         "rank": 2,
-        "points": 789.0,
+        "points": 852.6283094981166,
         "movement": {
           "type": "new",
           "value": 0
@@ -51,8 +67,17 @@
       },
       {
         "periodKey": "2026-07-18",
-        "rank": 2,
-        "points": 1152.0,
+        "rank": 1,
+        "points": 1291.1045358606045,
+        "movement": {
+          "type": "up",
+          "value": 1
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 1,
+        "points": 1266.4973442871012,
         "movement": {
           "type": "same",
           "value": 0
@@ -63,7 +88,7 @@
       {
         "periodKey": "2026-07-17",
         "rank": 3,
-        "points": 674.0,
+        "points": 728.8072201913587,
         "movement": {
           "type": "new",
           "value": 0
@@ -72,10 +97,19 @@
       {
         "periodKey": "2026-07-18",
         "rank": 3,
-        "points": 687.0,
+        "points": 709.5249869730612,
         "movement": {
           "type": "same",
           "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 4,
+        "points": 681.4468696811094,
+        "movement": {
+          "type": "down",
+          "value": 1
         }
       }
     ],
@@ -83,7 +117,7 @@
       {
         "periodKey": "2026-07-17",
         "rank": 4,
-        "points": 643.0,
+        "points": 657.4611192227733,
         "movement": {
           "type": "new",
           "value": 0
@@ -92,10 +126,19 @@
       {
         "periodKey": "2026-07-18",
         "rank": 4,
-        "points": 656.0,
+        "points": 672.979831801546,
         "movement": {
           "type": "same",
           "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 5,
+        "points": 644.7909959062822,
+        "movement": {
+          "type": "down",
+          "value": 1
         }
       }
     ],
@@ -103,7 +146,7 @@
       {
         "periodKey": "2026-07-17",
         "rank": 5,
-        "points": 550.0,
+        "points": 638.4968122995891,
         "movement": {
           "type": "new",
           "value": 0
@@ -112,10 +155,19 @@
       {
         "periodKey": "2026-07-18",
         "rank": 5,
-        "points": 552.0,
+        "points": 642.7657356745678,
         "movement": {
           "type": "same",
           "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 6,
+        "points": 631.3968639948687,
+        "movement": {
+          "type": "down",
+          "value": 1
         }
       }
     ],
@@ -123,7 +175,7 @@
       {
         "periodKey": "2026-07-17",
         "rank": 6,
-        "points": 422.0,
+        "points": 488.2795161900648,
         "movement": {
           "type": "new",
           "value": 0
@@ -132,7 +184,45 @@
       {
         "periodKey": "2026-07-18",
         "rank": 6,
-        "points": 503.8125,
+        "points": 614.7397212334799,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 9,
+        "points": 400.0744945312097,
+        "movement": {
+          "type": "down",
+          "value": 3
+        }
+      }
+    ],
+    "netease-album-151840133": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 7,
+        "points": 452.3084753868926,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 8,
+        "points": 447.45060890398327,
+        "movement": {
+          "type": "down",
+          "value": 1
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 8,
+        "points": 436.67570946772565,
         "movement": {
           "type": "same",
           "value": 0
@@ -142,8 +232,8 @@
     "netease-album-153345099": [
       {
         "periodKey": "2026-07-17",
-        "rank": 7,
-        "points": 395.0,
+        "rank": 8,
+        "points": 442.32157879407333,
         "movement": {
           "type": "new",
           "value": 0
@@ -152,27 +242,16 @@
       {
         "periodKey": "2026-07-18",
         "rank": 7,
-        "points": 473.0,
+        "points": 487.85899133297846,
         "movement": {
-          "type": "same",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-151840133": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 8,
-        "points": 384.0,
-        "movement": {
-          "type": "new",
-          "value": 0
+          "type": "up",
+          "value": 1
         }
       },
       {
-        "periodKey": "2026-07-18",
-        "rank": 8,
-        "points": 382.0,
+        "periodKey": "2026-07-19",
+        "rank": 7,
+        "points": 530.0138351702817,
         "movement": {
           "type": "same",
           "value": 0
@@ -183,7 +262,7 @@
       {
         "periodKey": "2026-07-17",
         "rank": 9,
-        "points": 269.0,
+        "points": 288.85712879037,
         "movement": {
           "type": "new",
           "value": 0
@@ -192,10 +271,19 @@
       {
         "periodKey": "2026-07-18",
         "rank": 9,
-        "points": 328.0,
+        "points": 353.33640027792376,
         "movement": {
           "type": "same",
           "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 10,
+        "points": 320.404761921881,
+        "movement": {
+          "type": "down",
+          "value": 1
         }
       }
     ],
@@ -203,7 +291,7 @@
       {
         "periodKey": "2026-07-17",
         "rank": 10,
-        "points": 229.0,
+        "points": 275.61643729037235,
         "movement": {
           "type": "new",
           "value": 0
@@ -212,38 +300,27 @@
       {
         "periodKey": "2026-07-18",
         "rank": 10,
-        "points": 207.0,
+        "points": 240.00963311956005,
         "movement": {
           "type": "same",
           "value": 0
         }
-      }
-    ],
-    "netease-album-36709029": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 11,
-        "points": 215.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
       },
       {
-        "periodKey": "2026-07-18",
-        "rank": 15,
-        "points": 184.0,
+        "periodKey": "2026-07-19",
+        "rank": 12,
+        "points": 232.92559601152678,
         "movement": {
           "type": "down",
-          "value": 4
+          "value": 2
         }
       }
     ],
     "netease-album-140792047": [
       {
         "periodKey": "2026-07-17",
-        "rank": 12,
-        "points": 202.0,
+        "rank": 11,
+        "points": 239.49995905374934,
         "movement": {
           "type": "new",
           "value": 0
@@ -252,10 +329,48 @@
       {
         "periodKey": "2026-07-18",
         "rank": 11,
-        "points": 202.0,
+        "points": 240.00963311956005,
         "movement": {
-          "type": "up",
-          "value": 1
+          "type": "same",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 11,
+        "points": 238.89180398765149,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-162129371": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 12,
+        "points": 226.04239914221213,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 12,
+        "points": 226.5234345005128,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 14,
+        "points": 221.12247295850912,
+        "movement": {
+          "type": "down",
+          "value": 2
         }
       }
     ],
@@ -263,27 +378,7 @@
       {
         "periodKey": "2026-07-17",
         "rank": 13,
-        "points": 197.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 12,
-        "points": 197.0,
-        "movement": {
-          "type": "up",
-          "value": 1
-        }
-      }
-    ],
-    "netease-album-162129371": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 14,
-        "points": 192.0,
+        "points": 226.04239914221213,
         "movement": {
           "type": "new",
           "value": 0
@@ -292,9 +387,47 @@
       {
         "periodKey": "2026-07-18",
         "rank": 13,
-        "points": 192.0,
+        "points": 226.5234345005128,
         "movement": {
-          "type": "up",
+          "type": "same",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 13,
+        "points": 232.92559601152678,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-245245946": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 14,
+        "points": 212.80851633314327,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 14,
+        "points": 214.7236594763738,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 15,
+        "points": 215.2867485996561,
+        "movement": {
+          "type": "down",
           "value": 1
         }
       }
@@ -303,7 +436,7 @@
       {
         "periodKey": "2026-07-17",
         "rank": 15,
-        "points": 187.0,
+        "points": 212.80851633314327,
         "movement": {
           "type": "new",
           "value": 0
@@ -311,39 +444,28 @@
       },
       {
         "periodKey": "2026-07-18",
-        "rank": 14,
-        "points": 187.0,
-        "movement": {
-          "type": "up",
-          "value": 1
-        }
-      }
-    ],
-    "netease-album-245245946": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 16,
-        "points": 182.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 16,
-        "points": 182.0,
+        "rank": 15,
+        "points": 214.7236594763738,
         "movement": {
           "type": "same",
           "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 16,
+        "points": 215.2867485996561,
+        "movement": {
+          "type": "down",
+          "value": 1
         }
       }
     ],
     "netease-album-381252074": [
       {
         "periodKey": "2026-07-17",
-        "rank": 17,
-        "points": 174.0,
+        "rank": 16,
+        "points": 202.6747581243361,
         "movement": {
           "type": "new",
           "value": 0
@@ -351,39 +473,28 @@
       },
       {
         "periodKey": "2026-07-18",
-        "rank": 17,
-        "points": 174.0,
+        "rank": 16,
+        "points": 200.4838013644352,
         "movement": {
           "type": "same",
           "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 17,
+        "points": 198.10060785591267,
+        "movement": {
+          "type": "down",
+          "value": 1
         }
       }
     ],
     "netease-album-251406892": [
       {
         "periodKey": "2026-07-17",
-        "rank": 18,
-        "points": 165.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 23,
-        "points": 127.0,
-        "movement": {
-          "type": "down",
-          "value": 5
-        }
-      }
-    ],
-    "netease-album-376089266": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 19,
-        "points": 155.0,
+        "rank": 17,
+        "points": 170.66623492113257,
         "movement": {
           "type": "new",
           "value": 0
@@ -392,138 +503,27 @@
       {
         "periodKey": "2026-07-18",
         "rank": 20,
-        "points": 153.0,
+        "points": 106.98317942000821,
         "movement": {
           "type": "down",
-          "value": 1
-        }
-      }
-    ],
-    "netease-album-283239096": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 20,
-        "points": 154.0,
-        "movement": {
-          "type": "new",
-          "value": 0
+          "value": 3
         }
       },
       {
-        "periodKey": "2026-07-18",
-        "rank": 34,
-        "points": 75.0,
-        "movement": {
-          "type": "down",
-          "value": 14
-        }
-      }
-    ],
-    "netease-album-294761": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 21,
-        "points": 153.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
+        "periodKey": "2026-07-19",
         "rank": 22,
-        "points": 134.0,
+        "points": 96.86726198062453,
         "movement": {
           "type": "down",
-          "value": 1
-        }
-      }
-    ],
-    "netease-album-241613753": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 22,
-        "points": 150.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 18,
-        "points": 162.0,
-        "movement": {
-          "type": "up",
-          "value": 4
+          "value": 2
         }
       }
     ],
     "netease-album-2284001": [
       {
         "periodKey": "2026-07-17",
-        "rank": 23,
-        "points": 148.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 37,
-        "points": 69.0,
-        "movement": {
-          "type": "down",
-          "value": 14
-        }
-      }
-    ],
-    "netease-album-502453": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 24,
-        "points": 132.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 21,
-        "points": 136.0,
-        "movement": {
-          "type": "up",
-          "value": 3
-        }
-      }
-    ],
-    "netease-album-3159689": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 25,
-        "points": 129.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 32,
-        "points": 83.0,
-        "movement": {
-          "type": "down",
-          "value": 7
-        }
-      }
-    ],
-    "netease-album-34611412": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 26,
-        "points": 129.0,
+        "rank": 18,
+        "points": 146.69687604338333,
         "movement": {
           "type": "new",
           "value": 0
@@ -532,18 +532,261 @@
       {
         "periodKey": "2026-07-18",
         "rank": 29,
-        "points": 89.0,
+        "points": 45.86941949348035,
         "movement": {
           "type": "down",
-          "value": 3
+          "value": 11
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 25,
+        "points": 96.86726198062453,
+        "movement": {
+          "type": "up",
+          "value": 4
         }
       }
     ],
-    "netease-album-2915046": [
+    "netease-album-241613753": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 19,
+        "points": 146.69687604338333,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 17,
+        "points": 168.46620225575163,
+        "movement": {
+          "type": "up",
+          "value": 2
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 19,
+        "points": 162.73399653077877,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
+      }
+    ],
+    "netease-album-294761": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 20,
+        "points": 146.69687604338333,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 21,
+        "points": 106.98317942000821,
+        "movement": {
+          "type": "down",
+          "value": 1
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 23,
+        "points": 96.86726198062453,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
+      }
+    ],
+    "netease-album-376089266": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 21,
+        "points": 146.69687604338333,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 18,
+        "points": 148.19655268426104,
+        "movement": {
+          "type": "up",
+          "value": 3
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 20,
+        "points": 138.17870335312003,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
+      }
+    ],
+    "netease-album-36709029": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 22,
+        "points": 135.82767193647038,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 19,
+        "points": 137.07187299888415,
+        "movement": {
+          "type": "up",
+          "value": 3
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 18,
+        "points": 166.64148362221667,
+        "movement": {
+          "type": "up",
+          "value": 1
+        }
+      }
+    ],
+    "netease-album-239816284": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 23,
+        "points": 108.349434709869,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-283239096": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 24,
+        "points": 108.349434709869,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 30,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "down",
+          "value": 6
+        }
+      }
+    ],
+    "netease-album-161720187": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 25,
+        "points": 99.71119369984737,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 31,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "down",
+          "value": 6
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 31,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-161982126": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 26,
+        "points": 99.71119369984737,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 22,
+        "points": 106.98317942000821,
+        "movement": {
+          "type": "up",
+          "value": 4
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 26,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "down",
+          "value": 4
+        }
+      }
+    ],
+    "netease-album-168588248": [
       {
         "periodKey": "2026-07-17",
         "rank": 27,
-        "points": 127.0,
+        "points": 99.71119369984737,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 32,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "down",
+          "value": 5
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 32,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "same",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-254719035": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 28,
+        "points": 99.71119369984737,
         "movement": {
           "type": "new",
           "value": 0
@@ -552,18 +795,163 @@
       {
         "periodKey": "2026-07-18",
         "rank": 33,
-        "points": 77.0,
+        "points": 45.86941949348035,
         "movement": {
           "type": "down",
-          "value": 6
+          "value": 5
         }
       }
     ],
-    "netease-album-239816284": [
+    "netease-album-2915046": [
       {
         "periodKey": "2026-07-17",
+        "rank": 29,
+        "points": 99.71119369984737,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 34,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "down",
+          "value": 5
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 33,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "up",
+          "value": 1
+        }
+      }
+    ],
+    "netease-album-34611412": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 30,
+        "points": 99.71119369984737,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 35,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "down",
+          "value": 5
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 34,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "up",
+          "value": 1
+        }
+      }
+    ],
+    "netease-album-502453": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 31,
+        "points": 99.71119369984737,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 23,
+        "points": 106.98317942000821,
+        "movement": {
+          "type": "up",
+          "value": 8
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 27,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "down",
+          "value": 4
+        }
+      }
+    ],
+    "netease-album-92895788": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 32,
+        "points": 99.71119369984737,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 26,
+        "points": 91.7388389869607,
+        "movement": {
+          "type": "up",
+          "value": 6
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
         "rank": 28,
-        "points": 125.0,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
+      }
+    ],
+    "netease-album-97470760": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 33,
+        "points": 99.71119369984737,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 24,
+        "points": 106.98317942000821,
+        "movement": {
+          "type": "up",
+          "value": 9
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 21,
+        "points": 138.17870335312003,
+        "movement": {
+          "type": "up",
+          "value": 3
+        }
+      }
+    ],
+    "netease-album-284356964": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 34,
+        "points": 72.232956473246,
         "movement": {
           "type": "new",
           "value": 0
@@ -573,119 +961,8 @@
     "netease-album-3029801": [
       {
         "periodKey": "2026-07-17",
-        "rank": 29,
-        "points": 122.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 19,
-        "points": 160.0,
-        "movement": {
-          "type": "up",
-          "value": 10
-        }
-      }
-    ],
-    "netease-album-254719035": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 30,
-        "points": 120.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
         "rank": 35,
-        "points": 73.0,
-        "movement": {
-          "type": "down",
-          "value": 5
-        }
-      }
-    ],
-    "netease-album-284356964": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 31,
-        "points": 112.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-168588248": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 32,
-        "points": 107.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 41,
-        "points": 58.0,
-        "movement": {
-          "type": "down",
-          "value": 9
-        }
-      }
-    ],
-    "netease-album-161982126": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 33,
-        "points": 105.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 24,
-        "points": 109.0,
-        "movement": {
-          "type": "up",
-          "value": 9
-        }
-      }
-    ],
-    "netease-album-161720187": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 34,
-        "points": 103.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 42,
-        "points": 57.0,
-        "movement": {
-          "type": "down",
-          "value": 8
-        }
-      }
-    ],
-    "netease-album-97470760": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 35,
-        "points": 91.0,
+        "points": 72.232956473246,
         "movement": {
           "type": "new",
           "value": 0
@@ -694,18 +971,27 @@
       {
         "periodKey": "2026-07-18",
         "rank": 27,
-        "points": 93.0,
+        "points": 91.7388389869607,
         "movement": {
           "type": "up",
           "value": 8
         }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 29,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
       }
     ],
-    "netease-album-92895788": [
+    "netease-album-3159689": [
       {
         "periodKey": "2026-07-17",
         "rank": 36,
-        "points": 89.0,
+        "points": 72.232956473246,
         "movement": {
           "type": "new",
           "value": 0
@@ -713,276 +999,28 @@
       },
       {
         "periodKey": "2026-07-18",
-        "rank": 39,
-        "points": 62.0,
+        "rank": 36,
+        "points": 45.86941949348035,
         "movement": {
-          "type": "down",
-          "value": 3
+          "type": "same",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 35,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "up",
+          "value": 1
         }
       }
     ],
-    "netease-album-35113913": [
+    "netease-album-155516301": [
       {
         "periodKey": "2026-07-17",
         "rank": 37,
-        "points": 79.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 28,
-        "points": 91.0,
-        "movement": {
-          "type": "up",
-          "value": 9
-        }
-      }
-    ],
-    "netease-album-35046112": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 38,
-        "points": 77.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 52,
-        "points": 19.0,
-        "movement": {
-          "type": "down",
-          "value": 14
-        }
-      }
-    ],
-    "netease-album-35016103": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 39,
-        "points": 75.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 53,
-        "points": 18.0,
-        "movement": {
-          "type": "down",
-          "value": 14
-        }
-      }
-    ],
-    "netease-album-34887005": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 40,
-        "points": 73.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 46,
-        "points": 35.0,
-        "movement": {
-          "type": "down",
-          "value": 6
-        }
-      }
-    ],
-    "netease-album-3377045": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 41,
-        "points": 71.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 30,
-        "points": 87.0,
-        "movement": {
-          "type": "up",
-          "value": 11
-        }
-      }
-    ],
-    "netease-album-33975": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 42,
-        "points": 69.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-383745195": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 43,
-        "points": 67.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 31,
-        "points": 85.0,
-        "movement": {
-          "type": "up",
-          "value": 12
-        }
-      }
-    ],
-    "netease-album-2635085": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 44,
-        "points": 58.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-282045917": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 45,
-        "points": 48.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-274323959": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 46,
-        "points": 47.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-245712680": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 47,
-        "points": 45.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 36,
-        "points": 71.0,
-        "movement": {
-          "type": "up",
-          "value": 11
-        }
-      }
-    ],
-    "netease-album-2068963": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 48,
-        "points": 39.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-198547863": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 49,
-        "points": 37.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-1986950": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 50,
-        "points": 36.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 38,
-        "points": 67.0,
-        "movement": {
-          "type": "up",
-          "value": 12
-        }
-      }
-    ],
-    "netease-album-213252": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 51,
-        "points": 24.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      {
-        "periodKey": "2026-07-18",
-        "rank": 40,
-        "points": 60.0,
-        "movement": {
-          "type": "up",
-          "value": 11
-        }
-      }
-    ],
-    "netease-album-177237088": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 52,
-        "points": 23.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-1910086": [
-      {
-        "periodKey": "2026-07-17",
-        "rank": 53,
-        "points": 21.0,
+        "points": 36.116478236623,
         "movement": {
           "type": "new",
           "value": 0
@@ -992,33 +1030,326 @@
     "netease-album-156059897": [
       {
         "periodKey": "2026-07-17",
-        "rank": 54,
-        "points": 20.0,
+        "rank": 38,
+        "points": 36.116478236623,
         "movement": {
           "type": "new",
           "value": 0
         }
       }
     ],
-    "netease-album-155516301": [
+    "netease-album-177237088": [
       {
         "periodKey": "2026-07-17",
-        "rank": 55,
-        "points": 19.0,
+        "rank": 39,
+        "points": 36.116478236623,
         "movement": {
           "type": "new",
           "value": 0
+        }
+      }
+    ],
+    "netease-album-1910086": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 40,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-198547863": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 41,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-1986950": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 42,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 37,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "up",
+          "value": 5
         }
       }
     ],
     "netease-album-201785": [
       {
         "periodKey": "2026-07-17",
-        "rank": 56,
-        "points": 18.0,
+        "rank": 43,
+        "points": 36.116478236623,
         "movement": {
           "type": "new",
           "value": 0
+        }
+      }
+    ],
+    "netease-album-2068963": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 44,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-213252": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 45,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 38,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 36,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "up",
+          "value": 2
+        }
+      }
+    ],
+    "netease-album-245712680": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 46,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 39,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "up",
+          "value": 7
+        }
+      }
+    ],
+    "netease-album-2635085": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 47,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-274323959": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 48,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-282045917": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 49,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-3377045": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 50,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 40,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "up",
+          "value": 10
+        }
+      }
+    ],
+    "netease-album-33975": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 51,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      }
+    ],
+    "netease-album-34887005": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 52,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 48,
+        "points": 30.088693578875922,
+        "movement": {
+          "type": "up",
+          "value": 4
+        }
+      }
+    ],
+    "netease-album-35016103": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 53,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 49,
+        "points": 15.044346789437961,
+        "movement": {
+          "type": "up",
+          "value": 4
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 40,
+        "points": 14.231390134548327,
+        "movement": {
+          "type": "up",
+          "value": 9
+        }
+      }
+    ],
+    "netease-album-35046112": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 54,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 50,
+        "points": 15.044346789437961,
+        "movement": {
+          "type": "up",
+          "value": 4
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 41,
+        "points": 14.231390134548327,
+        "movement": {
+          "type": "up",
+          "value": 9
+        }
+      }
+    ],
+    "netease-album-35113913": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 55,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 41,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "up",
+          "value": 14
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 37,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "up",
+          "value": 4
+        }
+      }
+    ],
+    "netease-album-383745195": [
+      {
+        "periodKey": "2026-07-17",
+        "rank": 56,
+        "points": 36.116478236623,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-18",
+        "rank": 42,
+        "points": 45.86941949348035,
+        "movement": {
+          "type": "up",
+          "value": 14
         }
       }
     ],
@@ -1026,32 +1357,59 @@
       {
         "periodKey": "2026-07-18",
         "rank": 25,
-        "points": 105.0,
+        "points": 106.98317942000821,
         "movement": {
           "type": "new",
           "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 24,
+        "points": 96.86726198062453,
+        "movement": {
+          "type": "up",
+          "value": 1
         }
       }
     ],
     "netease-album-136035356": [
       {
         "periodKey": "2026-07-18",
-        "rank": 26,
-        "points": 101.0,
+        "rank": 28,
+        "points": 91.7388389869607,
         "movement": {
           "type": "new",
           "value": 0
         }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 30,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "down",
+          "value": 2
+        }
       }
     ],
-    "netease-album-135740501": [
+    "netease-album-127725764": [
       {
         "periodKey": "2026-07-18",
         "rank": 43,
-        "points": 48.0,
+        "points": 45.86941949348035,
         "movement": {
           "type": "new",
           "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 38,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "up",
+          "value": 5
         }
       }
     ],
@@ -1059,18 +1417,27 @@
       {
         "periodKey": "2026-07-18",
         "rank": 44,
-        "points": 47.0,
+        "points": 45.86941949348035,
         "movement": {
           "type": "new",
           "value": 0
         }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 39,
+        "points": 41.77608879208458,
+        "movement": {
+          "type": "up",
+          "value": 5
+        }
       }
     ],
-    "netease-album-127725764": [
+    "netease-album-135740501": [
       {
         "periodKey": "2026-07-18",
         "rank": 45,
-        "points": 45.0,
+        "points": 45.86941949348035,
         "movement": {
           "type": "new",
           "value": 0
@@ -1080,8 +1447,8 @@
     "netease-album-1530458": [
       {
         "periodKey": "2026-07-18",
-        "rank": 47,
-        "points": 33.0,
+        "rank": 46,
+        "points": 45.86941949348035,
         "movement": {
           "type": "new",
           "value": 0
@@ -1091,30 +1458,8 @@
     "netease-album-88700095": [
       {
         "periodKey": "2026-07-18",
-        "rank": 48,
-        "points": 29.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-36472924": [
-      {
-        "periodKey": "2026-07-18",
-        "rank": 49,
-        "points": 23.0,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      }
-    ],
-    "netease-album-35864443": [
-      {
-        "periodKey": "2026-07-18",
-        "rank": 50,
-        "points": 21.0,
+        "rank": 47,
+        "points": 45.86941949348035,
         "movement": {
           "type": "new",
           "value": 0
@@ -1125,7 +1470,67 @@
       {
         "periodKey": "2026-07-18",
         "rank": 51,
-        "points": 20.0,
+        "points": 15.044346789437961,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 42,
+        "points": 14.231390134548327,
+        "movement": {
+          "type": "up",
+          "value": 9
+        }
+      }
+    ],
+    "netease-album-35864443": [
+      {
+        "periodKey": "2026-07-18",
+        "rank": 52,
+        "points": 15.044346789437961,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 43,
+        "points": 14.231390134548327,
+        "movement": {
+          "type": "up",
+          "value": 9
+        }
+      }
+    ],
+    "netease-album-36472924": [
+      {
+        "periodKey": "2026-07-18",
+        "rank": 53,
+        "points": 15.044346789437961,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      {
+        "periodKey": "2026-07-19",
+        "rank": 44,
+        "points": 14.231390134548327,
+        "movement": {
+          "type": "up",
+          "value": 9
+        }
+      }
+    ],
+    "netease-album-387518120": [
+      {
+        "periodKey": "2026-07-19",
+        "rank": 3,
+        "points": 876.8090006154359,
         "movement": {
           "type": "new",
           "value": 0

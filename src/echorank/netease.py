@@ -11,6 +11,8 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
+from .scoring import NETEASE_COLLECTION_VERSION
+
 NETEASE_WEEKLY_URL = "https://music.163.com/api/v1/play/record?uid={uid}&type=1"
 NETEASE_SEARCH_URL = "https://music.163.com/api/search/get/web"
 NETEASE_ALBUM_URL = "https://music.163.com/api/v1/album/{album_id}"
@@ -266,6 +268,7 @@ def normalize_weekly_ranking(
         raise ValueError(f"网易云周排行不是完整 Top 100：当前 {count} 条")
 
     entries = []
+    relative_scores = []
     seen_song_ids: set[int] = set()
     for rank, record in enumerate(week_data, start=1):
         if not isinstance(record, dict) or not isinstance(record.get("song"), dict):
@@ -297,9 +300,10 @@ def normalize_weekly_ranking(
                 ),
             })
 
-        play_count = _required_integer(record.get("playCount"), f"weekData[{rank}].playCount")
-        if play_count < 0:
-            raise ValueError(f"网易云周排行第 {rank} 条播放次数不能为负数")
+        relative_score = _required_integer(record.get("score"), f"weekData[{rank}].score")
+        if relative_score < 0:
+            raise ValueError(f"网易云周排行第 {rank} 条相对听歌分不能为负数")
+        relative_scores.append(relative_score)
         cover_url = album.get("picUrl")
         if cover_url is not None and not isinstance(cover_url, str):
             raise ValueError(f"网易云周排行第 {rank} 条封面地址类型错误")
@@ -315,14 +319,18 @@ def normalize_weekly_ranking(
             "coverUrl": cover_url,
             "coverColor": _cover_color(album_id),
             "rank": rank,
-            "weeklyPlays": play_count,
+            "relativeScore": relative_score,
         })
+
+    if not any(score > 0 for score in relative_scores):
+        raise ValueError("网易云周排行相对听歌分全部为 0，拒绝采集")
 
     collected = collected_at or datetime.now(CHINA_TIMEZONE)
     if collected.tzinfo is None:
         raise ValueError("采集时间必须包含时区")
     scheduled = datetime.combine(target_date, time(22), tzinfo=CHINA_TIMEZONE)
     return {
+        "collectionVersion": NETEASE_COLLECTION_VERSION,
         "periodKey": period_key,
         "scheduledAt": scheduled.isoformat(),
         "collectedAt": collected.astimezone(CHINA_TIMEZONE).isoformat(),

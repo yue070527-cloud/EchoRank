@@ -27,8 +27,8 @@ def raw_response(count: int = 100) -> dict:
         "code": 200,
         "weekData": [
             {
-                "playCount": 201 - rank,
-                "score": 100 - rank,
+                "playCount": 0,
+                "score": 201 - rank,
                 "song": {
                     "id": 10_000 + rank,
                     "name": f"Public Song {rank:03d}",
@@ -91,7 +91,7 @@ class NeteaseAdapterTests(unittest.TestCase):
         self.assertEqual(payload["scheduledAt"], "2026-07-17T22:00:00+08:00")
         self.assertEqual(payload["collectedAt"], "2026-07-17T22:05:00+08:00")
         self.assertEqual(first["rank"], 1)
-        self.assertEqual(first["weeklyPlays"], 200)
+        self.assertEqual(first["relativeScore"], 200)
         self.assertEqual(first["id"], "netease-song-10001")
         self.assertEqual(first["artists"][0]["id"], "netease-artist-20001")
         self.assertEqual(first["album"]["id"], "netease-album-30001")
@@ -174,7 +174,7 @@ class NeteaseAdapterTests(unittest.TestCase):
             self.assertEqual(json.loads(first.read_text(encoding="utf-8"))["code"], 200)
 
             changed = raw_response()
-            changed["weekData"][0]["playCount"] += 1
+            changed["weekData"][0]["score"] += 1
             with self.assertRaisesRegex(ValueError, "拒绝覆盖"):
                 archive_raw_snapshot(changed, "2026-07-17", root)
 
@@ -203,7 +203,7 @@ class NeteaseAdapterTests(unittest.TestCase):
                 ).fetchone()[0]
                 self.assertTrue(archive.exists())
                 self.assertEqual(period["source_snapshot"], archive.as_posix())
-                self.assertEqual(total, 10_000)
+                self.assertAlmostEqual(total, 10_000)
             finally:
                 connection.close()
 

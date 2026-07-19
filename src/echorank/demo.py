@@ -79,11 +79,12 @@ def _snapshot(day: date, offset: int) -> dict:
         item = _song(number)
         item.update({
             "rank": rank,
-            "weeklyPlays": max(1, 520 - rank * 4 + ((number * 13 + offset * 17) % 37)),
+            "relativeScore": max(1, 520 - rank * 4 + ((number * 13 + offset * 17) % 37)),
         })
         entries.append(item)
     key = day.isoformat()
     return {
+        "collectionVersion": "demo-relative-score-v1",
         "periodKey": key,
         "scheduledAt": f"{key}T22:00:00+08:00",
         "collectedAt": f"{key}T22:03:00+08:00",

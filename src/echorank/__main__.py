@@ -9,6 +9,7 @@ from .database import connect, initialize
 from .demo import generate_demo
 from .export import export_period
 from .netease import collect_weekly_snapshot
+from .repair import inspect_score_repair, repair_score_history
 from .server import serve_frontend
 from .settlement import (
     import_ledger_entries,
@@ -68,6 +69,11 @@ def build_parser() -> argparse.ArgumentParser:
     yearly = commands.add_parser("settle-yearly")
     yearly.add_argument("target_date")
 
+    repair = commands.add_parser("repair-score-history")
+    repair.add_argument("--raw-root", default="data/raw/netease")
+    repair.add_argument("--frontend", default="frontend")
+    repair.add_argument("--check", action="store_true")
+
     export = commands.add_parser("export")
     export.add_argument("entity_type", choices=("songs", "albums", "artists"))
     export.add_argument("period_type", choices=("daily", "weekly", "monthly", "yearly"))
@@ -101,6 +107,21 @@ def main() -> None:
         print(f"年榜：{result.year_key}")
         for (entity_type, period_type, period_key), path in sorted(result.paths.items()):
             print(f"{entity_type}/{period_type}/{period_key}：{path}")
+        return
+    if args.command == "repair-score-history":
+        if args.check:
+            print(json.dumps(
+                inspect_score_repair(args.database, args.raw_root),
+                ensure_ascii=False,
+                indent=2,
+            ))
+        else:
+            backup = repair_score_history(
+                args.database,
+                args.raw_root,
+                args.frontend,
+            )
+            print(f"Repaired NetEase score history. Backup: {backup}")
         return
     if args.command == "demo":
         paths = generate_demo(args.database, args.frontend)

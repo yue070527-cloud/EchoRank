@@ -6,12 +6,12 @@ import json
 import sqlite3
 import uuid
 from datetime import date, datetime, time, timedelta, timezone
-from statistics import median
 from typing import Any
 
 from .ranking import PointTotal, movement_for, rank_totals
 from .scoring import (
     BILIBILI_SCORING_VERSION,
+    NETEASE_COLLECTION_VERSION,
     NETEASE_SCORING_VERSION,
     PHYSICAL_EVENT_SCORING_VERSION,
     PHYSICAL_RANK_SCHEDULE_VERSION,
@@ -480,29 +480,31 @@ def import_netease_snapshot(connection: sqlite3.Connection, payload: dict[str, A
             period_id = existing["id"]
             connection.execute(
                 "UPDATE chart_periods SET scheduled_at=?, collected_at=?, status=?, coverage=?, "
-                "input_fingerprint=?, source_snapshot=? WHERE id=?",
+                "input_fingerprint=?, source_snapshot=?, collection_version=? WHERE id=?",
                 (
                     payload["scheduledAt"], payload.get("collectedAt"), status, coverage,
-                    fingerprint, payload.get("sourceSnapshot"), period_id,
+                    fingerprint, payload.get("sourceSnapshot"),
+                    payload.get("collectionVersion", NETEASE_COLLECTION_VERSION), period_id,
                 ),
             )
             connection.execute("DELETE FROM netease_snapshot_entries WHERE period_id=?", (period_id,))
         else:
             period_id = connection.execute(
                 "INSERT INTO chart_periods(entity_type, period_type, period_key, target_date, scheduled_at, "
-                "collected_at, status, coverage, input_fingerprint, source_snapshot) "
-                "VALUES ('songs', 'daily', ?, ?, ?, ?, ?, ?, ?, ?)",
+                "collected_at, status, coverage, input_fingerprint, source_snapshot, collection_version) "
+                "VALUES ('songs', 'daily', ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 (
                     period_key, period_key, payload["scheduledAt"], payload.get("collectedAt"),
                     status, coverage, fingerprint, payload.get("sourceSnapshot"),
+                    payload.get("collectionVersion", NETEASE_COLLECTION_VERSION),
                 ),
             ).lastrowid
         for item in entries:
             _upsert_song(connection, item)
             connection.execute(
-                "INSERT INTO netease_snapshot_entries(period_id, song_id, source_rank, weekly_play_count) "
+                "INSERT INTO netease_snapshot_entries(period_id, song_id, source_rank, relative_score) "
                 "VALUES (?, ?, ?, ?)",
-                (period_id, item["id"], item["rank"], item["weeklyPlays"]),
+                (period_id, item["id"], item["rank"], item["relativeScore"]),
             )
     return period_id
 
@@ -625,43 +627,6 @@ def _point_totals(rows: list[sqlite3.Row]) -> list[PointTotal]:
     return [PointTotal(entity_id=entity_id, **points) for entity_id, points in values.items()]
 
 
-def _activity_factors(
-    connection: sqlite3.Connection,
-    period_ids: list[int],
-) -> dict[int, float]:
-    if not period_ids:
-        return {}
-    placeholders = ",".join("?" for _ in period_ids)
-    selected = connection.execute(
-        f"SELECT id, target_date FROM chart_periods WHERE id IN ({placeholders})",
-        period_ids,
-    ).fetchall()
-    if not selected:
-        return {}
-    latest_date = max(row["target_date"] for row in selected)
-    rows = connection.execute(
-        "SELECT cp.id, cp.target_date, SUM(nse.weekly_play_count) AS activity "
-        "FROM chart_periods cp JOIN netease_snapshot_entries nse ON nse.period_id=cp.id "
-        "WHERE cp.entity_type='songs' AND cp.period_type='daily' AND cp.frozen=1 "
-        "AND cp.target_date<=? GROUP BY cp.id, cp.target_date ORDER BY cp.target_date",
-        (latest_date,),
-    ).fetchall()
-    selected_ids = set(period_ids)
-    prior_activities: list[float] = []
-    factors: dict[int, float] = {}
-    for row in rows:
-        activity = float(row["activity"] or 0)
-        if row["id"] in selected_ids:
-            if len(prior_activities) < 7:
-                factors[row["id"]] = 1.0
-            else:
-                baseline = median(prior_activities[-28:])
-                ratio = activity / baseline if baseline > 0 else 1.0
-                factors[row["id"]] = max(0.7, min(ratio, 1.3))
-        prior_activities.append(activity)
-    return factors
-
-
 def _ledger_totals(
     connection: sqlite3.Connection,
     period_ids: list[int],
@@ -672,29 +637,19 @@ def _ledger_totals(
         return []
     placeholders = ",".join("?" for _ in period_ids)
     yearly_filter = "" if period_type == "yearly" else "AND scoring_version != ? "
-    factors = _activity_factors(connection, period_ids) if period_type in LONG_PERIOD_TYPES else {}
-    factor_case = "1"
-    factor_parameters: list[Any] = []
-    if factors:
-        factor_case = "CASE period_id " + " ".join("WHEN ? THEN ?" for _ in factors) + " ELSE 1 END"
-        for period_id, factor in factors.items():
-            factor_parameters.extend((period_id, factor))
-    parameters: list[Any] = [*factor_parameters, *period_ids]
+    parameters: list[Any] = [*period_ids]
     if yearly_filter:
         parameters.append(YEARLY_ONLY_SCORING_VERSION)
     if entity_type == "songs":
         rows = connection.execute(
-            f"SELECT song_id AS entity_id, source, "
-            f"SUM(CASE WHEN source='netease' THEN points * ({factor_case}) ELSE points END) AS points "
+            f"SELECT song_id AS entity_id, source, SUM(points) AS points "
             f"FROM point_ledger WHERE period_id IN ({placeholders}) "
             f"{yearly_filter}GROUP BY song_id, source",
             parameters,
         ).fetchall()
     elif entity_type == "albums":
-        aliased_case = factor_case.replace("period_id", "pl.period_id")
         rows = list(connection.execute(
-            f"SELECT s.album_id AS entity_id, pl.source, "
-            f"SUM(CASE WHEN pl.source='netease' THEN pl.points * ({aliased_case}) ELSE pl.points END) AS points "
+            f"SELECT s.album_id AS entity_id, pl.source, SUM(pl.points) AS points "
             f"FROM point_ledger pl JOIN songs s ON s.id=pl.song_id WHERE pl.period_id IN ({placeholders}) "
             f"AND pl.source<>'physical' {yearly_filter.replace('scoring_version', 'pl.scoring_version')}"
             f"GROUP BY s.album_id, pl.source",
@@ -721,11 +676,10 @@ def _ledger_totals(
             for entity_id, points in event_points.items()
         ]
     elif entity_type == "artists":
-        aliased_case = factor_case.replace("period_id", "pl.period_id")
         rows = list(connection.execute(
             f"WITH credits AS (SELECT song_id, COUNT(*) AS count FROM song_artists GROUP BY song_id) "
             f"SELECT sa.artist_id AS entity_id, pl.source, "
-            f"SUM((CASE WHEN pl.source='netease' THEN pl.points * ({aliased_case}) ELSE pl.points END) / credits.count) AS points "
+            f"SUM(pl.points / credits.count) AS points "
             f"FROM point_ledger pl JOIN credits ON credits.song_id=pl.song_id "
             f"JOIN song_artists sa ON sa.song_id=pl.song_id WHERE pl.period_id IN ({placeholders}) "
             f"AND pl.source<>'physical' {yearly_filter.replace('scoring_version', 'pl.scoring_version')}"
@@ -779,19 +733,25 @@ def _create_derived_period(
     if existing:
         connection.execute(
             "UPDATE chart_periods SET target_date=?, scheduled_at=?, collected_at=?, status=?, coverage=?, "
-            "source_snapshot=? WHERE id=?",
+            "source_snapshot=?, collection_version=?, netease_scoring_version=? WHERE id=?",
             (
                 target.isoformat(), scheduled_at, scheduled_at, status, coverage,
-                source_period["source_snapshot"] if source_period else None, existing["id"],
+                source_period["source_snapshot"] if source_period else None,
+                source_period["collection_version"] if source_period else None,
+                source_period["netease_scoring_version"] if source_period else None,
+                existing["id"],
             ),
         )
         return existing["id"]
     return connection.execute(
         "INSERT INTO chart_periods(entity_type, period_type, period_key, target_date, scheduled_at, "
-        "collected_at, status, coverage, source_snapshot) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        "collected_at, status, coverage, source_snapshot, collection_version, netease_scoring_version) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
         (
             entity_type, period_type, period_key, target.isoformat(), scheduled_at, scheduled_at,
             status, coverage, source_period["source_snapshot"] if source_period else None,
+            source_period["collection_version"] if source_period else None,
+            source_period["netease_scoring_version"] if source_period else None,
         ),
     ).lastrowid
 
@@ -887,9 +847,9 @@ def settle_daily(connection: sqlite3.Connection, period_key: str) -> int:
     if period["frozen"]:
         return period["id"]
     entries = [
-        NeteaseInput(row["song_id"], row["source_rank"], row["weekly_play_count"])
+        NeteaseInput(row["song_id"], row["source_rank"], row["relative_score"])
         for row in connection.execute(
-            "SELECT song_id, source_rank, weekly_play_count FROM netease_snapshot_entries WHERE period_id=?",
+            "SELECT song_id, source_rank, relative_score FROM netease_snapshot_entries WHERE period_id=?",
             (period["id"],),
         )
     ]
@@ -913,8 +873,9 @@ def settle_daily(connection: sqlite3.Connection, period_key: str) -> int:
             _ledger_totals(connection, [period["id"]], "songs", "daily"),
         )
         connection.execute(
-            "UPDATE chart_periods SET status='settled', coverage=1, frozen=1 WHERE id=?",
-            (period["id"],),
+            "UPDATE chart_periods SET status='settled', coverage=1, frozen=1, "
+            "netease_scoring_version=? WHERE id=?",
+            (NETEASE_SCORING_VERSION, period["id"]),
         )
     return period["id"]
 
@@ -1005,16 +966,41 @@ def settle_period(
             connection, entity_type, period_type, period_key, period_target, status, coverage
         )
         period = connection.execute("SELECT * FROM chart_periods WHERE id=?", (period_id,)).fetchone()
+        input_ids = [row["id"] for row in daily_periods]
         _write_chart_entries(
             connection,
             period,
             _ledger_totals(
                 connection,
-                [row["id"] for row in daily_periods],
+                input_ids,
                 entity_type,
                 period_type,
             ),
         )
+        if input_ids:
+            placeholders = ",".join("?" for _ in input_ids)
+            collection_versions = [
+                row[0] for row in connection.execute(
+                    f"SELECT DISTINCT collection_version FROM chart_periods "
+                    f"WHERE id IN ({placeholders}) AND collection_version IS NOT NULL ORDER BY 1",
+                    input_ids,
+                )
+            ]
+            scoring_versions = [
+                row[0] for row in connection.execute(
+                    f"SELECT DISTINCT scoring_version FROM point_ledger "
+                    f"WHERE period_id IN ({placeholders}) AND source='netease' ORDER BY 1",
+                    input_ids,
+                )
+            ]
+            connection.execute(
+                "UPDATE chart_periods SET collection_version=?, netease_scoring_version=? WHERE id=?",
+                (
+                    ",".join(collection_versions) or None,
+                    ",".join(scoring_versions) or None,
+                    period_id,
+                ),
+            )
         if completed:
             connection.execute("UPDATE chart_periods SET frozen=1 WHERE id=?", (period_id,))
     return period_id

@@ -19,8 +19,8 @@ def raw_response() -> dict:
         "code": 200,
         "weekData": [
             {
-                "playCount": 201 - rank,
-                "score": 100 - rank,
+                "playCount": 0,
+                "score": 201 - rank,
                 "song": {
                     "id": 1000 + rank,
                     "name": f"Workflow Song {rank:03d}",

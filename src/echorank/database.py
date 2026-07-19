@@ -4,7 +4,7 @@ import sqlite3
 from importlib.resources import files
 from pathlib import Path
 
-SCHEMA_VERSION = 5
+SCHEMA_VERSION = 6
 
 
 def connect(path: str | Path) -> sqlite3.Connection:
@@ -47,7 +47,7 @@ def _migrate_legacy_charts(connection: sqlite3.Connection, schema: str) -> None:
             "coverage, input_fingerprint, source_snapshot, frozen FROM legacy_chart_periods"
         )
         connection.execute(
-            "INSERT INTO netease_snapshot_entries(period_id, song_id, source_rank, weekly_play_count) "
+            "INSERT INTO netease_snapshot_entries(period_id, song_id, source_rank, relative_score) "
             "SELECT period_id, song_id, source_rank, weekly_play_count FROM legacy_netease_snapshot_entries"
         )
         connection.execute(
@@ -96,6 +96,18 @@ def initialize(connection: sqlite3.Connection) -> None:
             "ALTER TABLE physical_releases ADD COLUMN rank_schedule_version "
             "TEXT NOT NULL DEFAULT 'physical-rank-schedule-v1'"
         )
+    if "chart_periods" in tables:
+        columns = _table_columns(connection, "chart_periods")
+        if "collection_version" not in columns:
+            connection.execute("ALTER TABLE chart_periods ADD COLUMN collection_version TEXT")
+        if "netease_scoring_version" not in columns:
+            connection.execute("ALTER TABLE chart_periods ADD COLUMN netease_scoring_version TEXT")
+    if "netease_snapshot_entries" in tables:
+        columns = _table_columns(connection, "netease_snapshot_entries")
+        if "weekly_play_count" in columns and "relative_score" not in columns:
+            connection.execute(
+                "ALTER TABLE netease_snapshot_entries RENAME COLUMN weekly_play_count TO relative_score"
+            )
     connection.executescript(schema)
     connection.execute(f"PRAGMA user_version = {SCHEMA_VERSION}")
     connection.commit()

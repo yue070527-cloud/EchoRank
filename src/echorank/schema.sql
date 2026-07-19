@@ -39,6 +39,8 @@ CREATE TABLE IF NOT EXISTS chart_periods (
     coverage REAL NOT NULL DEFAULT 0 CHECK (coverage >= 0 AND coverage <= 1),
     input_fingerprint TEXT,
     source_snapshot TEXT,
+    collection_version TEXT,
+    netease_scoring_version TEXT,
     frozen INTEGER NOT NULL DEFAULT 0 CHECK (frozen IN (0, 1)),
     UNIQUE (entity_type, period_type, period_key)
 );
@@ -47,7 +49,7 @@ CREATE TABLE IF NOT EXISTS netease_snapshot_entries (
     period_id INTEGER NOT NULL REFERENCES chart_periods(id) ON DELETE CASCADE,
     song_id TEXT NOT NULL REFERENCES songs(id),
     source_rank INTEGER NOT NULL CHECK (source_rank BETWEEN 1 AND 100),
-    weekly_play_count INTEGER NOT NULL CHECK (weekly_play_count >= 0),
+    relative_score INTEGER NOT NULL CHECK (relative_score >= 0),
     PRIMARY KEY (period_id, song_id),
     UNIQUE (period_id, source_rank)
 );

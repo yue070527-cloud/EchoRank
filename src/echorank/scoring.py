@@ -6,7 +6,8 @@ from statistics import median
 
 getcontext().prec = 28
 NETEASE_POOL = 10_000
-NETEASE_SCORING_VERSION = "netease-streaming-v2"
+NETEASE_COLLECTION_VERSION = "netease-week-record-score-v1"
+NETEASE_SCORING_VERSION = "netease-relative-score-v1"
 BILIBILI_SCORING_VERSION = "bilibili-manual-views-v1"
 PHYSICAL_SCORING_VERSION = "physical-v4"
 PHYSICAL_EVENT_SCORING_VERSION = "physical-event-v2"
@@ -85,7 +86,7 @@ def physical_purchase_weight(
 class NeteaseInput:
     song_id: str
     rank: int
-    weekly_plays: int
+    relative_score: int
 
 
 def allocate_netease_points(entries: list[NeteaseInput]) -> dict[str, Decimal]:
@@ -94,24 +95,33 @@ def allocate_netease_points(entries: list[NeteaseInput]) -> dict[str, Decimal]:
     ranks = {entry.rank for entry in entries}
     if ranks != set(range(1, 101)) or len({entry.song_id for entry in entries}) != 100:
         raise ValueError("网易云快照必须包含唯一的歌曲和连续的 1—100 名")
-    if any(entry.weekly_plays < 0 for entry in entries):
-        raise ValueError("最近七日播放量不能为负数")
+    if any(
+        isinstance(entry.relative_score, bool)
+        or not isinstance(entry.relative_score, int)
+        or entry.relative_score < 0
+        for entry in entries
+    ):
+        raise ValueError("网易云相对听歌分必须是非负整数")
+    if not any(entry.relative_score > 0 for entry in entries):
+        raise ValueError("网易云相对听歌分全部为 0，拒绝结算")
 
-    median_plays = Decimal(str(median(entry.weekly_plays for entry in entries)))
-    safe_median = max(median_plays, Decimal(1))
+    median_score = Decimal(str(median(entry.relative_score for entry in entries)))
+    safe_median = max(median_score, Decimal(1))
     groups: dict[int, list[NeteaseInput]] = {}
-    for entry in sorted(entries, key=lambda item: (item.weekly_plays, item.song_id)):
-        groups.setdefault(entry.weekly_plays, []).append(entry)
+    for entry in sorted(entries, key=lambda item: (item.relative_score, item.song_id)):
+        groups.setdefault(entry.relative_score, []).append(entry)
 
     weights: dict[str, Decimal] = {}
-    for weekly_plays in sorted(groups):
-        group = groups[weekly_plays]
+    for relative_score in sorted(groups):
+        group = groups[relative_score]
         average_rank = sum(Decimal(entry.rank) for entry in group) / Decimal(len(group))
         rank_ratio = (Decimal(101) - average_rank) / Decimal(100)
         rank_weight = Decimal("0.08") + Decimal("0.92") * Decimal(
             str(float(rank_ratio) ** 1.35)
         )
-        strength = Decimal(str((Decimal(weekly_plays) / safe_median) ** Decimal("0.25")))
+        strength = Decimal(
+            str((Decimal(relative_score) / safe_median) ** Decimal("0.25"))
+        )
         strength = max(Decimal("0.80"), min(strength, Decimal("1.25")))
         weight = rank_weight * strength
         for entry in group:

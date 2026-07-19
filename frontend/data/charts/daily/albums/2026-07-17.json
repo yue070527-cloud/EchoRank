@@ -16,10 +16,11 @@
     "collectedAt": "2026-07-17T22:00:00+08:00",
     "coverage": 1.0,
     "status": "success",
-    "sourceSnapshot": "D:/Desktop/MyBillboard/data/raw/netease/2026/07/2026-07-17.json"
+    "sourceSnapshot": "data/raw/netease/2026/07/2026-07-17.json",
+    "version": "netease-week-record-score-v1"
   },
   "scoringVersions": {
-    "netease": "netease-streaming-v1",
+    "netease": "netease-relative-score-v1",
     "physical": "external-ledger-v1",
     "bilibili": "external-ledger-v1",
     "combined": "combined-v1"
@@ -41,7 +42,7 @@
             "name": "Post Malone"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
+        "coverUrl": "http://p2.music.126.net/dzSZAgIjIYJ3iLqFfKrrlQ==/109951169510761055.jpg",
         "coverColor": "#6d3887"
       },
       "rank": {
@@ -53,13 +54,13 @@
         }
       },
       "points": {
-        "netease": 934.0,
+        "netease": 908.9373963058943,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 934.0
+        "total": 908.9373963058943
       },
       "record": {
         "peak": 1,
@@ -71,8 +72,8 @@
       "entityId": "netease-album-120321112",
       "entity": {
         "title": "evermore (deluxe version)",
-        "subtitle": "Taylor Swift / Bon Iver",
-        "detail": "8 首歌曲参与统计",
+        "subtitle": "Taylor Swift / Bon Iver / The National",
+        "detail": "14 首歌曲参与统计",
         "artists": [
           {
             "id": "netease-artist-44266",
@@ -81,9 +82,13 @@
           {
             "id": "netease-artist-29337",
             "name": "Bon Iver"
+          },
+          {
+            "id": "netease-artist-102057",
+            "name": "The National"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
+        "coverUrl": "http://p2.music.126.net/If9lAb2HxDreXr91BRTYdw==/109951173366340878.jpg",
         "coverColor": "#02c639"
       },
       "rank": {
@@ -95,13 +100,13 @@
         }
       },
       "points": {
-        "netease": 789.0,
+        "netease": 852.6283094981166,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 789.0
+        "total": 852.6283094981166
       },
       "record": {
         "peak": 2,
@@ -121,7 +126,7 @@
             "name": "NMIXX"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/5tJzpo0e9DoNKSp5d-3Oqg==/109951169261472921.jpg",
+        "coverUrl": "http://p2.music.126.net/5tJzpo0e9DoNKSp5d-3Oqg==/109951169261472921.jpg",
         "coverColor": "#26253a"
       },
       "rank": {
@@ -133,13 +138,13 @@
         }
       },
       "points": {
-        "netease": 674.0,
+        "netease": 728.8072201913587,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 674.0
+        "total": 728.8072201913587
       },
       "record": {
         "peak": 3,
@@ -159,7 +164,7 @@
             "name": "NMIXX"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/wRDGhwhhzJuUkWMrjrPwKw==/109951172137146717.jpg",
+        "coverUrl": "http://p2.music.126.net/wRDGhwhhzJuUkWMrjrPwKw==/109951172137146717.jpg",
         "coverColor": "#ffcda8"
       },
       "rank": {
@@ -171,13 +176,13 @@
         }
       },
       "points": {
-        "netease": 643.0,
+        "netease": 657.4611192227733,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 643.0
+        "total": 657.4611192227733
       },
       "record": {
         "peak": 4,
@@ -209,13 +214,13 @@
         }
       },
       "points": {
-        "netease": 550.0,
+        "netease": 638.4968122995891,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 550.0
+        "total": 638.4968122995891
       },
       "record": {
         "peak": 5,
@@ -227,15 +232,23 @@
       "entityId": "netease-album-80752440",
       "entity": {
         "title": "Lover",
-        "subtitle": "Taylor Swift",
-        "detail": "6 首歌曲参与统计",
+        "subtitle": "Taylor Swift / Brendon Urie / The Chicks",
+        "detail": "20 首歌曲参与统计",
         "artists": [
           {
             "id": "netease-artist-44266",
             "name": "Taylor Swift"
+          },
+          {
+            "id": "netease-artist-28076769",
+            "name": "Brendon Urie"
+          },
+          {
+            "id": "netease-artist-90517",
+            "name": "The Chicks"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
+        "coverUrl": "http://p2.music.126.net/6CB6Jsmb7k7qiJqfMY5Row==/109951164260234943.jpg",
         "coverColor": "#a5cc30"
       },
       "rank": {
@@ -247,58 +260,16 @@
         }
       },
       "points": {
-        "netease": 422.0,
+        "netease": 488.2795161900648,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 422.0
+        "total": 488.2795161900648
       },
       "record": {
         "peak": 6,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-153345099",
-      "entity": {
-        "title": "Midnights (3am Edition)",
-        "subtitle": "Taylor Swift / Lana Del Rey",
-        "detail": "6 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          },
-          {
-            "id": "netease-artist-66212",
-            "name": "Lana Del Rey"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/lKhXKmONQahzGsRdhoDR7w==/109951168178695711.jpg",
-        "coverColor": "#f81979"
-      },
-      "rank": {
-        "current": 7,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 395.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 395.0
-      },
-      "record": {
-        "peak": 7,
         "periods": 1,
         "championships": 0
       }
@@ -319,6 +290,48 @@
         "coverColor": "#18db5b"
       },
       "rank": {
+        "current": 7,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 452.3084753868926,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 452.3084753868926
+      },
+      "record": {
+        "peak": 7,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-153345099",
+      "entity": {
+        "title": "Midnights (3am Edition)",
+        "subtitle": "Taylor Swift / Lana Del Rey",
+        "detail": "6 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          },
+          {
+            "id": "netease-artist-66212",
+            "name": "Lana Del Rey"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/lKhXKmONQahzGsRdhoDR7w==/109951168178695711.jpg",
+        "coverColor": "#f81979"
+      },
+      "rank": {
         "current": 8,
         "previous": null,
         "movement": {
@@ -327,13 +340,13 @@
         }
       },
       "points": {
-        "netease": 384.0,
+        "netease": 442.32157879407333,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 384.0
+        "total": 442.32157879407333
       },
       "record": {
         "peak": 8,
@@ -353,7 +366,7 @@
             "name": "Taylor Swift"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/WS5zt4tq5KBONXcAktO2lA==/109951169270236134.jpg",
+        "coverUrl": "http://p2.music.126.net/WS5zt4tq5KBONXcAktO2lA==/109951169270236134.jpg",
         "coverColor": "#91d023"
       },
       "rank": {
@@ -365,13 +378,13 @@
         }
       },
       "points": {
-        "netease": 269.0,
+        "netease": 288.85712879037,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 269.0
+        "total": 288.85712879037
       },
       "record": {
         "peak": 9,
@@ -391,7 +404,7 @@
             "name": "NMIXX"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/_D78HhIawnP39LnGe2BN0g==/109951168730733118.jpg",
+        "coverUrl": "http://p2.music.126.net/_D78HhIawnP39LnGe2BN0g==/109951168730733118.jpg",
         "coverColor": "#b78547"
       },
       "rank": {
@@ -403,54 +416,16 @@
         }
       },
       "points": {
-        "netease": 229.0,
+        "netease": 275.61643729037235,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 229.0
+        "total": 275.61643729037235
       },
       "record": {
         "peak": 10,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-36709029",
-      "entity": {
-        "title": "reputation",
-        "subtitle": "Taylor Swift",
-        "detail": "8 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
-        "coverColor": "#643566"
-      },
-      "rank": {
-        "current": 11,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 215.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 215.0
-      },
-      "record": {
-        "peak": 11,
         "periods": 1,
         "championships": 0
       }
@@ -471,6 +446,44 @@
         "coverColor": "#87c8c3"
       },
       "rank": {
+        "current": 11,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 239.49995905374934,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 239.49995905374934
+      },
+      "record": {
+        "peak": 11,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-162129371",
+      "entity": {
+        "title": "expérgo",
+        "subtitle": "NMIXX",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-51480970",
+            "name": "NMIXX"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/7VbJhgwwdaZnjPk5i1TUlQ==/109951168483903090.jpg",
+        "coverColor": "#77d261"
+      },
+      "rank": {
         "current": 12,
         "previous": null,
         "movement": {
@@ -479,13 +492,13 @@
         }
       },
       "points": {
-        "netease": 202.0,
+        "netease": 226.04239914221213,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 202.0
+        "total": 226.04239914221213
       },
       "record": {
         "peak": 12,
@@ -517,13 +530,13 @@
         }
       },
       "points": {
-        "netease": 197.0,
+        "netease": 226.04239914221213,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 197.0
+        "total": 226.04239914221213
       },
       "record": {
         "peak": 13,
@@ -532,9 +545,9 @@
       }
     },
     {
-      "entityId": "netease-album-162129371",
+      "entityId": "netease-album-245245946",
       "entity": {
-        "title": "expérgo",
+        "title": "Fe3O4: STICK OUT",
         "subtitle": "NMIXX",
         "detail": "1 首歌曲参与统计",
         "artists": [
@@ -543,8 +556,8 @@
             "name": "NMIXX"
           }
         ],
-        "coverUrl": "http://p2.music.126.net/7VbJhgwwdaZnjPk5i1TUlQ==/109951168483903090.jpg",
-        "coverColor": "#77d261"
+        "coverUrl": "http://p2.music.126.net/yzTGqdBHa-IiJyUFHNu-wQ==/109951169885477298.jpg",
+        "coverColor": "#0937cf"
       },
       "rank": {
         "current": 14,
@@ -555,13 +568,13 @@
         }
       },
       "points": {
-        "netease": 192.0,
+        "netease": 212.80851633314327,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 192.0
+        "total": 212.80851633314327
       },
       "record": {
         "peak": 14,
@@ -593,54 +606,16 @@
         }
       },
       "points": {
-        "netease": 187.0,
+        "netease": 212.80851633314327,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 187.0
+        "total": 212.80851633314327
       },
       "record": {
         "peak": 15,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-245245946",
-      "entity": {
-        "title": "Fe3O4: STICK OUT",
-        "subtitle": "NMIXX",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-51480970",
-            "name": "NMIXX"
-          }
-        ],
-        "coverUrl": "http://p2.music.126.net/yzTGqdBHa-IiJyUFHNu-wQ==/109951169885477298.jpg",
-        "coverColor": "#0937cf"
-      },
-      "rank": {
-        "current": 16,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 182.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 182.0
-      },
-      "record": {
-        "peak": 16,
         "periods": 1,
         "championships": 0
       }
@@ -661,7 +636,7 @@
         "coverColor": "#212e36"
       },
       "rank": {
-        "current": 17,
+        "current": 16,
         "previous": null,
         "movement": {
           "type": "new",
@@ -669,16 +644,16 @@
         }
       },
       "points": {
-        "netease": 174.0,
+        "netease": 202.6747581243361,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 174.0
+        "total": 202.6747581243361
       },
       "record": {
-        "peak": 17,
+        "peak": 16,
         "periods": 1,
         "championships": 0
       }
@@ -699,6 +674,44 @@
         "coverColor": "#4c0b23"
       },
       "rank": {
+        "current": 17,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 170.66623492113257,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 170.66623492113257
+      },
+      "record": {
+        "peak": 17,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-2284001",
+      "entity": {
+        "title": "Wide Awake(Single)",
+        "subtitle": "Katy Perry",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-62888",
+            "name": "Katy Perry"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/FEdpVuLFl8AYhaC4NxE-KQ==/109951163059849520.jpg",
+        "coverColor": "#aff686"
+      },
+      "rank": {
         "current": 18,
         "previous": null,
         "movement": {
@@ -707,130 +720,16 @@
         }
       },
       "points": {
-        "netease": 165.0,
+        "netease": 146.69687604338333,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 165.0
+        "total": 146.69687604338333
       },
       "record": {
         "peak": 18,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-376089266",
-      "entity": {
-        "title": "Motto",
-        "subtitle": "ITZY",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-31155319",
-            "name": "ITZY"
-          }
-        ],
-        "coverUrl": "http://p2.music.126.net/65E7xvc7oEIb9AhwI2_lCg==/109951173213643105.jpg",
-        "coverColor": "#55783c"
-      },
-      "rank": {
-        "current": 19,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 155.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 155.0
-      },
-      "record": {
-        "peak": 19,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-283239096",
-      "entity": {
-        "title": "Man’s Best Friend",
-        "subtitle": "Sabrina Carpenter",
-        "detail": "4 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-77993",
-            "name": "Sabrina Carpenter"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/YeH7390tcj6VgHd1hz6PRA==/109951171960893246.jpg",
-        "coverColor": "#4c32b3"
-      },
-      "rank": {
-        "current": 20,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 154.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 154.0
-      },
-      "record": {
-        "peak": 20,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-294761",
-      "entity": {
-        "title": "Animal (Expanded Edition)",
-        "subtitle": "Kesha",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-63901",
-            "name": "Kesha"
-          }
-        ],
-        "coverUrl": "http://p2.music.126.net/RHv1VNQqb5Q7Y_ephBLqxA==/109951172325402148.jpg",
-        "coverColor": "#5f0f31"
-      },
-      "rank": {
-        "current": 21,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 153.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 153.0
-      },
-      "record": {
-        "peak": 21,
         "periods": 1,
         "championships": 0
       }
@@ -851,8 +750,122 @@
             "name": "Post Malone"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/VfcVFMkzWPe2izZcbLc3Pg==/109951169764175102.jpg",
+        "coverUrl": "http://p2.music.126.net/VfcVFMkzWPe2izZcbLc3Pg==/109951169764175102.jpg",
         "coverColor": "#f11f0d"
+      },
+      "rank": {
+        "current": 19,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 146.69687604338333,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 146.69687604338333
+      },
+      "record": {
+        "peak": 19,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-294761",
+      "entity": {
+        "title": "Animal (Expanded Edition)",
+        "subtitle": "Kesha",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-63901",
+            "name": "Kesha"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/RHv1VNQqb5Q7Y_ephBLqxA==/109951172325402148.jpg",
+        "coverColor": "#5f0f31"
+      },
+      "rank": {
+        "current": 20,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 146.69687604338333,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 146.69687604338333
+      },
+      "record": {
+        "peak": 20,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-376089266",
+      "entity": {
+        "title": "Motto",
+        "subtitle": "ITZY",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-31155319",
+            "name": "ITZY"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/65E7xvc7oEIb9AhwI2_lCg==/109951173213643105.jpg",
+        "coverColor": "#55783c"
+      },
+      "rank": {
+        "current": 21,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 146.69687604338333,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 146.69687604338333
+      },
+      "record": {
+        "peak": 21,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-36709029",
+      "entity": {
+        "title": "reputation",
+        "subtitle": "Taylor Swift",
+        "detail": "8 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/fdh0myRe6FD87QNJtvGe_A==/109951163054654501.jpg",
+        "coverColor": "#643566"
       },
       "rank": {
         "current": 22,
@@ -863,13 +876,13 @@
         }
       },
       "points": {
-        "netease": 150.0,
+        "netease": 135.82767193647038,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 150.0
+        "total": 135.82767193647038
       },
       "record": {
         "peak": 22,
@@ -878,19 +891,19 @@
       }
     },
     {
-      "entityId": "netease-album-2284001",
+      "entityId": "netease-album-239816284",
       "entity": {
-        "title": "Wide Awake(Single)",
-        "subtitle": "Katy Perry",
-        "detail": "1 首歌曲参与统计",
+        "title": "The Secret of Us",
+        "subtitle": "Gracie Abrams",
+        "detail": "3 首歌曲参与统计",
         "artists": [
           {
-            "id": "netease-artist-62888",
-            "name": "Katy Perry"
+            "id": "netease-artist-33515545",
+            "name": "Gracie Abrams"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/FEdpVuLFl8AYhaC4NxE-KQ==/109951163059849520.jpg",
-        "coverColor": "#aff686"
+        "coverUrl": "http://p1.music.126.net/SJ2CnxqyKmX9OOJ9xwLbxQ==/109951169703985489.jpg",
+        "coverColor": "#4a6426"
       },
       "rank": {
         "current": 23,
@@ -901,13 +914,13 @@
         }
       },
       "points": {
-        "netease": 148.0,
+        "netease": 108.349434709869,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 148.0
+        "total": 108.349434709869
       },
       "record": {
         "peak": 23,
@@ -916,19 +929,19 @@
       }
     },
     {
-      "entityId": "netease-album-502453",
+      "entityId": "netease-album-283239096",
       "entity": {
-        "title": "NRJ Summer Hits Only 2012",
-        "subtitle": "Nicki Minaj",
-        "detail": "1 首歌曲参与统计",
+        "title": "Man’s Best Friend",
+        "subtitle": "Sabrina Carpenter",
+        "detail": "4 首歌曲参与统计",
         "artists": [
           {
-            "id": "netease-artist-70183",
-            "name": "Nicki Minaj"
+            "id": "netease-artist-77993",
+            "name": "Sabrina Carpenter"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/o2BhJAlz3moqp5a0eFlVAw==/2469503116002357.jpg",
-        "coverColor": "#88679b"
+        "coverUrl": "http://p2.music.126.net/YeH7390tcj6VgHd1hz6PRA==/109951171960893246.jpg",
+        "coverColor": "#4c32b3"
       },
       "rank": {
         "current": 24,
@@ -939,13 +952,13 @@
         }
       },
       "points": {
-        "netease": 132.0,
+        "netease": 108.349434709869,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 132.0
+        "total": 108.349434709869
       },
       "record": {
         "peak": 24,
@@ -954,19 +967,19 @@
       }
     },
     {
-      "entityId": "netease-album-3159689",
+      "entityId": "netease-album-161720187",
       "entity": {
-        "title": "E•MO•TION (Deluxe)",
-        "subtitle": "Carly Rae Jepsen",
-        "detail": "2 首歌曲参与统计",
+        "title": "Young, Dumb, Stupid",
+        "subtitle": "NMIXX",
+        "detail": "1 首歌曲参与统计",
         "artists": [
           {
-            "id": "netease-artist-50934",
-            "name": "Carly Rae Jepsen"
+            "id": "netease-artist-51480970",
+            "name": "NMIXX"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/xitMjHqUd_WqLWkNdyOYQw==/109951171850460419.jpg",
-        "coverColor": "#2f600d"
+        "coverUrl": "http://p2.music.126.net/XGwhkM0apLEgF9jDeQmXuQ==/109951168466105648.jpg",
+        "coverColor": "#ce318f"
       },
       "rank": {
         "current": 25,
@@ -977,13 +990,13 @@
         }
       },
       "points": {
-        "netease": 129.0,
+        "netease": 99.71119369984737,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 129.0
+        "total": 99.71119369984737
       },
       "record": {
         "peak": 25,
@@ -992,19 +1005,19 @@
       }
     },
     {
-      "entityId": "netease-album-34611412",
+      "entityId": "netease-album-161982126",
       "entity": {
-        "title": "Just Like Fire (From the Original Motion Picture \"Alice Through The Looking Glass\")",
-        "subtitle": "P!nk",
+        "title": "emails i can’t send fwd:",
+        "subtitle": "Sabrina Carpenter",
         "detail": "1 首歌曲参与统计",
         "artists": [
           {
-            "id": "netease-artist-70821",
-            "name": "P!nk"
+            "id": "netease-artist-77993",
+            "name": "Sabrina Carpenter"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/W0KCB3zjKbXykM1-Va5NcQ==/109951166001800740.jpg",
-        "coverColor": "#3d5205"
+        "coverUrl": "http://p2.music.126.net/Sit0Pt76CzwbU-79FIrmwQ==/109951171960925193.jpg",
+        "coverColor": "#cd7fd8"
       },
       "rank": {
         "current": 26,
@@ -1015,16 +1028,104 @@
         }
       },
       "points": {
-        "netease": 129.0,
+        "netease": 99.71119369984737,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 129.0
+        "total": 99.71119369984737
       },
       "record": {
         "peak": 26,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-168588248",
+      "entity": {
+        "title": "Speak Now (Taylor's Version)",
+        "subtitle": "Taylor Swift / Fall Out Boy / Hayley Williams",
+        "detail": "22 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          },
+          {
+            "id": "netease-artist-56782",
+            "name": "Fall Out Boy"
+          },
+          {
+            "id": "netease-artist-60268",
+            "name": "Hayley Williams"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/3MQls4eG_yJR_HaYXPMWlA==/109951168728387752.jpg",
+        "coverColor": "#3ebea4"
+      },
+      "rank": {
+        "current": 27,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 99.71119369984737,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 99.71119369984737
+      },
+      "record": {
+        "peak": 27,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-254719035",
+      "entity": {
+        "title": "GNX",
+        "subtitle": "Kendrick Lamar / SZA",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-37995",
+            "name": "Kendrick Lamar"
+          },
+          {
+            "id": "netease-artist-905232",
+            "name": "SZA"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/EMv55rDoGWJ3IzG-aphT3w==/109951170180620807.jpg",
+        "coverColor": "#0e202d"
+      },
+      "rank": {
+        "current": 28,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 99.71119369984737,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 99.71119369984737
+      },
+      "record": {
+        "peak": 28,
         "periods": 1,
         "championships": 0
       }
@@ -1049,84 +1150,8 @@
             "name": "Nicki Minaj"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/oA3lAYhcxmoPbfqUYHLbrQ==/109951163219135819.jpg",
+        "coverUrl": "http://p2.music.126.net/oA3lAYhcxmoPbfqUYHLbrQ==/109951163219135819.jpg",
         "coverColor": "#d245e6"
-      },
-      "rank": {
-        "current": 27,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 127.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 127.0
-      },
-      "record": {
-        "peak": 27,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-239816284",
-      "entity": {
-        "title": "The Secret of Us",
-        "subtitle": "Gracie Abrams",
-        "detail": "3 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-33515545",
-            "name": "Gracie Abrams"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/SJ2CnxqyKmX9OOJ9xwLbxQ==/109951169703985489.jpg",
-        "coverColor": "#4a6426"
-      },
-      "rank": {
-        "current": 28,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 125.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 125.0
-      },
-      "record": {
-        "peak": 28,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-3029801",
-      "entity": {
-        "title": "1989 (Deluxe)",
-        "subtitle": "Taylor Swift",
-        "detail": "7 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/3KDqQ9XW2Khj5Ia4tRqAAw==/18771962022688349.jpg",
-        "coverColor": "#730c49"
       },
       "rank": {
         "current": 29,
@@ -1137,13 +1162,13 @@
         }
       },
       "points": {
-        "netease": 122.0,
+        "netease": 99.71119369984737,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 122.0
+        "total": 99.71119369984737
       },
       "record": {
         "peak": 29,
@@ -1152,23 +1177,19 @@
       }
     },
     {
-      "entityId": "netease-album-254719035",
+      "entityId": "netease-album-34611412",
       "entity": {
-        "title": "GNX",
-        "subtitle": "Kendrick Lamar / SZA",
+        "title": "Just Like Fire (From the Original Motion Picture \"Alice Through The Looking Glass\")",
+        "subtitle": "P!nk",
         "detail": "1 首歌曲参与统计",
         "artists": [
           {
-            "id": "netease-artist-37995",
-            "name": "Kendrick Lamar"
-          },
-          {
-            "id": "netease-artist-905232",
-            "name": "SZA"
+            "id": "netease-artist-70821",
+            "name": "P!nk"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/EMv55rDoGWJ3IzG-aphT3w==/109951170180620807.jpg",
-        "coverColor": "#0e202d"
+        "coverUrl": "http://p2.music.126.net/W0KCB3zjKbXykM1-Va5NcQ==/109951166001800740.jpg",
+        "coverColor": "#3d5205"
       },
       "rank": {
         "current": 30,
@@ -1179,16 +1200,134 @@
         }
       },
       "points": {
-        "netease": 120.0,
+        "netease": 99.71119369984737,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 120.0
+        "total": 99.71119369984737
       },
       "record": {
         "peak": 30,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-502453",
+      "entity": {
+        "title": "NRJ Summer Hits Only 2012",
+        "subtitle": "Nicki Minaj",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-70183",
+            "name": "Nicki Minaj"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/o2BhJAlz3moqp5a0eFlVAw==/2469503116002357.jpg",
+        "coverColor": "#88679b"
+      },
+      "rank": {
+        "current": 31,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 99.71119369984737,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 99.71119369984737
+      },
+      "record": {
+        "peak": 31,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-92895788",
+      "entity": {
+        "title": "folklore (deluxe version)",
+        "subtitle": "Taylor Swift / Bon Iver",
+        "detail": "6 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          },
+          {
+            "id": "netease-artist-29337",
+            "name": "Bon Iver"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/b_6ZbpOz55g8oB4KR34aFw==/109951168971655174.jpg",
+        "coverColor": "#9779c5"
+      },
+      "rank": {
+        "current": 32,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 99.71119369984737,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 99.71119369984737
+      },
+      "record": {
+        "peak": 32,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-97470760",
+      "entity": {
+        "title": "Positions (Deluxe)",
+        "subtitle": "Ariana Grande",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-48161",
+            "name": "Ariana Grande"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/G4HIWXvyzneVNjZPxwt00Q==/109951165741355057.jpg",
+        "coverColor": "#f9740f"
+      },
+      "rank": {
+        "current": 33,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 99.71119369984737,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 99.71119369984737
+      },
+      "record": {
+        "peak": 33,
         "periods": 1,
         "championships": 0
       }
@@ -1213,120 +1352,6 @@
         "coverColor": "#8cb90f"
       },
       "rank": {
-        "current": 31,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 112.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 112.0
-      },
-      "record": {
-        "peak": 31,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-168588248",
-      "entity": {
-        "title": "Speak Now (Taylor's Version)",
-        "subtitle": "Taylor Swift",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/3MQls4eG_yJR_HaYXPMWlA==/109951168728387752.jpg",
-        "coverColor": "#3ebea4"
-      },
-      "rank": {
-        "current": 32,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 107.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 107.0
-      },
-      "record": {
-        "peak": 32,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-161982126",
-      "entity": {
-        "title": "emails i can’t send fwd:",
-        "subtitle": "Sabrina Carpenter",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-77993",
-            "name": "Sabrina Carpenter"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/Sit0Pt76CzwbU-79FIrmwQ==/109951171960925193.jpg",
-        "coverColor": "#cd7fd8"
-      },
-      "rank": {
-        "current": 33,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 105.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 105.0
-      },
-      "record": {
-        "peak": 33,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-161720187",
-      "entity": {
-        "title": "Young, Dumb, Stupid",
-        "subtitle": "NMIXX",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-51480970",
-            "name": "NMIXX"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/XGwhkM0apLEgF9jDeQmXuQ==/109951168466105648.jpg",
-        "coverColor": "#ce318f"
-      },
-      "rank": {
         "current": 34,
         "previous": null,
         "movement": {
@@ -1335,13 +1360,13 @@
         }
       },
       "points": {
-        "netease": 103.0,
+        "netease": 72.232956473246,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 103.0
+        "total": 72.232956473246
       },
       "record": {
         "peak": 34,
@@ -1350,19 +1375,19 @@
       }
     },
     {
-      "entityId": "netease-album-97470760",
+      "entityId": "netease-album-3029801",
       "entity": {
-        "title": "Positions (Deluxe)",
-        "subtitle": "Ariana Grande",
-        "detail": "1 首歌曲参与统计",
+        "title": "1989 (Deluxe)",
+        "subtitle": "Taylor Swift",
+        "detail": "19 首歌曲参与统计",
         "artists": [
           {
-            "id": "netease-artist-48161",
-            "name": "Ariana Grande"
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/G4HIWXvyzneVNjZPxwt00Q==/109951165741355057.jpg",
-        "coverColor": "#f9740f"
+        "coverUrl": "http://p2.music.126.net/3KDqQ9XW2Khj5Ia4tRqAAw==/18771962022688349.jpg",
+        "coverColor": "#730c49"
       },
       "rank": {
         "current": 35,
@@ -1373,13 +1398,13 @@
         }
       },
       "points": {
-        "netease": 91.0,
+        "netease": 72.232956473246,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 91.0
+        "total": 72.232956473246
       },
       "record": {
         "peak": 35,
@@ -1388,23 +1413,19 @@
       }
     },
     {
-      "entityId": "netease-album-92895788",
+      "entityId": "netease-album-3159689",
       "entity": {
-        "title": "folklore (deluxe version)",
-        "subtitle": "Taylor Swift / Bon Iver",
-        "detail": "6 首歌曲参与统计",
+        "title": "E•MO•TION (Deluxe)",
+        "subtitle": "Carly Rae Jepsen",
+        "detail": "2 首歌曲参与统计",
         "artists": [
           {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          },
-          {
-            "id": "netease-artist-29337",
-            "name": "Bon Iver"
+            "id": "netease-artist-50934",
+            "name": "Carly Rae Jepsen"
           }
         ],
-        "coverUrl": "http://p1.music.126.net/b_6ZbpOz55g8oB4KR34aFw==/109951168971655174.jpg",
-        "coverColor": "#9779c5"
+        "coverUrl": "http://p2.music.126.net/xitMjHqUd_WqLWkNdyOYQw==/109951171850460419.jpg",
+        "coverColor": "#2f600d"
       },
       "rank": {
         "current": 36,
@@ -1415,704 +1436,16 @@
         }
       },
       "points": {
-        "netease": 89.0,
+        "netease": 72.232956473246,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 89.0
+        "total": 72.232956473246
       },
       "record": {
         "peak": 36,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-35113913",
-      "entity": {
-        "title": "Welcome To The Next Level",
-        "subtitle": "陈星翰 / 蔡依林",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-12154330",
-            "name": "陈星翰"
-          },
-          {
-            "id": "netease-artist-7219",
-            "name": "蔡依林"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/qXzyI00_XwByKbpHzB7rKg==/109951163378954345.jpg",
-        "coverColor": "#958b08"
-      },
-      "rank": {
-        "current": 37,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 79.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 79.0
-      },
-      "record": {
-        "peak": 37,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-35046112",
-      "entity": {
-        "title": "La La Land (Original Motion Picture Soundtrack)",
-        "subtitle": "La La Land Cast",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-28410395",
-            "name": "La La Land Cast"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/CrAb6Ryc5osJUM6zuoqxuw==/109951171012054073.jpg",
-        "coverColor": "#1f80eb"
-      },
-      "rank": {
-        "current": 38,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 77.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 77.0
-      },
-      "record": {
-        "peak": 38,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-35016103",
-      "entity": {
-        "title": "末路狂花",
-        "subtitle": "魏如萱",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-9609",
-            "name": "魏如萱"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/pUVA3A7XBN2WwGNXSPz4Og==/109951165958860830.jpg",
-        "coverColor": "#a0021b"
-      },
-      "rank": {
-        "current": 39,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 75.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 75.0
-      },
-      "record": {
-        "peak": 39,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-34887005",
-      "entity": {
-        "title": "Joanne (Deluxe)",
-        "subtitle": "Lady Gaga",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-64147",
-            "name": "Lady Gaga"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/uAfW09c_7PJ18bvwFspYQw==/109951166162939168.jpg",
-        "coverColor": "#8eab41"
-      },
-      "rank": {
-        "current": 40,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 73.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 73.0
-      },
-      "record": {
-        "peak": 40,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-3377045",
-      "entity": {
-        "title": "25",
-        "subtitle": "Adele",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-46487",
-            "name": "Adele"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/GBjkPuYOKYFaXtEjA6ULqA==/109951168110232012.jpg",
-        "coverColor": "#7806a4"
-      },
-      "rank": {
-        "current": 41,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 71.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 71.0
-      },
-      "record": {
-        "peak": 41,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-33975",
-      "entity": {
-        "title": "成人礼",
-        "subtitle": "By2",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-11097",
-            "name": "By2"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/F4PaoO9YZTRv-WQqEXCryw==/109951169200438951.jpg",
-        "coverColor": "#0b0706"
-      },
-      "rank": {
-        "current": 42,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 69.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 69.0
-      },
-      "record": {
-        "peak": 42,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-383745195",
-      "entity": {
-        "title": "Look at My Life",
-        "subtitle": "Gracie Abrams",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-33515545",
-            "name": "Gracie Abrams"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/OQczUIXdW-o57D86fJ40HQ==/109951173458639082.jpg",
-        "coverColor": "#38c92c"
-      },
-      "rank": {
-        "current": 43,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 67.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 67.0
-      },
-      "record": {
-        "peak": 43,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-2635085",
-      "entity": {
-        "title": "ARTPOP",
-        "subtitle": "Lady Gaga",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-64147",
-            "name": "Lady Gaga"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/E-A30drf7Yh57SEc4vxChA==/109951167148132297.jpg",
-        "coverColor": "#8fcef3"
-      },
-      "rank": {
-        "current": 44,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 58.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 58.0
-      },
-      "record": {
-        "peak": 44,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-282045917",
-      "entity": {
-        "title": "A Matter of Time",
-        "subtitle": "Laufey",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-35111369",
-            "name": "Laufey"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/qG9jovJB2bxGlXjzyKhpjQ==/109951171894964337.jpg",
-        "coverColor": "#a96a9a"
-      },
-      "rank": {
-        "current": 45,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 48.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 48.0
-      },
-      "record": {
-        "peak": 45,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-274323959",
-      "entity": {
-        "title": "Manchild",
-        "subtitle": "Sabrina Carpenter",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-77993",
-            "name": "Sabrina Carpenter"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/MgyiCj-ROHiJ2cw_f9tqWQ==/109951171267609507.jpg",
-        "coverColor": "#1219b5"
-      },
-      "rank": {
-        "current": 46,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 47.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 47.0
-      },
-      "record": {
-        "peak": 46,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-245712680",
-      "entity": {
-        "title": "Short n' Sweet",
-        "subtitle": "Sabrina Carpenter",
-        "detail": "3 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-77993",
-            "name": "Sabrina Carpenter"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/ZqMhqy-8rC1yWRuskrs0SQ==/109951171960903511.jpg",
-        "coverColor": "#7b7d98"
-      },
-      "rank": {
-        "current": 47,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 45.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 45.0
-      },
-      "record": {
-        "peak": 47,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-2068963",
-      "entity": {
-        "title": "Pablo Honey",
-        "subtitle": "Radiohead",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-99384",
-            "name": "Radiohead"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/Zg-bnruyZm1L9GdPKI3RTw==/18205713532941813.jpg",
-        "coverColor": "#fc2906"
-      },
-      "rank": {
-        "current": 48,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 39.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 39.0
-      },
-      "record": {
-        "peak": 48,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-198547863",
-      "entity": {
-        "title": "BRAT",
-        "subtitle": "Charli xcx",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-53092",
-            "name": "Charli xcx"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/Ba-96IExpMYCZsjFCaUM0g==/109951171954771934.jpg",
-        "coverColor": "#f6385c"
-      },
-      "rank": {
-        "current": 49,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 37.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 37.0
-      },
-      "record": {
-        "peak": 49,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-1986950",
-      "entity": {
-        "title": "Diamonds",
-        "subtitle": "Rihanna",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-72724",
-            "name": "Rihanna"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/vrJzlA1RIiwaPHlXzZy90g==/3263350514797284.jpg",
-        "coverColor": "#7c44ef"
-      },
-      "rank": {
-        "current": 50,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 36.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 36.0
-      },
-      "record": {
-        "peak": 50,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-213252",
-      "entity": {
-        "title": "21",
-        "subtitle": "Adele",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-46487",
-            "name": "Adele"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/-aAWuK0-91lgZmDGx7V_kA==/109951172658442765.jpg",
-        "coverColor": "#9c1a6f"
-      },
-      "rank": {
-        "current": 51,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 24.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 24.0
-      },
-      "record": {
-        "peak": 51,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-177237088",
-      "entity": {
-        "title": "1989 (Taylor's Version)",
-        "subtitle": "Taylor Swift",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-44266",
-            "name": "Taylor Swift"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/KRD58DefFEjWF5I0kDs1pg==/109951173299643308.jpg",
-        "coverColor": "#0468b3"
-      },
-      "rank": {
-        "current": 52,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 23.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 23.0
-      },
-      "record": {
-        "peak": 52,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-1910086",
-      "entity": {
-        "title": "Toxic",
-        "subtitle": "Britney Spears",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-48432",
-            "name": "Britney Spears"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/deSSYRxKCEuGkecb4koc0w==/18290375928612464.jpg",
-        "coverColor": "#fa8eaa"
-      },
-      "rank": {
-        "current": 53,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 21.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 21.0
-      },
-      "record": {
-        "peak": 53,
-        "periods": 1,
-        "championships": 0
-      }
-    },
-    {
-      "entityId": "netease-album-156059897",
-      "entity": {
-        "title": "SOS",
-        "subtitle": "SZA",
-        "detail": "1 首歌曲参与统计",
-        "artists": [
-          {
-            "id": "netease-artist-905232",
-            "name": "SZA"
-          }
-        ],
-        "coverUrl": "http://p1.music.126.net/qQ5e7rM-xY6YWJW9_3tR-w==/109951168121859537.jpg",
-        "coverColor": "#3f6417"
-      },
-      "rank": {
-        "current": 54,
-        "previous": null,
-        "movement": {
-          "type": "new",
-          "value": 0
-        }
-      },
-      "points": {
-        "netease": 20.0,
-        "physical": 0.0,
-        "bilibili": 0.0,
-        "other": 0.0,
-        "legacyBonus": 0.0,
-        "manualAdjustment": 0.0,
-        "total": 20.0
-      },
-      "record": {
-        "peak": 54,
         "periods": 1,
         "championships": 0
       }
@@ -2133,7 +1466,7 @@
         "coverColor": "#c83b86"
       },
       "rank": {
-        "current": 55,
+        "current": 37,
         "previous": null,
         "movement": {
           "type": "new",
@@ -2141,16 +1474,206 @@
         }
       },
       "points": {
-        "netease": 19.0,
+        "netease": 36.116478236623,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 19.0
+        "total": 36.116478236623
       },
       "record": {
-        "peak": 55,
+        "peak": 37,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-156059897",
+      "entity": {
+        "title": "SOS",
+        "subtitle": "SZA",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-905232",
+            "name": "SZA"
+          }
+        ],
+        "coverUrl": "http://p1.music.126.net/qQ5e7rM-xY6YWJW9_3tR-w==/109951168121859537.jpg",
+        "coverColor": "#3f6417"
+      },
+      "rank": {
+        "current": 38,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 38,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-177237088",
+      "entity": {
+        "title": "1989 (Taylor's Version)",
+        "subtitle": "Taylor Swift",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-44266",
+            "name": "Taylor Swift"
+          }
+        ],
+        "coverUrl": "http://p1.music.126.net/KRD58DefFEjWF5I0kDs1pg==/109951173299643308.jpg",
+        "coverColor": "#0468b3"
+      },
+      "rank": {
+        "current": 39,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 39,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-1910086",
+      "entity": {
+        "title": "Toxic",
+        "subtitle": "Britney Spears",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-48432",
+            "name": "Britney Spears"
+          }
+        ],
+        "coverUrl": "http://p1.music.126.net/deSSYRxKCEuGkecb4koc0w==/18290375928612464.jpg",
+        "coverColor": "#fa8eaa"
+      },
+      "rank": {
+        "current": 40,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 40,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-198547863",
+      "entity": {
+        "title": "BRAT",
+        "subtitle": "Charli xcx",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-53092",
+            "name": "Charli xcx"
+          }
+        ],
+        "coverUrl": "http://p1.music.126.net/Ba-96IExpMYCZsjFCaUM0g==/109951171954771934.jpg",
+        "coverColor": "#f6385c"
+      },
+      "rank": {
+        "current": 41,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 41,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-1986950",
+      "entity": {
+        "title": "Diamonds",
+        "subtitle": "Rihanna",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-72724",
+            "name": "Rihanna"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/vrJzlA1RIiwaPHlXzZy90g==/3263350514797284.jpg",
+        "coverColor": "#7c44ef"
+      },
+      "rank": {
+        "current": 42,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 42,
         "periods": 1,
         "championships": 0
       }
@@ -2175,6 +1698,504 @@
         "coverColor": "#707b5c"
       },
       "rank": {
+        "current": 43,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 43,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-2068963",
+      "entity": {
+        "title": "Pablo Honey",
+        "subtitle": "Radiohead",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-99384",
+            "name": "Radiohead"
+          }
+        ],
+        "coverUrl": "http://p1.music.126.net/Zg-bnruyZm1L9GdPKI3RTw==/18205713532941813.jpg",
+        "coverColor": "#fc2906"
+      },
+      "rank": {
+        "current": 44,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 44,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-213252",
+      "entity": {
+        "title": "21",
+        "subtitle": "Adele",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-46487",
+            "name": "Adele"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/-aAWuK0-91lgZmDGx7V_kA==/109951172658442765.jpg",
+        "coverColor": "#9c1a6f"
+      },
+      "rank": {
+        "current": 45,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 45,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-245712680",
+      "entity": {
+        "title": "Short n' Sweet",
+        "subtitle": "Sabrina Carpenter",
+        "detail": "3 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-77993",
+            "name": "Sabrina Carpenter"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/ZqMhqy-8rC1yWRuskrs0SQ==/109951171960903511.jpg",
+        "coverColor": "#7b7d98"
+      },
+      "rank": {
+        "current": 46,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 46,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-2635085",
+      "entity": {
+        "title": "ARTPOP",
+        "subtitle": "Lady Gaga",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-64147",
+            "name": "Lady Gaga"
+          }
+        ],
+        "coverUrl": "http://p1.music.126.net/E-A30drf7Yh57SEc4vxChA==/109951167148132297.jpg",
+        "coverColor": "#8fcef3"
+      },
+      "rank": {
+        "current": 47,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 47,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-274323959",
+      "entity": {
+        "title": "Manchild",
+        "subtitle": "Sabrina Carpenter",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-77993",
+            "name": "Sabrina Carpenter"
+          }
+        ],
+        "coverUrl": "http://p1.music.126.net/MgyiCj-ROHiJ2cw_f9tqWQ==/109951171267609507.jpg",
+        "coverColor": "#1219b5"
+      },
+      "rank": {
+        "current": 48,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 48,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-282045917",
+      "entity": {
+        "title": "A Matter of Time",
+        "subtitle": "Laufey",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-35111369",
+            "name": "Laufey"
+          }
+        ],
+        "coverUrl": "http://p1.music.126.net/qG9jovJB2bxGlXjzyKhpjQ==/109951171894964337.jpg",
+        "coverColor": "#a96a9a"
+      },
+      "rank": {
+        "current": 49,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 49,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-3377045",
+      "entity": {
+        "title": "25",
+        "subtitle": "Adele",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-46487",
+            "name": "Adele"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/GBjkPuYOKYFaXtEjA6ULqA==/109951168110232012.jpg",
+        "coverColor": "#7806a4"
+      },
+      "rank": {
+        "current": 50,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 50,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-33975",
+      "entity": {
+        "title": "成人礼",
+        "subtitle": "By2",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-11097",
+            "name": "By2"
+          }
+        ],
+        "coverUrl": "http://p1.music.126.net/F4PaoO9YZTRv-WQqEXCryw==/109951169200438951.jpg",
+        "coverColor": "#0b0706"
+      },
+      "rank": {
+        "current": 51,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 51,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-34887005",
+      "entity": {
+        "title": "Joanne (Deluxe)",
+        "subtitle": "Lady Gaga",
+        "detail": "2 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-64147",
+            "name": "Lady Gaga"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/uAfW09c_7PJ18bvwFspYQw==/109951166162939168.jpg",
+        "coverColor": "#8eab41"
+      },
+      "rank": {
+        "current": 52,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 52,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-35016103",
+      "entity": {
+        "title": "末路狂花",
+        "subtitle": "魏如萱",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-9609",
+            "name": "魏如萱"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/pUVA3A7XBN2WwGNXSPz4Og==/109951165958860830.jpg",
+        "coverColor": "#a0021b"
+      },
+      "rank": {
+        "current": 53,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 53,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-35046112",
+      "entity": {
+        "title": "La La Land (Original Motion Picture Soundtrack)",
+        "subtitle": "La La Land Cast",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-28410395",
+            "name": "La La Land Cast"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/CrAb6Ryc5osJUM6zuoqxuw==/109951171012054073.jpg",
+        "coverColor": "#1f80eb"
+      },
+      "rank": {
+        "current": 54,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 54,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-35113913",
+      "entity": {
+        "title": "Welcome To The Next Level",
+        "subtitle": "陈星翰 / 蔡依林",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-12154330",
+            "name": "陈星翰"
+          },
+          {
+            "id": "netease-artist-7219",
+            "name": "蔡依林"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/qXzyI00_XwByKbpHzB7rKg==/109951163378954345.jpg",
+        "coverColor": "#958b08"
+      },
+      "rank": {
+        "current": 55,
+        "previous": null,
+        "movement": {
+          "type": "new",
+          "value": 0
+        }
+      },
+      "points": {
+        "netease": 36.116478236623,
+        "physical": 0.0,
+        "bilibili": 0.0,
+        "other": 0.0,
+        "legacyBonus": 0.0,
+        "manualAdjustment": 0.0,
+        "total": 36.116478236623
+      },
+      "record": {
+        "peak": 55,
+        "periods": 1,
+        "championships": 0
+      }
+    },
+    {
+      "entityId": "netease-album-383745195",
+      "entity": {
+        "title": "Look at My Life",
+        "subtitle": "Gracie Abrams",
+        "detail": "1 首歌曲参与统计",
+        "artists": [
+          {
+            "id": "netease-artist-33515545",
+            "name": "Gracie Abrams"
+          }
+        ],
+        "coverUrl": "http://p2.music.126.net/OQczUIXdW-o57D86fJ40HQ==/109951173458639082.jpg",
+        "coverColor": "#38c92c"
+      },
+      "rank": {
         "current": 56,
         "previous": null,
         "movement": {
@@ -2183,13 +2204,13 @@
         }
       },
       "points": {
-        "netease": 18.0,
+        "netease": 36.116478236623,
         "physical": 0.0,
         "bilibili": 0.0,
         "other": 0.0,
         "legacyBonus": 0.0,
         "manualAdjustment": 0.0,
-        "total": 18.0
+        "total": 36.116478236623
       },
       "record": {
         "peak": 56,

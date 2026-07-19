@@ -50,10 +50,11 @@ def snapshot_payload(day: date, start: int = 1) -> dict:
             "coverUrl": None,
             "coverColor": f"#{number % 0xFFFFFF:06x}",
             "rank": rank,
-            "weeklyPlays": 201 - rank,
+            "relativeScore": 201 - rank,
         })
     key = day.isoformat()
     return {
+        "collectionVersion": "test-relative-score-v1",
         "periodKey": key,
         "scheduledAt": f"{key}T22:00:00+08:00",
         "collectedAt": f"{key}T22:03:00+08:00",
@@ -171,7 +172,7 @@ class SettlementTests(unittest.TestCase):
         day = date(2026, 7, 13)
         self.settle(day)
         replacement = snapshot_payload(day)
-        replacement["entries"][0]["weeklyPlays"] += 1
+        replacement["entries"][0]["relativeScore"] += 1
         with self.assertRaisesRegex(ValueError, "已结算"):
             import_netease_snapshot(self.connection, replacement)
 
@@ -181,7 +182,7 @@ class SettlementTests(unittest.TestCase):
         netease_total = self.connection.execute(
             "SELECT SUM(points) FROM point_ledger WHERE period_id=? AND source='netease'", (period_id,)
         ).fetchone()[0]
-        self.assertEqual(netease_total, 10_000)
+        self.assertAlmostEqual(netease_total, 10_000)
         self.assertEqual(self.connection.execute("SELECT COUNT(*) FROM chart_entries WHERE period_id=?", (period_id,)).fetchone()[0], 100)
 
     def test_bilibili_view_scoring_boundaries(self) -> None:
@@ -439,7 +440,7 @@ class SettlementTests(unittest.TestCase):
         self.assertEqual(live["period"]["key"], "2026-W29")
         self.assertEqual(live["period"]["status"], "collecting")
         self.assertAlmostEqual(live["collection"]["coverage"], 3 / 7)
-        self.assertEqual(sum(item["points"]["netease"] for item in live["entries"]), 30_000)
+        self.assertAlmostEqual(sum(item["points"]["netease"] for item in live["entries"]), 30_000)
 
         for offset in range(3, 7):
             self.settle(monday + timedelta(days=offset))
@@ -447,18 +448,18 @@ class SettlementTests(unittest.TestCase):
         frozen = snapshot_for_period(self.connection, frozen_id)
         self.assertEqual(frozen_id, live_id)
         self.assertEqual(frozen["period"]["status"], "settled")
-        self.assertEqual(sum(item["points"]["netease"] for item in frozen["entries"]), 70_000)
+        self.assertAlmostEqual(sum(item["points"]["netease"] for item in frozen["entries"]), 70_000)
         period = self.connection.execute("SELECT frozen FROM chart_periods WHERE id=?", (frozen_id,)).fetchone()
         self.assertEqual(period["frozen"], 1)
 
-    def test_long_period_netease_points_follow_daily_activity(self) -> None:
+    def test_long_period_netease_points_sum_daily_pools(self) -> None:
         first_day = date(2026, 7, 6)
         daily_ids = [self.settle(first_day + timedelta(days=offset)) for offset in range(7)]
 
         low_day = first_day + timedelta(days=7)
         low_payload = snapshot_payload(low_day)
         for entry in low_payload["entries"]:
-            entry["weeklyPlays"] = 1
+            entry["relativeScore"] = 1
         low_id = import_netease_snapshot(self.connection, low_payload)
         import_ledger_entries(self.connection, {
             "periodKey": low_day.isoformat(),
@@ -475,7 +476,7 @@ class SettlementTests(unittest.TestCase):
         high_day = low_day + timedelta(days=1)
         high_payload = snapshot_payload(high_day)
         for entry in high_payload["entries"]:
-            entry["weeklyPlays"] = 10_000
+            entry["relativeScore"] = 10_000
         high_id = import_netease_snapshot(self.connection, high_payload)
         settle_daily(self.connection, high_day.isoformat())
 
@@ -484,7 +485,7 @@ class SettlementTests(unittest.TestCase):
                 "SELECT SUM(points) FROM point_ledger WHERE period_id=? AND source='netease'",
                 (period_id,),
             ).fetchone()[0]
-            self.assertEqual(daily_total, 10_000)
+            self.assertAlmostEqual(daily_total, 10_000)
 
         weekly_id = settle_weekly(self.connection, high_day.isoformat())
         totals = self.connection.execute(
@@ -639,7 +640,7 @@ class SettlementTests(unittest.TestCase):
         self.assertEqual(len(manifest["views"][0]["snapshots"]), 1)
         exported = json.loads(destination.read_text(encoding="utf-8"))
         self.assertEqual(len(exported["entries"]), 100)
-        self.assertEqual(sum(entry["points"]["netease"] for entry in exported["entries"]), 10_000)
+        self.assertAlmostEqual(sum(entry["points"]["netease"] for entry in exported["entries"]), 10_000)
 
 
 if __name__ == "__main__":

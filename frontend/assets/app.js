@@ -1,3 +1,4 @@
+import "../components/auth-gate.js";
 import "../components/app-navigation.js";
 import "../components/chart-tabs.js";
 import "../components/period-selector.js";
@@ -18,6 +19,7 @@ import {
   loadTrendHistory,
   mapEntry,
 } from "./chart-data.js";
+import { supabase } from "./supabase.js";
 
 const entityLabels = { songs: "歌曲", albums: "专辑", artists: "艺人" };
 const periodLabels = { daily: "日榜", weekly: "周榜", monthly: "月榜", yearly: "年榜" };
@@ -34,8 +36,11 @@ const state = {
   trendItem: null,
   snapshot: null,
   navigation: null,
+  started: false,
 };
 
+const authGate = document.querySelector("auth-gate");
+const appShell = document.querySelector("[data-app-shell]");
 const chartList = document.querySelector("chart-list");
 const bubblingSection = document.querySelector("bubbling-section");
 const periodSelector = document.querySelector("period-selector");
@@ -280,14 +285,107 @@ document.addEventListener("period-change", async (event) => {
   }
 });
 
-try {
-  state.manifest = await loadManifest();
-  Object.assign(state, state.manifest.defaultView);
-  document.querySelector('chart-tabs[name="entity"]').setAttribute("active", state.entityType);
-  document.querySelector('chart-tabs[name="period"]').setAttribute("active", state.periodType);
-  await loadCurrentView();
-} catch (error) {
+const loadUserContext = async (user) => {
+  const [profileResult, settingsResult] = await Promise.all([
+    supabase.from("profiles").select("*").eq("id", user.id).maybeSingle(),
+    supabase.from("user_settings").select("*").eq("user_id", user.id).maybeSingle(),
+  ]);
+  if (profileResult.error || settingsResult.error) {
+    authGate.setUser(user, "已登录；用户资料暂未同步。");
+    return;
+  }
+  authGate.setUser(user, "个人资料已同步。");
+};
+
+const startChartApp = async (user) => {
+  if (state.started) return;
+  state.started = true;
+  authGate.setUser(user, "正在加载个人榜单…");
+  try {
+    state.manifest ||= await loadManifest();
+    Object.assign(state, state.manifest.defaultView);
+    document.querySelector('chart-tabs[name="entity"]').setAttribute("active", state.entityType);
+    document.querySelector('chart-tabs[name="period"]').setAttribute("active", state.periodType);
+    await loadCurrentView();
+    appShell.hidden = false;
+    loadUserContext(user).catch(() => {
+      authGate.setUser(user, "已登录；用户资料暂未同步。");
+    });
+  } catch (error) {
+    state.started = false;
+    clearChart();
+    appShell.hidden = false;
+    status.textContent = error.message;
+    periodSelector.period = { title: "榜单加载失败", subtitle: "请检查数据文件", status: "failed" };
+    authGate.setUser(user, "已登录，但榜单加载失败。");
+  }
+};
+
+const stopChartApp = () => {
+  state.started = false;
+  state.chartRequest += 1;
+  state.trendRequest += 1;
+  state.aggregateRequest += 1;
+  state.snapshot = null;
+  state.navigation = null;
+  state.periodKey = null;
+  trendDetail.close();
+  settlementReveal.close();
+  aggregateTrend.stopPlayback();
   clearChart();
-  status.textContent = error.message;
-  periodSelector.period = { title: "榜单加载失败", subtitle: "请检查数据文件", status: "failed" };
+  appShell.hidden = true;
+};
+
+const showAuthError = (error) => {
+  authGate.setSignedOut(error?.message || "认证请求失败，请稍后重试。", true);
+};
+
+document.addEventListener("auth-login", async (event) => {
+  authGate.setBusy(true, "正在登录…");
+  const { error } = await supabase.auth.signInWithPassword(event.detail);
+  if (error) showAuthError(error);
+});
+
+document.addEventListener("auth-register", async (event) => {
+  authGate.setBusy(true, "正在创建账户…");
+  const { data, error } = await supabase.auth.signUp({
+    email: event.detail.email,
+    password: event.detail.password,
+  });
+  if (error) {
+    showAuthError(error);
+    return;
+  }
+  if (!data.session) {
+    authGate.setSignedOut("注册成功，请先完成邮箱验证后登录。");
+  }
+});
+
+document.addEventListener("auth-logout", async () => {
+  authGate.setBusy(true, "正在退出…");
+  const { error } = await supabase.auth.signOut();
+  if (error) authGate.setMessage(error.message, true);
+});
+
+supabase.auth.onAuthStateChange((_event, session) => {
+  queueMicrotask(() => {
+    if (session?.user) startChartApp(session.user);
+    else {
+      stopChartApp();
+      authGate.setSignedOut();
+    }
+  });
+});
+
+try {
+  const { data, error } = await supabase.auth.getSession();
+  if (error) throw error;
+  if (data.session?.user) await startChartApp(data.session.user);
+  else {
+    stopChartApp();
+    authGate.setSignedOut();
+  }
+} catch (error) {
+  stopChartApp();
+  showAuthError(error);
 }

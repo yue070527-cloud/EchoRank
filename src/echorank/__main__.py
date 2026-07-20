@@ -5,6 +5,7 @@ import json
 from datetime import date
 from pathlib import Path
 
+from .cloud import cloud_update
 from .database import connect, initialize
 from .demo import generate_demo
 from .export import export_period
@@ -80,6 +81,11 @@ def build_parser() -> argparse.ArgumentParser:
     upload_supabase.add_argument("--env-file", default=".env")
     upload_supabase.add_argument("--timeout", type=float, default=20)
 
+    cloud = commands.add_parser("cloud-update")
+    cloud.add_argument("--state-root", required=True)
+    cloud.add_argument("--frontend", required=True)
+    cloud.add_argument("--timeout", type=float, default=20)
+
     export = commands.add_parser("export")
     export.add_argument("entity_type", choices=("songs", "albums", "artists"))
     export.add_argument("period_type", choices=("daily", "weekly", "monthly", "yearly"))
@@ -113,6 +119,17 @@ def main() -> None:
         print(f"年榜：{result.year_key}")
         for (entity_type, period_type, period_key), path in sorted(result.paths.items()):
             print(f"{entity_type}/{period_type}/{period_key}：{path}")
+        return
+    if args.command == "cloud-update":
+        result = cloud_update(args.state_root, args.frontend, args.timeout)
+        if result.update.skipped:
+            print("当前未到 22:00，未采集、保存或上传榜单")
+            return
+        print("已恢复私密历史" if result.restored else "已初始化私密历史")
+        print(f"日榜：{result.update.period_key}（{result.update.entry_count} 条）")
+        print(
+            f"已上传 {result.upload.periods} 个周期和 {result.upload.entries} 条榜单记录"
+        )
         return
     if args.command == "upload-supabase":
         result = upload_manifest(

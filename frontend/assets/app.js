@@ -300,6 +300,17 @@ document.addEventListener("period-change", async (event) => {
   }
 });
 
+const showEmptyChartApp = (uid) => {
+  Object.assign(state, state.manifest.defaultView);
+  document.querySelector('chart-tabs[name="entity"]').setAttribute("active", state.entityType);
+  document.querySelector('chart-tabs[name="period"]').setAttribute("active", state.periodType);
+  setMode("charts");
+  showUnavailable();
+  neteaseOnboarding.hidden = true;
+  appShell.hidden = false;
+  authGate.setUser(state.user, `网易云 UID ${uid} 已绑定，等待首次榜单生成。`);
+};
+
 const loadUserSettings = async (userId) => {
   const { data, error } = await supabase
     .from("user_settings")
@@ -340,10 +351,13 @@ const startChartApp = async (user) => {
       if (state.user?.id === user.id) authGate.setUser(user, "已登录；用户资料暂未同步。");
     });
     if (!manifest.views.length) {
-      appShell.hidden = true;
-      neteaseOnboarding.hidden = false;
-      if (settings.netease_uid) neteaseOnboarding.setConfigured(settings.netease_uid);
-      else neteaseOnboarding.setEditable();
+      if (settings.netease_uid) {
+        showEmptyChartApp(settings.netease_uid);
+      } else {
+        appShell.hidden = true;
+        neteaseOnboarding.hidden = false;
+        neteaseOnboarding.setEditable();
+      }
       return;
     }
     Object.assign(state, manifest.defaultView);
@@ -410,7 +424,7 @@ document.addEventListener("netease-uid-save", async (event) => {
     neteaseOnboarding.setError("保存失败：用户设置不存在或无权更新。");
     return;
   }
-  neteaseOnboarding.setConfigured(data.netease_uid);
+  showEmptyChartApp(data.netease_uid);
 });
 
 document.addEventListener("auth-login", async (event) => {

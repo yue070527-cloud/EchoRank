@@ -165,8 +165,12 @@ def update_charts(
     now: datetime | None = None,
     timeout: float = 20,
     fetcher: Fetcher = _default_fetcher,
+    netease_uid: str | None = None,
 ) -> UpdateResult:
-    config = load_config(config_path)
+    if netease_uid is None:
+        netease_uid = load_config(config_path)["neteaseUid"]
+    elif not isinstance(netease_uid, str) or not netease_uid.isdecimal():
+        raise ValueError("网易云 UID 必须是数字字符串")
     current = now or datetime.now(CHINA_TIMEZONE)
     if current.tzinfo is None:
         raise ValueError("当前时间必须包含时区")
@@ -196,7 +200,7 @@ def update_charts(
                 payload = _load_archived_snapshot(archive_path, period_key, current)
             else:
                 payload, archive_path = collect_weekly_snapshot(
-                    config["neteaseUid"], period_key, raw_root, timeout, fetcher, current
+                    netease_uid, period_key, raw_root, timeout, fetcher, current
                 )
                 collected = True
             import_netease_snapshot(connection, payload)

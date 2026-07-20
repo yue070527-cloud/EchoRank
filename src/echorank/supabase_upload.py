@@ -79,8 +79,8 @@ def _load_env(path: str | Path) -> dict[str, str]:
     return values
 
 
-def load_config(env_file: str | Path = ".env") -> SupabaseConfig:
-    file_values = _load_env(env_file)
+def load_config(env_file: str | Path | None = ".env") -> SupabaseConfig:
+    file_values = {} if env_file is None else _load_env(env_file)
     values = {
         name: os.environ.get(name, file_values.get(name, "")).strip()
         for name in (
@@ -313,6 +313,29 @@ class SupabaseUploader:
             return json.loads(raw.decode("utf-8"))
         except (UnicodeDecodeError, json.JSONDecodeError) as error:
             raise ValueError(f"Supabase {resource} 返回了无效 JSON") from error
+
+    def fetch_netease_uid(self) -> str:
+        response = self._request(
+            "GET",
+            "user_settings",
+            query={
+                "select": "netease_uid",
+                "user_id": f"eq.{self.config.user_id}",
+            },
+            expect_json=True,
+        )
+        if not isinstance(response, list):
+            raise ValueError("Supabase user_settings 返回格式无效")
+        if not response:
+            raise ValueError("未找到该用户的网易云设置")
+        if len(response) != 1 or not isinstance(response[0], dict):
+            raise ValueError("该用户的网易云设置不是唯一记录")
+        uid = response[0].get("netease_uid")
+        if uid is None or uid == "":
+            raise ValueError("该用户尚未绑定网易云 UID")
+        if not isinstance(uid, str) or not uid.isdecimal():
+            raise ValueError("Supabase 中的 netease_uid 必须是数字字符串")
+        return uid
 
     def _period_row(self, upload: SnapshotUpload) -> dict:
         snapshot = upload.payload

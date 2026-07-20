@@ -154,6 +154,31 @@ class WorkflowTests(unittest.TestCase):
         self.assertFalse(result.collected)
         self.assertEqual(result.entry_count, 100)
 
+    def test_direct_uid_does_not_require_local_config(self) -> None:
+        result = update_charts(
+            self.root / "missing.json",
+            self.database,
+            self.raw_root,
+            self.frontend,
+            self.now,
+            fetcher=lambda request, timeout: raw_response(),
+            netease_uid="123456",
+        )
+        self.assertEqual(result.entry_count, 100)
+        self.assertTrue(self.database.exists())
+
+    def test_invalid_direct_uid_creates_no_database(self) -> None:
+        with self.assertRaisesRegex(ValueError, "UID 必须是数字字符串"):
+            update_charts(
+                self.root / "missing.json",
+                self.database,
+                self.raw_root,
+                self.frontend,
+                self.now,
+                netease_uid="12x",
+            )
+        self.assertFalse(self.database.exists())
+
     def test_config_errors_are_clear_and_create_no_database(self) -> None:
         missing = self.root / "missing.json"
         with self.assertRaisesRegex(ValueError, "缺少本机配置"):

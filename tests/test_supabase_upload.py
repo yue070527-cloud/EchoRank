@@ -15,7 +15,12 @@ from uuid import uuid4
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from echorank.supabase_upload import load_config, load_snapshots, upload_manifest
+from echorank.supabase_upload import (
+    SupabaseUploader,
+    load_config,
+    load_snapshots,
+    upload_manifest,
+)
 
 
 class Response(BytesIO):
@@ -178,6 +183,52 @@ class SupabaseUploadTests(unittest.TestCase):
         )
         with self.assertRaisesRegex(ValueError, "有效 UUID"):
             load_config(self.env)
+
+    def test_fetch_netease_uid_uses_fixed_user_filter(self) -> None:
+        requests = []
+
+        def requester(request, timeout):
+            requests.append(request)
+            return Response(json.dumps([{"netease_uid": "123456"}]).encode())
+
+        uploader = SupabaseUploader(load_config(self.env), requester=requester)
+        self.assertEqual(uploader.fetch_netease_uid(), "123456")
+        query = parse_qs(urlparse(requests[0].full_url).query)
+        self.assertEqual(query, {
+            "select": ["netease_uid"],
+            "user_id": [f"eq.{self.user_id}"],
+        })
+
+    def test_fetch_netease_uid_rejects_missing_or_invalid_values(self) -> None:
+        config = load_config(self.env)
+        cases = [
+            ([], "未找到"),
+            ([{"netease_uid": None}], "尚未绑定"),
+            ([{"netease_uid": "12x"}], "数字字符串"),
+            ([{"netease_uid": "1"}, {"netease_uid": "2"}], "不是唯一"),
+        ]
+        for payload, message in cases:
+            with self.subTest(payload=payload):
+                uploader = SupabaseUploader(
+                    config,
+                    requester=lambda request, timeout, payload=payload: Response(
+                        json.dumps(payload).encode()
+                    ),
+                )
+                with self.assertRaisesRegex(ValueError, message) as context:
+                    uploader.fetch_netease_uid()
+                self.assertNotIn("local-secret", str(context.exception))
+
+    def test_environment_only_config_does_not_require_env_file(self) -> None:
+        values = {
+            "SUPABASE_URL": "https://example.supabase.co",
+            "SUPABASE_SECRET_KEY": "environment-secret",
+            "SUPABASE_USER_ID": self.user_id,
+        }
+        with patch.dict(os.environ, values, clear=True):
+            config = load_config(None)
+        self.assertEqual(config.user_id, self.user_id)
+        self.assertEqual(config.secret_key, "environment-secret")
 
     def test_insert_failure_is_actionable_and_hides_secret(self) -> None:
         period_id = str(uuid4())

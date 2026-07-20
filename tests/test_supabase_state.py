@@ -47,6 +47,21 @@ class SupabaseStateTests(unittest.TestCase):
         )
         self.assertFalse(restored)
 
+    def test_missing_state_with_supabase_400_is_first_run(self) -> None:
+        def requester(request, timeout):
+            raise HTTPError(
+                request.full_url,
+                400,
+                "missing",
+                {},
+                BytesIO(b'{"statusCode":"404","error":"not_found","message":"Object not found"}'),
+            )
+
+        restored = SupabaseStateStore(self.config, requester=requester).restore(
+            self.root / "state"
+        )
+        self.assertFalse(restored)
+
     def test_save_and_restore_only_database_and_raw_files(self) -> None:
         requests = []
         state = self.root / "state"

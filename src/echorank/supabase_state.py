@@ -45,9 +45,13 @@ class SupabaseStateStore:
             with response:
                 return response.read()
         except HTTPError as error:
-            if method == "GET" and error.code == 404:
-                return None
             detail = error.read().decode("utf-8", errors="replace")[:500]
+            missing = error.code == 404 or (
+                error.code == 400
+                and ("Object not found" in detail or '"error":"not_found"' in detail)
+            )
+            if method == "GET" and missing:
+                return None
             raise ValueError(
                 f"Supabase Storage {method} {STATE_BUCKET} 失败（HTTP {error.code}）：{detail}"
             ) from None

@@ -11,6 +11,7 @@ import "../components/settlement-archive.js";
 import {
   buildAggregateTrend,
   buildTrendSeries,
+  clearChartDataCache,
   findView,
   getLatestPeriodKey,
   getSnapshotNavigation,
@@ -33,10 +34,12 @@ const state = {
   chartRequest: 0,
   trendRequest: 0,
   aggregateRequest: 0,
+  settlementRequest: 0,
   trendItem: null,
   snapshot: null,
   navigation: null,
   started: false,
+  user: null,
 };
 
 const authGate = document.querySelector("auth-gate");
@@ -108,14 +111,14 @@ const maybeShowSettlement = async (snapshot, navigation) => {
     : ["settled", "partial"].includes(snapshot.period.status);
   if (!isLatest || !isFinal) return;
   const settlementVersion = snapshot.collection.collectedAt || snapshot.collection.sourceSnapshot || "unknown";
-  const key = `echorank-settlement:${snapshot.chart.periodType}:${snapshot.period.key}:${snapshot.period.status}:${settlementVersion}`;
+  const key = `echorank-settlement:${state.user.id}:${snapshot.chart.periodType}:${snapshot.period.key}:${snapshot.period.status}:${settlementVersion}`;
   if (localStorage.getItem(key)) return;
   const winners = [];
   for (const [entityType, label] of [["songs", "冠军单曲"], ["albums", "冠军专辑"]]) {
     const view = findView(state.manifest, entityType, snapshot.chart.periodType);
     const entry = view?.snapshots?.find((item) => item.periodKey === snapshot.period.key);
     if (!entry) continue;
-    const winnerSnapshot = await loadSnapshot(entry.path);
+    const winnerSnapshot = await loadSnapshot(state.user.id, entry);
     const champion = winnerSnapshot.entries.find((item) => item.rank.current === 1);
     if (champion) winners.push({ label, item: mapEntry(champion) });
   }
@@ -142,7 +145,7 @@ const loadCurrentView = async () => {
     ? state.periodKey
     : getLatestPeriodKey(view);
   const navigation = getSnapshotNavigation(view, state.periodKey);
-  const snapshot = await loadSnapshot(navigation.current.path);
+  const snapshot = await loadSnapshot(state.user.id, navigation.current);
   if (request !== state.chartRequest) return;
   state.snapshot = snapshot;
   state.navigation = navigation;
@@ -160,12 +163,12 @@ const loadAggregateTrend = async () => {
   }
   const view = findView(state.manifest, state.entityType, state.periodType);
   aggregateTrend.setLoading("正在加载综合排名走势…");
-  if (!view?.historyPath) {
+  if (!view?.snapshots?.length) {
     aggregateTrend.setError("该榜单尚未生成综合走势数据。");
     return;
   }
   try {
-    const history = await loadTrendHistory(view.historyPath);
+    const history = await loadTrendHistory(state.user.id, state.entityType, state.periodType);
     if (request !== state.aggregateRequest || state.mode !== "trends") return;
     aggregateTrend.setData(buildAggregateTrend(history, state.snapshot, state.topN), {
       entity: entityLabels[state.entityType],
@@ -177,6 +180,8 @@ const loadAggregateTrend = async () => {
 };
 
 const loadSettlementArchive = async () => {
+  const request = ++state.settlementRequest;
+  const userId = state.user.id;
   const records = [];
   for (const periodType of ["daily", "weekly", "monthly", "yearly"]) {
     const songView = findView(state.manifest, "songs", periodType);
@@ -184,7 +189,10 @@ const loadSettlementArchive = async () => {
     for (const songRef of songView?.snapshots || []) {
       const albumRef = albumView?.snapshots?.find((item) => item.periodKey === songRef.periodKey);
       if (!albumRef) continue;
-      const [songs, albums] = await Promise.all([loadSnapshot(songRef.path), loadSnapshot(albumRef.path)]);
+      const [songs, albums] = await Promise.all([
+        loadSnapshot(userId, songRef),
+        loadSnapshot(userId, albumRef),
+      ]);
       const final = periodType === "daily"
         ? songs.period.status === "settled"
         : ["settled", "partial"].includes(songs.period.status) && songs.entries[0]?.record.championships > 0;
@@ -200,6 +208,7 @@ const loadSettlementArchive = async () => {
       });
     }
   }
+  if (request !== state.settlementRequest || state.mode !== "settlements") return;
   settlementArchive.records = records.sort((left, right) => right.periodKey.localeCompare(left.periodKey));
 };
 
@@ -209,9 +218,13 @@ const setMode = (mode) => {
   trendsRegion.hidden = mode !== "trends";
   settlementsRegion.hidden = mode !== "settlements";
   if (mode === "trends") loadAggregateTrend();
-  else if (mode === "settlements") loadSettlementArchive();
+  else if (mode === "settlements") loadSettlementArchive().catch((error) => {
+    if (mode === state.mode) settlementArchive.records = [];
+    status.textContent = error.message;
+  });
   else {
     state.aggregateRequest += 1;
+    state.settlementRequest += 1;
     aggregateTrend.stopPlayback();
   }
 };
@@ -221,12 +234,12 @@ const loadTrend = async (periodType) => {
   const view = findView(state.manifest, state.entityType, periodType);
   trendDetail.setPeriod(periodType);
   trendDetail.setLoading("正在加载排名走势…");
-  if (!view?.historyPath) {
+  if (!view?.snapshots?.length) {
     trendDetail.setError("该统计尺度尚未生成趋势数据。");
     return;
   }
   try {
-    const history = await loadTrendHistory(view.historyPath);
+    const history = await loadTrendHistory(state.user.id, state.entityType, periodType);
     if (request !== state.trendRequest) return;
     trendDetail.setData(buildTrendSeries(history, state.trendItem.id));
   } catch (error) {
@@ -287,9 +300,10 @@ document.addEventListener("period-change", async (event) => {
 
 const loadUserContext = async (user) => {
   const [profileResult, settingsResult] = await Promise.all([
-    supabase.from("profiles").select("*").eq("id", user.id).maybeSingle(),
+    supabase.from("profiles").select("*").eq("user_id", user.id).maybeSingle(),
     supabase.from("user_settings").select("*").eq("user_id", user.id).maybeSingle(),
   ]);
+  if (state.user?.id !== user.id) return;
   if (profileResult.error || settingsResult.error) {
     authGate.setUser(user, "已登录；用户资料暂未同步。");
     return;
@@ -298,25 +312,30 @@ const loadUserContext = async (user) => {
 };
 
 const startChartApp = async (user) => {
-  if (state.started) return;
+  if (state.started && state.user?.id === user.id) return;
+  if (state.started) stopChartApp();
   state.started = true;
+  state.user = user;
   authGate.setUser(user, "正在加载个人榜单…");
   try {
-    state.manifest ||= await loadManifest();
+    state.manifest = await loadManifest(user.id);
+    if (state.user?.id !== user.id) return;
     Object.assign(state, state.manifest.defaultView);
     document.querySelector('chart-tabs[name="entity"]').setAttribute("active", state.entityType);
     document.querySelector('chart-tabs[name="period"]').setAttribute("active", state.periodType);
     await loadCurrentView();
+    if (state.user?.id !== user.id) return;
     appShell.hidden = false;
     loadUserContext(user).catch(() => {
-      authGate.setUser(user, "已登录；用户资料暂未同步。");
+      if (state.user?.id === user.id) authGate.setUser(user, "已登录；用户资料暂未同步。");
     });
   } catch (error) {
+    if (state.user?.id !== user.id) return;
     state.started = false;
     clearChart();
     appShell.hidden = false;
     status.textContent = error.message;
-    periodSelector.period = { title: "榜单加载失败", subtitle: "请检查数据文件", status: "failed" };
+    periodSelector.period = { title: "榜单加载失败", subtitle: "请检查云端数据", status: "failed" };
     authGate.setUser(user, "已登录，但榜单加载失败。");
   }
 };
@@ -326,11 +345,17 @@ const stopChartApp = () => {
   state.chartRequest += 1;
   state.trendRequest += 1;
   state.aggregateRequest += 1;
+  state.settlementRequest += 1;
+  state.manifest = null;
+  state.user = null;
   state.snapshot = null;
   state.navigation = null;
   state.periodKey = null;
+  state.trendItem = null;
+  clearChartDataCache();
   trendDetail.close();
   settlementReveal.close();
+  settlementArchive.records = [];
   aggregateTrend.stopPlayback();
   clearChart();
   appShell.hidden = true;
@@ -357,7 +382,10 @@ document.addEventListener("auth-register", async (event) => {
     return;
   }
   if (!data.session) {
-    authGate.setSignedOut("注册成功，请先完成邮箱验证后登录。");
+    authGate.setSignedOut(data.user
+      ? "注册成功，请先完成邮箱验证后登录。"
+      : "注册请求已完成，但未创建账户，请稍后重试。",
+    !data.user);
   }
 });
 

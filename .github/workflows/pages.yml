@@ -33,10 +33,17 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Build public frontend
+        run: |
+          mkdir _site
+          cp -a frontend/. _site/
+          rm -f _site/data/chart-manifest.json
+          rm -rf _site/data/charts _site/data/trends
+
       - name: Upload frontend
         uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend
+          path: _site
 
       - name: Deploy GitHub Pages
         id: deployment

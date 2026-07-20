@@ -19,6 +19,7 @@ from .settlement import (
     settle_weekly,
     settle_yearly,
 )
+from .supabase_upload import upload_manifest
 from .workflow import update_charts
 
 
@@ -74,6 +75,11 @@ def build_parser() -> argparse.ArgumentParser:
     repair.add_argument("--frontend", default="frontend")
     repair.add_argument("--check", action="store_true")
 
+    upload_supabase = commands.add_parser("upload-supabase")
+    upload_supabase.add_argument("--frontend", default="frontend")
+    upload_supabase.add_argument("--env-file", default=".env")
+    upload_supabase.add_argument("--timeout", type=float, default=20)
+
     export = commands.add_parser("export")
     export.add_argument("entity_type", choices=("songs", "albums", "artists"))
     export.add_argument("period_type", choices=("daily", "weekly", "monthly", "yearly"))
@@ -107,6 +113,14 @@ def main() -> None:
         print(f"年榜：{result.year_key}")
         for (entity_type, period_type, period_key), path in sorted(result.paths.items()):
             print(f"{entity_type}/{period_type}/{period_key}：{path}")
+        return
+    if args.command == "upload-supabase":
+        result = upload_manifest(
+            args.frontend,
+            args.env_file,
+            args.timeout,
+        )
+        print(f"Uploaded {result.periods} periods and {result.entries} entries")
         return
     if args.command == "repair-score-history":
         if args.check:

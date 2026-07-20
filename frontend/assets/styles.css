@@ -54,6 +54,10 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .auth-session { display: flex; align-items: center; justify-content: center; gap: 14px; min-height: 44px; padding: 8px 20px; border-bottom: 1px solid var(--line); background: var(--surface); font-size: 11px; }
 .auth-session__message { color: var(--muted); }
 .auth-session button { padding: 7px 12px; color: var(--ink); background: var(--paper); }
+.onboarding-screen { min-height: calc(100dvh - 44px); display: grid; place-items: center; padding: 32px 20px; }
+.onboarding-card strong { color: var(--ink); }
+.onboarding-form > button { padding: 14px 18px; border: 1px solid var(--ink); color: var(--surface); background: var(--ink); cursor: pointer; font-weight: 900; }
+.onboarding-form > button:disabled { color: var(--muted); background: var(--soft-line); cursor: wait; }
 
 .page-shell { width: min(1440px, calc(100% - 40px)); margin: 0 auto; padding-bottom: 96px; }
 .app-nav { min-height: 92px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 28px; border-bottom: 2px solid var(--ink); }
@@ -266,6 +270,7 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   .auth-form__actions { grid-template-columns: 1fr; }
   .auth-session { align-items: stretch; flex-direction: column; gap: 6px; }
   .auth-session button { width: 100%; }
+  .onboarding-screen { min-height: calc(100dvh - 108px); padding: 12px; }
   .page-shell { width: min(100% - 24px, 680px); }
   .app-nav { min-height: 76px; }
   .update-clock { display: none; }

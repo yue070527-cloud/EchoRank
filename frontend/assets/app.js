@@ -1,4 +1,5 @@
 import "../components/auth-gate.js";
+import "../components/netease-onboarding.js";
 import "../components/app-navigation.js";
 import "../components/chart-tabs.js";
 import "../components/period-selector.js";
@@ -43,6 +44,7 @@ const state = {
 };
 
 const authGate = document.querySelector("auth-gate");
+const neteaseOnboarding = document.querySelector("netease-onboarding");
 const appShell = document.querySelector("[data-app-shell]");
 const chartList = document.querySelector("chart-list");
 const bubblingSection = document.querySelector("bubbling-section");
@@ -298,17 +300,25 @@ document.addEventListener("period-change", async (event) => {
   }
 });
 
+const loadUserSettings = async (userId) => {
+  const { data, error } = await supabase
+    .from("user_settings")
+    .select("netease_uid")
+    .eq("user_id", userId)
+    .maybeSingle();
+  if (error) throw new Error(`读取用户设置失败：${error.message}`);
+  if (!data) throw new Error("用户设置不存在，请重新注册或联系管理员。");
+  return data;
+};
+
 const loadUserContext = async (user) => {
-  const [profileResult, settingsResult] = await Promise.all([
-    supabase.from("profiles").select("*").eq("user_id", user.id).maybeSingle(),
-    supabase.from("user_settings").select("*").eq("user_id", user.id).maybeSingle(),
-  ]);
+  const { error } = await supabase
+    .from("profiles")
+    .select("user_id")
+    .eq("user_id", user.id)
+    .maybeSingle();
   if (state.user?.id !== user.id) return;
-  if (profileResult.error || settingsResult.error) {
-    authGate.setUser(user, "已登录；用户资料暂未同步。");
-    return;
-  }
-  authGate.setUser(user, "个人资料已同步。");
+  authGate.setUser(user, error ? "已登录；用户资料暂未同步。" : "个人资料已同步。");
 };
 
 const startChartApp = async (user) => {
@@ -317,26 +327,39 @@ const startChartApp = async (user) => {
   state.started = true;
   state.user = user;
   authGate.setUser(user, "正在加载个人榜单…");
+  neteaseOnboarding.hidden = true;
+  neteaseOnboarding.setLoading();
   try {
-    state.manifest = await loadManifest(user.id);
+    const [manifest, settings] = await Promise.all([
+      loadManifest(user.id),
+      loadUserSettings(user.id),
+    ]);
     if (state.user?.id !== user.id) return;
-    Object.assign(state, state.manifest.defaultView);
+    state.manifest = manifest;
+    loadUserContext(user).catch(() => {
+      if (state.user?.id === user.id) authGate.setUser(user, "已登录；用户资料暂未同步。");
+    });
+    if (!manifest.views.length) {
+      appShell.hidden = true;
+      neteaseOnboarding.hidden = false;
+      if (settings.netease_uid) neteaseOnboarding.setConfigured(settings.netease_uid);
+      else neteaseOnboarding.setEditable();
+      return;
+    }
+    Object.assign(state, manifest.defaultView);
     document.querySelector('chart-tabs[name="entity"]').setAttribute("active", state.entityType);
     document.querySelector('chart-tabs[name="period"]').setAttribute("active", state.periodType);
     await loadCurrentView();
     if (state.user?.id !== user.id) return;
     appShell.hidden = false;
-    loadUserContext(user).catch(() => {
-      if (state.user?.id === user.id) authGate.setUser(user, "已登录；用户资料暂未同步。");
-    });
   } catch (error) {
     if (state.user?.id !== user.id) return;
     state.started = false;
     clearChart();
-    appShell.hidden = false;
-    status.textContent = error.message;
-    periodSelector.period = { title: "榜单加载失败", subtitle: "请检查云端数据", status: "failed" };
-    authGate.setUser(user, "已登录，但榜单加载失败。");
+    appShell.hidden = true;
+    neteaseOnboarding.hidden = false;
+    neteaseOnboarding.setFailure(error.message);
+    authGate.setUser(user, "已登录，但个人数据加载失败。");
   }
 };
 
@@ -359,11 +382,36 @@ const stopChartApp = () => {
   aggregateTrend.stopPlayback();
   clearChart();
   appShell.hidden = true;
+  neteaseOnboarding.hidden = true;
+  neteaseOnboarding.reset();
 };
 
 const showAuthError = (error) => {
   authGate.setSignedOut(error?.message || "认证请求失败，请稍后重试。", true);
 };
+
+document.addEventListener("netease-uid-save", async (event) => {
+  const userId = state.user?.id;
+  if (!userId) return;
+  const uid = event.detail.uid;
+  neteaseOnboarding.setSaving(uid);
+  const { data, error } = await supabase
+    .from("user_settings")
+    .update({ netease_uid: uid, updated_at: new Date().toISOString() })
+    .eq("user_id", userId)
+    .select("netease_uid")
+    .maybeSingle();
+  if (state.user?.id !== userId) return;
+  if (error) {
+    neteaseOnboarding.setError(`保存失败：${error.message}`);
+    return;
+  }
+  if (!data) {
+    neteaseOnboarding.setError("保存失败：用户设置不存在或无权更新。");
+    return;
+  }
+  neteaseOnboarding.setConfigured(data.netease_uid);
+});
 
 document.addEventListener("auth-login", async (event) => {
   authGate.setBusy(true, "正在登录…");

@@ -301,13 +301,13 @@ document.addEventListener("period-change", async (event) => {
   }
 });
 
-const showEmptyChartApp = (uid) => {
+const showEmptyChartApp = (uid, message = "网易云 UID 已绑定，等待首份榜单生成；通常需要几分钟。") => {
   Object.assign(state, state.manifest.defaultView);
   document.querySelector('chart-tabs[name="entity"]').setAttribute("active", state.entityType);
   document.querySelector('chart-tabs[name="period"]').setAttribute("active", state.periodType);
   setMode("charts");
   showUnavailable();
-  status.textContent = "网易云 UID 已绑定，等待下一次自动采集；当前暂无榜单数据。";
+  status.textContent = message;
   neteaseOnboarding.hidden = true;
   appShell.hidden = false;
   authGate.setUser(state.user, `网易云 UID ${uid} 已绑定。`);
@@ -356,7 +356,10 @@ const startChartApp = async (user) => {
     });
     if (!manifest.views.length) {
       if (settings.netease_uid) {
-        showEmptyChartApp(settings.netease_uid);
+        showEmptyChartApp(
+          settings.netease_uid,
+          "网易云 UID 已绑定；若首份榜单仍在生成，请稍后刷新页面。",
+        );
       } else {
         appShell.hidden = true;
         neteaseOnboarding.hidden = false;
@@ -436,7 +439,16 @@ document.addEventListener("netease-uid-save", async (event) => {
     neteaseOnboarding.setError("保存失败：用户设置不存在或无权更新。");
     return;
   }
-  showEmptyChartApp(data.netease_uid);
+  const { error: requestError } = await supabase
+    .from("collection_requests")
+    .insert({ user_id: userId, request_type: "initial" });
+  if (state.user?.id !== userId) return;
+  showEmptyChartApp(
+    data.netease_uid,
+    requestError
+      ? "UID 已绑定，但首份榜单任务暂未创建；系统仍会在下一次 22:05 自动采集。"
+      : "UID 已绑定，正在准备首份基准榜单；通常需要几分钟，刷新页面即可查看。",
+  );
 });
 
 document.addEventListener("auth-login", async (event) => {
@@ -459,6 +471,23 @@ document.addEventListener("auth-register", async (event) => {
     if (data.user) authGate.setVerificationPending(event.detail.email);
     else authGate.setSignedOut("注册请求未创建账户，请稍后重试。", true);
   }
+});
+
+document.addEventListener("auth-delete-account", async (event) => {
+  const userId = state.user?.id;
+  if (!userId) return;
+  authGate.setBusy(true, "正在永久注销账户…");
+  const { data, error } = await supabase.functions.invoke("delete-account", {
+    body: { email: event.detail.email },
+  });
+  if (state.user?.id !== userId) return;
+  if (error || data?.deleted !== true) {
+    authGate.setMessage("账户注销失败，请稍后重试。", true);
+    return;
+  }
+  stopChartApp();
+  await supabase.auth.signOut({ scope: "local" }).catch(() => {});
+  authGate.setSignedOut("账户已永久注销。", false);
 });
 
 document.addEventListener("auth-logout", async () => {

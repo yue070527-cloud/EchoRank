@@ -5,7 +5,7 @@ import json
 from datetime import date
 from pathlib import Path
 
-from .cloud import cloud_update
+from .cloud import cloud_update, process_collection_requests
 from .database import connect, initialize
 from .demo import generate_demo
 from .export import export_period
@@ -86,6 +86,11 @@ def build_parser() -> argparse.ArgumentParser:
     cloud.add_argument("--frontend", required=True)
     cloud.add_argument("--timeout", type=float, default=20)
 
+    requests = commands.add_parser("process-collection-requests")
+    requests.add_argument("--state-root", required=True)
+    requests.add_argument("--frontend", required=True)
+    requests.add_argument("--timeout", type=float, default=20)
+
     export = commands.add_parser("export")
     export.add_argument("entity_type", choices=("songs", "albums", "artists"))
     export.add_argument("period_type", choices=("daily", "weekly", "monthly", "yearly"))
@@ -124,6 +129,15 @@ def main() -> None:
         result = cloud_update(args.state_root, args.frontend, args.timeout)
         print(
             f"用户 {result.users}：成功 {result.succeeded}，跳过 {result.skipped}，"
+            f"失败 {len(result.failed)}；上传 {result.periods} 个周期、{result.entries} 条记录"
+        )
+        if result.failed:
+            raise SystemExit(1)
+        return
+    if args.command == "process-collection-requests":
+        result = process_collection_requests(args.state_root, args.frontend, args.timeout)
+        print(
+            f"首采请求 {result.requests}：成功 {result.succeeded}，"
             f"失败 {len(result.failed)}；上传 {result.periods} 个周期、{result.entries} 条记录"
         )
         if result.failed:

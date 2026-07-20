@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "5 14 * * *"
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: read
@@ -31,7 +32,15 @@ jobs:
       - name: Install EchoRank
         run: python -m pip install .
 
+      - name: Process first-collection requests
+        if: github.event_name == 'schedule' && github.event.schedule != '5 14 * * *'
+        run: >-
+          python -m echorank process-collection-requests
+          --state-root "${RUNNER_TEMP}/echorank-state"
+          --frontend "${RUNNER_TEMP}/echorank-frontend"
+
       - name: Collect and upload private chart
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '5 14 * * *'
         run: >-
           python -m echorank cloud-update
           --state-root "${RUNNER_TEMP}/echorank-state"

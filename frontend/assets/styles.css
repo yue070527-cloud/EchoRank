@@ -59,6 +59,15 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .auth-session { display: flex; align-items: center; justify-content: center; gap: 14px; min-height: 44px; padding: 8px 20px; border-bottom: 1px solid var(--line); background: var(--surface); font-size: 11px; }
 .auth-session__message { color: var(--muted); }
 .auth-session button { padding: 7px 12px; color: var(--ink); background: var(--paper); }
+.auth-session .auth-session__danger, .account-delete .is-danger { color: var(--surface); background: var(--down); }
+.account-delete { width: min(760px, calc(100% - 24px)); margin: 12px auto; padding: 20px; border: 2px solid var(--down); background: var(--surface); }
+.account-delete__copy p { margin: 8px 0 0; color: var(--muted); line-height: 1.5; }
+.account-delete__form { display: grid; grid-template-columns: minmax(240px, 1fr) auto; gap: 14px; align-items: end; margin-top: 18px; }
+.account-delete__form label { display: grid; gap: 7px; color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .08em; }
+.account-delete__form input { width: 100%; padding: 11px 12px; border: 1px solid var(--line); color: var(--ink); background: var(--paper); }
+.account-delete__actions { display: flex; gap: 8px; }
+.account-delete__actions button { padding: 11px 14px; border: 1px solid var(--ink); cursor: pointer; font-weight: 900; }
+.account-delete__actions button:disabled { color: var(--muted); background: var(--soft-line); cursor: wait; }
 .onboarding-screen { min-height: calc(100dvh - 44px); display: grid; place-items: center; padding: 32px 20px; }
 .onboarding-card strong { color: var(--ink); }
 .onboarding-form > button { padding: 14px 18px; border: 1px solid var(--ink); color: var(--surface); background: var(--ink); cursor: pointer; font-weight: 900; }
@@ -275,6 +284,9 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
   .auth-form__actions { grid-template-columns: 1fr; }
   .auth-session { align-items: stretch; flex-direction: column; gap: 6px; }
   .auth-session button { width: 100%; }
+  .account-delete__form { grid-template-columns: 1fr; }
+  .account-delete__actions { flex-direction: column; }
+  .account-delete__actions button { width: 100%; }
   .onboarding-screen { min-height: calc(100dvh - 108px); padding: 12px; }
   .page-shell { width: min(100% - 24px, 680px); }
   .app-nav { min-height: 76px; }

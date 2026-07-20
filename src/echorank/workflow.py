@@ -166,6 +166,7 @@ def update_charts(
     timeout: float = 20,
     fetcher: Fetcher = _default_fetcher,
     netease_uid: str | None = None,
+    target_date: date | None = None,
 ) -> UpdateResult:
     if netease_uid is None:
         netease_uid = load_config(config_path)["neteaseUid"]
@@ -176,7 +177,7 @@ def update_charts(
         raise ValueError("当前时间必须包含时区")
     current = current.astimezone(CHINA_TIMEZONE)
     current_date = current.date()
-    chart_date = current_date
+    chart_date = target_date or current_date
     period_key = chart_date.isoformat()
     iso_year, iso_week, _ = chart_date.isocalendar()
     week_key = f"{iso_year}-W{iso_week:02d}"
@@ -186,7 +187,7 @@ def update_charts(
 
     connection = connect(database_path)
     initialize(connection)
-    if current.time() < time(22):
+    if target_date is None and current.time() < time(22):
         try:
             return _skipped_update_result(connection, frontend_root)
         finally:

@@ -18,7 +18,7 @@ class NeteaseOnboarding extends HTMLElement {
     this.render();
   }
 
-  setEditable(uid = "", message = "保存后，系统会在下一次自动采集时生成你的榜单。") {
+  setEditable(uid = "", message = "保存后，系统会立即准备首份基准榜单；通常需要几分钟。") {
     this.mode = "editable";
     this.uid = uid;
     this.message = message;
@@ -51,7 +51,7 @@ class NeteaseOnboarding extends HTMLElement {
   setConfigured(uid) {
     this.mode = "configured";
     this.uid = uid;
-    this.message = "UID 已保存，系统会在下一次自动采集后生成榜单。";
+    this.message = "UID 已保存，系统正在准备首份基准榜单。";
     this.error = false;
     this.render();
   }

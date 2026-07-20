@@ -8,6 +8,7 @@ class AuthGate extends HTMLElement {
     this.message = "正在恢复登录状态…";
     this.error = false;
     this.busy = false;
+    this.deleteMode = false;
   }
 
   connectedCallback() {
@@ -24,6 +25,7 @@ class AuthGate extends HTMLElement {
   setSignedOut(message = "登录后查看你的个人榜单。", error = false) {
     this.mode = "signed-out";
     this.user = null;
+    this.deleteMode = false;
     this.message = message;
     this.error = error;
     this.busy = false;
@@ -41,6 +43,7 @@ class AuthGate extends HTMLElement {
   setUser(user, message = "登录状态已同步。") {
     this.mode = "signed-in";
     this.user = user;
+    this.deleteMode = false;
     this.message = message;
     this.error = false;
     this.busy = false;
@@ -84,15 +87,67 @@ class AuthGate extends HTMLElement {
     }
 
     if (this.mode === "signed-in") {
+      const email = this.user?.email || "Supabase 用户";
+      if (this.deleteMode) {
+        this.innerHTML = `
+          <section class="account-delete" aria-label="注销账户">
+            <div class="account-delete__copy">
+              <strong>永久注销账户</strong>
+              <p>账户、个人榜单、网易云 UID 与历史采集状态将被永久删除，无法恢复。</p>
+              <p>请输入当前邮箱 <strong>${this.escape(email)}</strong> 确认。</p>
+            </div>
+            <form class="account-delete__form">
+              <label>
+                <span>确认邮箱</span>
+                <input type="email" name="email" autocomplete="off" required ${this.busy ? "disabled" : ""}>
+              </label>
+              <div class="account-delete__actions">
+                <button type="button" data-auth-delete-cancel ${this.busy ? "disabled" : ""}>取消</button>
+                <button type="submit" class="is-danger" ${this.busy ? "disabled" : ""}>${this.busy ? "正在永久注销…" : "永久注销账户"}</button>
+              </div>
+            </form>
+            <p class="auth-message ${this.error ? "is-error" : ""}" aria-live="polite">${this.escape(this.message)}</p>
+          </section>
+        `;
+        const form = this.querySelector(".account-delete__form");
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          if (!form.reportValidity()) return;
+          const confirmation = String(new FormData(form).get("email") || "").trim();
+          if (confirmation.toLowerCase() !== email.toLowerCase()) {
+            this.setMessage("确认邮箱与当前账户不一致。", true);
+            return;
+          }
+          this.dispatchEvent(new CustomEvent("auth-delete-account", {
+            bubbles: true,
+            detail: { email: confirmation },
+          }));
+        });
+        this.querySelector("[data-auth-delete-cancel]").addEventListener("click", () => {
+          this.deleteMode = false;
+          this.message = "登录状态已同步。";
+          this.error = false;
+          this.render();
+        });
+        return;
+      }
+
       this.innerHTML = `
         <aside class="auth-session" aria-label="当前账户">
-          <span>已登录 · <strong>${this.escape(this.user?.email || "Supabase 用户")}</strong></span>
+          <span>已登录 · <strong>${this.escape(email)}</strong></span>
           <span class="auth-session__message">${this.escape(this.message)}</span>
           <button type="button" data-auth-logout ${this.busy ? "disabled" : ""}>退出</button>
+          <button type="button" class="auth-session__danger" data-auth-delete ${this.busy ? "disabled" : ""}>注销账户</button>
         </aside>
       `;
       this.querySelector("[data-auth-logout]").addEventListener("click", () => {
         this.dispatchEvent(new CustomEvent("auth-logout", { bubbles: true }));
+      });
+      this.querySelector("[data-auth-delete]").addEventListener("click", () => {
+        this.deleteMode = true;
+        this.message = "请输入当前邮箱以确认永久注销。";
+        this.error = false;
+        this.render();
       });
       return;
     }

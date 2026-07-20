@@ -4,6 +4,7 @@ import json
 import math
 import os
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
 from urllib.error import HTTPError, URLError
@@ -47,6 +48,13 @@ class SupabaseConfig:
 class UploadResult:
     periods: int
     entries: int
+
+
+@dataclass(frozen=True)
+class CollectionRequest:
+    id: str
+    user_id: str
+    netease_uid: str
 
 
 @dataclass(frozen=True)
@@ -357,6 +365,80 @@ class SupabaseUploader:
             if len(response) < 1000:
                 return users
             offset += 1000
+
+    def fetch_pending_collection_requests(self) -> list[CollectionRequest]:
+        response = self._request(
+            "GET",
+            "collection_requests",
+            query={
+                "select": "id,user_id",
+                "request_type": "eq.initial",
+                "status": "eq.pending",
+                "order": "requested_at",
+                "limit": "100",
+            },
+            expect_json=True,
+        )
+        if not isinstance(response, list):
+            raise ValueError("Supabase collection_requests 返回格式无效")
+        requests = []
+        for row in response:
+            if not isinstance(row, dict):
+                raise ValueError("Supabase collection_requests 包含无效记录")
+            try:
+                request_id = str(UUID(row.get("id")))
+                user_id = str(UUID(row.get("user_id")))
+            except (ValueError, TypeError, AttributeError) as error:
+                raise ValueError("Supabase collection_requests 包含无效 UUID") from error
+            uid = SupabaseUploader(self.config.for_user(user_id), self.timeout, self.requester).fetch_netease_uid()
+            requests.append(CollectionRequest(request_id, user_id, uid))
+        return requests
+
+    def claim_collection_request(self, request_id: str) -> bool:
+        response = self._request(
+            "PATCH",
+            "collection_requests",
+            query={"id": f"eq.{request_id}", "status": "eq.pending"},
+            body={
+                "status": "processing",
+                "started_at": datetime.now(timezone.utc).isoformat(),
+                "error": None,
+            },
+            prefer="return=representation",
+            expect_json=True,
+        )
+        return isinstance(response, list) and len(response) == 1
+
+    def finish_collection_request(self, request_id: str, error: str | None = None) -> None:
+        body = {
+            "status": "failed" if error else "completed",
+            "completed_at": datetime.now(timezone.utc).isoformat(),
+            "error": error[:1000] if error else None,
+        }
+        self._request(
+            "PATCH",
+            "collection_requests",
+            query={"id": f"eq.{request_id}", "status": "eq.processing"},
+            body=body,
+            prefer="return=minimal",
+        )
+
+    def has_chart_periods(self) -> bool:
+        if self.config.user_id is None:
+            raise ValueError("当前 Supabase 配置未指定 user_id")
+        response = self._request(
+            "GET",
+            "chart_periods",
+            query={
+                "select": "id",
+                "user_id": f"eq.{self.config.user_id}",
+                "limit": "1",
+            },
+            expect_json=True,
+        )
+        if not isinstance(response, list):
+            raise ValueError("Supabase chart_periods 返回格式无效")
+        return bool(response)
 
     def fetch_netease_uid(self) -> str:
         if self.config.user_id is None:

@@ -230,6 +230,34 @@ class SupabaseUploadTests(unittest.TestCase):
         self.assertEqual(config.user_id, self.user_id)
         self.assertEqual(config.secret_key, "environment-secret")
 
+    def test_environment_only_batch_config_does_not_require_user_id(self) -> None:
+        values = {
+            "SUPABASE_URL": "https://example.supabase.co",
+            "SUPABASE_SECRET_KEY": "environment-secret",
+        }
+        with patch.dict(os.environ, values, clear=True):
+            config = load_config(None, require_user=False)
+        self.assertIsNone(config.user_id)
+        self.assertEqual(config.secret_key, "environment-secret")
+
+    def test_fetch_bound_users(self) -> None:
+        second_user = str(uuid4())
+        requests = []
+
+        def requester(request, timeout):
+            requests.append(request)
+            return Response(json.dumps([
+                {"user_id": self.user_id, "netease_uid": "123456"},
+                {"user_id": second_user, "netease_uid": "654321"},
+            ]).encode())
+
+        config = load_config(self.env).for_user(self.user_id)
+        users = SupabaseUploader(config, requester=requester).fetch_bound_users()
+        self.assertEqual(users, [(self.user_id, "123456"), (second_user, "654321")])
+        query = parse_qs(urlparse(requests[0].full_url).query)
+        self.assertEqual(query["netease_uid"], ["not.is.null"])
+        self.assertEqual(query["select"], ["user_id,netease_uid"])
+
     def test_insert_failure_is_actionable_and_hides_secret(self) -> None:
         period_id = str(uuid4())
 

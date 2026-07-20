@@ -16,7 +16,6 @@ jobs:
     env:
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-      SUPABASE_USER_ID: ${{ secrets.SUPABASE_USER_ID }}
 
     steps:
       - name: Check out repository

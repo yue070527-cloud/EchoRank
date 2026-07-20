@@ -33,7 +33,14 @@ def _open_request(request: Request, timeout: float) -> object:
 class SupabaseConfig:
     url: str
     secret_key: str
-    user_id: str
+    user_id: str | None = None
+
+    def for_user(self, user_id: str) -> SupabaseConfig:
+        try:
+            validated = str(UUID(user_id))
+        except ValueError as error:
+            raise ValueError("user_id 必须是有效 UUID") from error
+        return SupabaseConfig(self.url, self.secret_key, validated)
 
 
 @dataclass(frozen=True)
@@ -79,23 +86,27 @@ def _load_env(path: str | Path) -> dict[str, str]:
     return values
 
 
-def load_config(env_file: str | Path | None = ".env") -> SupabaseConfig:
+def load_config(
+    env_file: str | Path | None = ".env",
+    require_user: bool = True,
+) -> SupabaseConfig:
     file_values = {} if env_file is None else _load_env(env_file)
+    names = ["SUPABASE_URL", "SUPABASE_SECRET_KEY"]
+    if require_user:
+        names.append("SUPABASE_USER_ID")
     values = {
         name: os.environ.get(name, file_values.get(name, "")).strip()
-        for name in (
-            "SUPABASE_URL",
-            "SUPABASE_SECRET_KEY",
-            "SUPABASE_USER_ID",
-        )
+        for name in names
     }
     missing = [name for name, value in values.items() if not value]
     if missing:
         raise ValueError(f"Supabase 配置缺少：{', '.join(missing)}")
-    try:
-        user_id = str(UUID(values["SUPABASE_USER_ID"]))
-    except ValueError as error:
-        raise ValueError("SUPABASE_USER_ID 必须是有效 UUID") from error
+    user_id = None
+    if require_user:
+        try:
+            user_id = str(UUID(values["SUPABASE_USER_ID"]))
+        except ValueError as error:
+            raise ValueError("SUPABASE_USER_ID 必须是有效 UUID") from error
     url = values["SUPABASE_URL"].rstrip("/")
     if not url.startswith("https://"):
         raise ValueError("SUPABASE_URL 必须使用 https://")
@@ -314,7 +325,42 @@ class SupabaseUploader:
         except (UnicodeDecodeError, json.JSONDecodeError) as error:
             raise ValueError(f"Supabase {resource} 返回了无效 JSON") from error
 
+    def fetch_bound_users(self) -> list[tuple[str, str]]:
+        users = []
+        offset = 0
+        while True:
+            response = self._request(
+                "GET",
+                "user_settings",
+                query={
+                    "select": "user_id,netease_uid",
+                    "netease_uid": "not.is.null",
+                    "order": "user_id",
+                    "offset": str(offset),
+                    "limit": "1000",
+                },
+                expect_json=True,
+            )
+            if not isinstance(response, list):
+                raise ValueError("Supabase user_settings 返回格式无效")
+            for row in response:
+                if not isinstance(row, dict):
+                    raise ValueError("Supabase user_settings 包含无效记录")
+                try:
+                    user_id = str(UUID(row.get("user_id")))
+                except (ValueError, TypeError, AttributeError) as error:
+                    raise ValueError("Supabase user_settings 包含无效 user_id") from error
+                uid = row.get("netease_uid")
+                if not isinstance(uid, str) or not uid.isdecimal():
+                    raise ValueError(f"用户 {user_id[:8]} 的 netease_uid 必须是数字字符串")
+                users.append((user_id, uid))
+            if len(response) < 1000:
+                return users
+            offset += 1000
+
     def fetch_netease_uid(self) -> str:
+        if self.config.user_id is None:
+            raise ValueError("当前 Supabase 配置未指定 user_id")
         response = self._request(
             "GET",
             "user_settings",

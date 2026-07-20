@@ -122,14 +122,12 @@ def main() -> None:
         return
     if args.command == "cloud-update":
         result = cloud_update(args.state_root, args.frontend, args.timeout)
-        if result.update.skipped:
-            print("当前未到 22:00，未采集、保存或上传榜单")
-            return
-        print("已恢复私密历史" if result.restored else "已初始化私密历史")
-        print(f"日榜：{result.update.period_key}（{result.update.entry_count} 条）")
         print(
-            f"已上传 {result.upload.periods} 个周期和 {result.upload.entries} 条榜单记录"
+            f"用户 {result.users}：成功 {result.succeeded}，跳过 {result.skipped}，"
+            f"失败 {len(result.failed)}；上传 {result.periods} 个周期、{result.entries} 条记录"
         )
+        if result.failed:
+            raise SystemExit(1)
         return
     if args.command == "upload-supabase":
         result = upload_manifest(

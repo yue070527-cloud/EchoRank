@@ -46,6 +46,7 @@ const state = {
 const authGate = document.querySelector("auth-gate");
 const neteaseOnboarding = document.querySelector("netease-onboarding");
 const appShell = document.querySelector("[data-app-shell]");
+const chartMain = document.querySelector("[data-chart-main]");
 const chartList = document.querySelector("chart-list");
 const bubblingSection = document.querySelector("bubbling-section");
 const periodSelector = document.querySelector("period-selector");
@@ -306,9 +307,12 @@ const showEmptyChartApp = (uid) => {
   document.querySelector('chart-tabs[name="period"]').setAttribute("active", state.periodType);
   setMode("charts");
   showUnavailable();
+  status.textContent = "网易云 UID 已绑定，等待下一次自动采集；当前暂无榜单数据。";
   neteaseOnboarding.hidden = true;
   appShell.hidden = false;
-  authGate.setUser(state.user, `网易云 UID ${uid} 已绑定，等待首次榜单生成。`);
+  authGate.setUser(state.user, `网易云 UID ${uid} 已绑定。`);
+  chartMain.focus();
+  appShell.scrollIntoView({ block: "start" });
 };
 
 const loadUserSettings = async (userId) => {
@@ -400,8 +404,16 @@ const stopChartApp = () => {
   neteaseOnboarding.reset();
 };
 
+const authErrorMessage = (error) => {
+  const message = error?.message || "";
+  if (/email not confirmed/i.test(message)) return "邮箱尚未验证，请先点击验证邮件中的链接。";
+  if (/invalid login credentials/i.test(message)) return "邮箱或密码不正确。";
+  if (/already registered|already been registered/i.test(message)) return "该邮箱已注册，请返回登录。";
+  return message || "认证请求失败，请稍后重试。";
+};
+
 const showAuthError = (error) => {
-  authGate.setSignedOut(error?.message || "认证请求失败，请稍后重试。", true);
+  authGate.setSignedOut(authErrorMessage(error), true);
 };
 
 document.addEventListener("netease-uid-save", async (event) => {
@@ -444,10 +456,8 @@ document.addEventListener("auth-register", async (event) => {
     return;
   }
   if (!data.session) {
-    authGate.setSignedOut(data.user
-      ? "注册成功，请先完成邮箱验证后登录。"
-      : "注册请求已完成，但未创建账户，请稍后重试。",
-    !data.user);
+    if (data.user) authGate.setVerificationPending(event.detail.email);
+    else authGate.setSignedOut("注册请求未创建账户，请稍后重试。", true);
   }
 });
 

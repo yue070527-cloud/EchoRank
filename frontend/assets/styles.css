@@ -42,6 +42,11 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 .auth-card h1 em { color: var(--netease); font-style: normal; }
 .auth-card__intro { margin: 20px 0 28px; color: var(--muted); line-height: 1.7; }
 .auth-form { display: grid; gap: 18px; }
+.auth-primary, .auth-mode-switch { width: 100%; padding: 13px 18px; border: 1px solid var(--ink); cursor: pointer; font-weight: 900; }
+.auth-primary { color: var(--surface); background: var(--ink); }
+.auth-mode-switch { margin-top: 12px; color: var(--ink); background: var(--accent); }
+.auth-card--verification strong { color: var(--ink); }
+[data-chart-main]:focus { outline: none; }
 .auth-form label { display: grid; gap: 8px; color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .08em; }
 .auth-form input { width: 100%; padding: 14px 15px; border: 1px solid var(--line); border-radius: 0; color: var(--ink); background: var(--paper); font: 600 15px var(--body); }
 .auth-form__actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }

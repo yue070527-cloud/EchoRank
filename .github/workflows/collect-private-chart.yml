@@ -1,6 +1,9 @@
 name: Collect private NetEase chart
 
 on:
+  push:
+    branches: [main]
+    paths: [.github/workflows/collect-private-chart.yml]
   workflow_dispatch:
   schedule:
     - cron: "5 14 * * *"
@@ -40,7 +43,7 @@ jobs:
           --frontend "${RUNNER_TEMP}/echorank-frontend"
 
       - name: Collect and upload private chart
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '5 14 * * *'
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || github.event.schedule == '5 14 * * *'
         run: >-
           python -m echorank cloud-update
           --state-root "${RUNNER_TEMP}/echorank-state"
